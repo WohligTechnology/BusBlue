@@ -1,0 +1,6 @@
+<div class="menu-bar pull-right">
+    <ul class="nav nav-pills menu">
+        <li ng-repeat="menu in navigation" class="{{menu.classis}}" ng-show="(menu.onsession=='0' || isloggedin=='1')"><a href="{{menu.link}}">{{menu.name}}</a>
+        </li>
+    </ul>
+</div>

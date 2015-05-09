@@ -1,0 +1,28 @@
+<div class="loginform text-center">
+    <toaster-container></toaster-container>
+    <h3>Register</h3>
+    <p>or <a href="#/login">Login</a>
+    </p>
+
+    <center>
+        <form name="myForm" novalidate>
+            <p>
+                <input type="email" name="email" class="form-control signup" placeholder="Email" ng-model="login.email" required>
+                <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                    <span ng-show="myForm.email.$error.required">Email is required.</span>
+                <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+                </span>
+            </p>
+            <p>
+                <input type="password" name="password" class="form-control signup" placeholder="Password" ng-model="login.password" required>
+                <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">
+                    <span ng-show="myForm.password.$error.required">Password is required.</span>
+                <span ng-show="myForm.password.$error.email">Invalid Password.</span>
+                </span>
+            </p>
+            <p>
+                <button class="btn btn-success" ng-click="signupfunc(login)" ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid">Sign Up</button>
+            </p>
+        </form>
+    </center>
+</div>

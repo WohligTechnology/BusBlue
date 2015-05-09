@@ -1,0 +1,43 @@
+<div class="loginform text-center">
+    <toaster-container></toaster-container>
+    <h3>Contact Us</h3>
+    </p>
+
+    <center>
+        <form name="myForm" novalidate>
+            <p>
+                <input type="text" name="name" class="form-control signup" placeholder="Name" ng-model="contactus.name" required>
+                <span style="color:red" ng-show="myForm.name.$dirty && myForm.name.$invalid">
+                    <span ng-show="myForm.name.$error.required">Name is required.</span>
+                <span ng-show="myForm.name.$error.name">Invalid Name address.</span>
+                </span>
+            </p>
+            <p>
+                <input type="email" name="email" class="form-control signup" placeholder="Email" ng-model="contactus.email" required>
+                <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                    <span ng-show="myForm.email.$error.required">Email is required.</span>
+                <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+                </span>
+            </p>
+            <p>
+                <input type="text" name="subject" class="form-control signup" placeholder="Subject" ng-model="contactus.subject" required>
+                <span style="color:red" ng-show="myForm.subject.$dirty && myForm.subject.$invalid">
+                    <span ng-show="myForm.subject.$error.required">Subject is required.</span>
+                <span ng-show="myForm.subject.$error.subject">Invalid Subject.</span>
+                </span>
+            </p>
+            <p>
+                <textarea name="message" class="form-control signup" placeholder="Message" ng-model="contactus.message" required>
+                    
+                </textarea>
+                <span style="color:red" ng-show="myForm.subject.$dirty && myForm.subject.$invalid">
+                    <span ng-show="myForm.subject.$error.required">Message is required.</span>
+                <span ng-show="myForm.subject.$error.subject">Invalid Message.</span>
+                </span>
+            </p>
+            <p>
+                <button class="btn btn-success" ng-click="signupfunc(login)" ng-disabled="myForm.name.$dirty && myForm.name.$invalid || myForm.email.$dirty && myForm.email.$invalid || myForm.subject.$dirty && myForm.$invalid || myForm.message.$dirty && myForm.message.$invalid">Send Message</button>
+            </p>
+        </form>
+    </center>
+</div>

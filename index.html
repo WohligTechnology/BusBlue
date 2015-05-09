@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="firstapp">
+
+<head ng-controller="headerctrl">
+
+    <!--    <title ng-bind="'Eglapp - '+template.title">Eglapp</title>-->
+    <title ng-bind="'AngularFramework - '">2.0</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="lib/images/favicon.ico" />
+<!--    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />-->
+   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css" />
+    <!--    <link rel="stylesheet" type="text/css" href="lib/css/animate.css" />-->
+    <!--    <link rel="stylesheet" type="text/css" href="lib/css/main.css" />-->
+    <!--    <link rel="stylesheet" type="text/css" href="lib/css/custom.css" />-->
+    <link rel="stylesheet" type="text/css" href="lib/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/angularjs-toaster/toaster.css" />
+    <link rel="stylesheet" type="text/css" href="lib/css/cutom.css">
+    <link rel="stylesheet" type="text/css" href="lib/linearicons/icons.css">
+<!--    <link rel="stylesheet" type="text/css" href="lib/linearicons/Linearicons.ttf">-->
+
+    <!-- CSS adjustments for browsers with JavaScript disabled -->
+
+    <script type="text/javascript">
+        FileAPI = {
+            debug: true,
+        };
+    </script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular-isotope/demo/scripts/vendor/jquery.isotope.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-masonry/angular-masonry.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-isotope/dist/angular-isotope.min.js"></script>
+    <script src="bower_components/angularjs-toaster/toaster.js"></script>
+    <script src="lib/js/angular-route.min.js"></script>
+    <script src="lib/js/ng-infinite-scroll.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.0.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/templateservice.js"></script>
+    <script src="js/rest.js"></script>
+    <script src="js/navigation.js"></script>
+    <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+    <script type="text/javascript" src="bower_components/angular-ui-map/ui-map.min.js"></script>
+    <script src="bower_components/angular-ui-utils/ui-utils.min.js"></script>
+    <script src="js/app.js"></script>
+
+    
+</head>
+
+<body>
+    <!--   <div class="view-animate-container">-->
+    <div class="blackshade"><div class="page {{pageClass}} repeated-item" ng-view></div></div>
+
+    <!--  </    div>-->
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            var latlon = position.coords.latitude + "," + position.coords.longitude;
+            console.log(position.coords);
+        }
+
+        function showError(error) {
+            switch (error.code) {
+            case error.PERMISSION_DENIED:
+                x.innerHTML = "User denied the request for Geolocation."
+                break;
+            case error.POSITION_UNAVAILABLE:
+                x.innerHTML = "Location information is unavailable."
+                break;
+            case error.TIMEOUT:
+                x.innerHTML = "The request to get user location timed out."
+                break;
+            case error.UNKNOWN_ERROR:
+                x.innerHTML = "An unknown error occurred."
+                break;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
