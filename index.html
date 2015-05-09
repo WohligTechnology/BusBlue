@@ -7,8 +7,8 @@
     <title ng-bind="'AngularFramework - '">2.0</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="lib/images/favicon.ico" />
-<!--    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />-->
-   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <!--    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />-->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css" />
     <!--    <link rel="stylesheet" type="text/css" href="lib/css/animate.css" />-->
     <!--    <link rel="stylesheet" type="text/css" href="lib/css/main.css" />-->
@@ -17,7 +17,6 @@
     <link rel="stylesheet" type="text/css" href="bower_components/angularjs-toaster/toaster.css" />
     <link rel="stylesheet" type="text/css" href="lib/css/cutom.css">
     <link rel="stylesheet" type="text/css" href="lib/linearicons/icons.css">
-<!--    <link rel="stylesheet" type="text/css" href="lib/linearicons/Linearicons.ttf">-->
 
     <!-- CSS adjustments for browsers with JavaScript disabled -->
 
@@ -36,7 +35,7 @@
     <script src="lib/js/angular-route.min.js"></script>
     <script src="lib/js/ng-infinite-scroll.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+
     <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.0.js"></script>
     <script src="js/controller.js"></script>
     <script src="js/templateservice.js"></script>
@@ -47,12 +46,14 @@
     <script src="bower_components/angular-ui-utils/ui-utils.min.js"></script>
     <script src="js/app.js"></script>
 
-    
+
 </head>
 
 <body>
     <!--   <div class="view-animate-container">-->
-    <div class="blackshade"><div class="page {{pageClass}} repeated-item" ng-view></div></div>
+    <div class="blackshade">
+        <div class="page {{pageClass}} repeated-item" ng-view></div>
+    </div>
 
     <!--  </    div>-->
     <script>
@@ -71,18 +72,18 @@
 
         function showError(error) {
             switch (error.code) {
-            case error.PERMISSION_DENIED:
-                x.innerHTML = "User denied the request for Geolocation."
-                break;
-            case error.POSITION_UNAVAILABLE:
-                x.innerHTML = "Location information is unavailable."
-                break;
-            case error.TIMEOUT:
-                x.innerHTML = "The request to get user location timed out."
-                break;
-            case error.UNKNOWN_ERROR:
-                x.innerHTML = "An unknown error occurred."
-                break;
+                case error.PERMISSION_DENIED:
+                    x.innerHTML = "User denied the request for Geolocation."
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    x.innerHTML = "Location information is unavailable."
+                    break;
+                case error.TIMEOUT:
+                    x.innerHTML = "The request to get user location timed out."
+                    break;
+                case error.UNKNOWN_ERROR:
+                    x.innerHTML = "An unknown error occurred."
+                    break;
             }
 
         }
