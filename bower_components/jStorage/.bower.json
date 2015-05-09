@@ -1,0 +1,15 @@
+{
+  "name": "jStorage",
+  "homepage": "https://github.com/martinkr/jStorage",
+  "version": "1.1.1",
+  "_release": "1.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.1.1",
+    "commit": "abe83b372d688fcfcb02b07aabf8088f1eb3cc8c"
+  },
+  "_source": "https://github.com/martinkr/jStorage.git",
+  "_target": "~1.1.1",
+  "_originalSource": "https://github.com/martinkr/jStorage.git",
+  "_direct": true
+}
