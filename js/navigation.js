@@ -13,6 +13,12 @@ var navigationservice = angular.module('navigationservice', [])
         link: "#/car",
         onsession: "0",
         subnav: []
+    },{
+        name: "Flight",
+        active: "",
+        link: "#/Flight",
+        onsession: "0",
+        subnav: []
     }];
 
     return {

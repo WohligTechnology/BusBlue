@@ -217,7 +217,7 @@ phonecatControllers.controller('login',
         TemplateService.content = "views/login.html";
         $scope.navigation = NavigationService.getnav();
         $scope.pageClass = "page-login";
-
+    $scope.headclass = 'changehead';
         $scope.loginfunc = function(login) {
             console.log("in login");
             toaster.pop("error", "Login Error", "Invalid username or password", 5000);
@@ -225,9 +225,73 @@ phonecatControllers.controller('login',
         }
 
     });
+phonecatControllers.controller('forgetpass',
+    function($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+        $scope.template = TemplateService;
+        TemplateService.title = $scope.menutitle;
+        TemplateService.content = "views/forgetpass.html";
+        $scope.navigation = NavigationService.getnav();
+        $scope.pageClass = "page-login";
+    $scope.headclass = 'changehead';
+        $scope.loginfunc = function(login) {
+            console.log("in login");
+            toaster.pop("error", "Login Error", "Invalid username or password", 5000);
+            toaster.pop("success", "Welcome", "Registered successfully", 5000);
+        }
+
+    });
+
+phonecatControllers.controller('resetpass',
+    function($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+        $scope.template = TemplateService;
+        TemplateService.title = $scope.menutitle;
+        TemplateService.content = "views/resetpass.html";
+        $scope.navigation = NavigationService.getnav();
+        $scope.pageClass = "page-login";
+    $scope.headclass = 'changehead';
+        $scope.loginfunc = function(login) {
+            console.log("in login");
+            toaster.pop("error", "Login Error", "Invalid username or password", 5000);
+            toaster.pop("success", "Welcome", "Registered successfully", 5000);
+        }
+
+    });
+
+phonecatControllers.controller('about',
+    function($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+        $scope.template = TemplateService;
+        TemplateService.title = $scope.menutitle;
+        TemplateService.content = "views/about.html";
+        $scope.navigation = NavigationService.getnav();
+        $scope.pageClass = "page-login";
+    $scope.headclass = 'changehead';
+        $scope.loginfunc = function(login) {
+            console.log("in login");
+            toaster.pop("error", "Login Error", "Invalid username or password", 5000);
+            toaster.pop("success", "Welcome", "Registered successfully", 5000);
+        }
+
+    });
+phonecatControllers.controller('terms',
+    function($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+        $scope.template = TemplateService;
+        TemplateService.title = $scope.menutitle;
+        TemplateService.content = "views/terms.html";
+        $scope.navigation = NavigationService.getnav();
+        $scope.pageClass = "page-login";
+    $scope.headclass = 'changehead';
+        $scope.loginfunc = function(login) {
+            console.log("in login");
+            toaster.pop("error", "Login Error", "Invalid username or password", 5000);
+            toaster.pop("success", "Welcome", "Registered successfully", 5000);
+        }
+
+    });
+
 phonecatControllers.controller('signup',
     function($scope, TemplateService, NavigationService, RestService, $location, toaster) {
         $scope.template = TemplateService;
+      $scope.headclass = 'changehead';
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/signup.html";
         $scope.navigation = NavigationService.getnav();
