@@ -1,12 +1,12 @@
 var lat = 0;
 var long = 0;
-var phonecatControllers = angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'restservicemod', 'ngRoute', 'infinite-scroll', 'ngAnimate', 'toaster', 'wu.masonry', 'iso.directives']);
+var phonecatControllers = angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'restservicemod', 'ngRoute', 'infinite-scroll', 'ngAnimate', 'toaster', 'wu.masonry', 'iso.directives','ui.bootstrap']);
 
 phonecatControllers.controller('home',
     function($scope, TemplateService, NavigationService, RestService, $filter, $location, $timeout, toaster) {
 
         $scope.template = TemplateService;
-        $scope.menutitle = NavigationService.makeactive("Home");
+        $scope.menutitle = NavigationService.makeactive("Bus");
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/home.html";
         $scope.navigation = NavigationService.getnav();
@@ -40,6 +40,7 @@ phonecatControllers.controller('home',
             $scope.toggleMin();
 
             $scope.open = function($event) {
+                console.log('Open Calendar');
                 $event.preventDefault();
                 $event.stopPropagation();
 
@@ -120,6 +121,15 @@ phonecatControllers.controller('home',
         }
 
 
+    });
+
+phonecatControllers.controller('car',
+    function($scope, TemplateService, NavigationService, RestService, $location, $http) {
+        $scope.template = TemplateService;
+        $scope.menutitle = NavigationService.makeactive("Car");
+        TemplateService.title = $scope.menutitle;
+        TemplateService.content = "views/car.html";
+        $scope.navigation = NavigationService.getnav();
     });
 
 phonecatControllers.controller('myprofile',

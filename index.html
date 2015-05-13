@@ -4,27 +4,28 @@
 <head ng-controller="headerctrl">
 
     <!--    <title ng-bind="'Eglapp - '+template.title">Eglapp</title>-->
-    <title ng-bind="'AngularFramework - '">2.0</title>
+    <title ng-bind="'Bus & Car - '"></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="lib/images/favicon.ico" />
-    <!--    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />-->
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="lib/linearicons/icons.css">
     <!--    <link rel="stylesheet" type="text/css" href="lib/css/animate.css" />-->
     <!--    <link rel="stylesheet" type="text/css" href="lib/css/main.css" />-->
-    <!--    <link rel="stylesheet" type="text/css" href="lib/css/custom.css" />-->
     <link rel="stylesheet" type="text/css" href="lib/css/animate.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/angularjs-toaster/toaster.css" />
-    <link rel="stylesheet" type="text/css" href="css/cutom.css">
-    <link rel="stylesheet" type="text/css" href="lib/linearicons/icons.css">
+
+    <!--Custom stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- CSS adjustments for browsers with JavaScript disabled -->
-
     <script type="text/javascript">
         FileAPI = {
             debug: true,
         };
     </script>
+    
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular-isotope/demo/scripts/vendor/jquery.isotope.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
@@ -37,10 +38,13 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.0.js"></script>
+
+    <!--Custom js files-->
     <script src="js/controller.js"></script>
     <script src="js/templateservice.js"></script>
     <script src="js/rest.js"></script>
     <script src="js/navigation.js"></script>
+
     <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
     <script type="text/javascript" src="bower_components/angular-ui-map/ui-map.min.js"></script>
     <script src="bower_components/angular-ui-utils/ui-utils.min.js"></script>
@@ -51,9 +55,9 @@
 
 <body>
     <!--   <div class="view-animate-container">-->
-    <div class="blackshade">
+
         <div class="page {{pageClass}} repeated-item" ng-view></div>
-    </div>
+
 
     <!--  </    div>-->
     <script>

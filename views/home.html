@@ -3,76 +3,60 @@
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
                 <div class="bus-form" ng-controller="Datepicker">
-                    <div class="col-md-12">
+                    <div class="">
                         <div class="head">
                             <h4>Online Bus Tickets Booking with Zero Booking Fees</h4>
                         </div>
                     </div>
-                    <div class="col-md-12 frm-main">
+                    <div class="row frm-main">
                         <div class="col-md-6">
-                            <form>
-                                <div class="form-group from-mainpage">
-                                    <label class="labels">From</label>
-                                    <input type="text" class="form-control" id="From" placeholder="Enter Your City">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-md-6">
-                            <form>
-                                <div class="form-group from-mainpage">
-                                    <label class="labels">To</label>
-                                    <input type="text" class="form-control" id="From" placeholder="Enter Your City">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-md-12 frm-main">
-                        <div class="col-md-6">
-                            <form>
-                                <div class="form-group from-mainpage">
-                                    <label class="labels">Date of Journey</label>
-                                    <input type="date" class="form-control" id="From" placeholder="Enter Your City">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-md-6">
-                            <form>
-                                <div class="form-group from-mainpage">
-                                    <label class="labels">Date of Return</label>
-                                    <input type="date" class="form-control" id="From" placeholder="Enter Your City">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="btnhome pull-right">
-                        <button type="button" class="btn btn-info">Search Buses</button>
-                    </div>
 
-                    <!--               date picker   -->
+                            <div class="form-group from-mainpage">
+                                <label class="labels">From</label>
+                                <input type="text" class="form-control" placeholder="Enter Your City">
+                            </div>
 
-                    <!--
-        <div class="col-md-6">
-            <p class="input-group">
-              <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
-              <span class="input-group-btn">
-                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="form-group from-mainpage">
+                                <label class="labels">To</label>
+                                <input type="text" class="form-control" placeholder="Enter Your City">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row frm-main home-cal">
+                        <div class="col-md-6">
+
+                            <div class="form-group from-mainpage">
+                                <label class="labels">Date of Journey</label>
+                                <p class="input-group">
+                                    <input type="date" class="form-control" datepicker-popup ng-model="dt1" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                    <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
               </span>
-            </p>
-        </div>
+                                </p>
+                            </div>
 
-        <div class="col-md-6">
-            <p class="input-group">
-              <input type="date" class="form-control" datepicker-popup ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
-              <span class="input-group-btn">
-                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="form-group from-mainpage">
+                                <label class="labels">Date of Return (Optional)</label>
+                                <p class="input-group">
+                                    <input type="date" class="form-control" datepicker-popup ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                    <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
               </span>
-            </p>
-        </div>
--->
-                    <!--               date pcker end  -->
+                                </p>
+                            </div>
 
-
-
+                        </div>
+                    </div>
+                    <div class="btnhome text-right">
+                        <button type="button" class="btn btn-primary">Search</button>
+                    </div>
 
                 </div>
             </div>
