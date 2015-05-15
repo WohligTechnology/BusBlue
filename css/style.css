@@ -574,3 +574,67 @@ button.createacc:hover {
     color: #3DAEDF;
     border: 1px solid #3DAEDF;
 }
+.tbl-set button {
+    background: #3DAEDF;
+    border: 1px solid #3DAEDF;
+    color: #fff;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+.tbl-set button:hover {
+    background: #fff;
+    border: 1px solid #3DAEDF;
+    color: #3DAEDF;
+}
+td.td-st i {
+    margin-right: 15px;
+    float: left;
+    margin-top: 7px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.ng-pageslide {
+                background: #eee;
+            }
+.coll{
+transition: all 1s ease;
+-webkit-transition: all 1s ease;
+-o-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+}
+
+.ngdialog-content {
+  animation: ngdialog-flyin .5s;
+  background: #fff !important;
+  border-radius: 5px;
+  color: #444;
+  font-family: 'Helvetica',sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 1em;
+  position: relative;
+  min-width: 450px !important;
+    min-height: 350px;
+}
+
+
+.slide-set img{
+  margin:auto;
+  width: 400px;
+}
+#slides_control {
+  position:absolute;
+  width: 400px;
+  left:50%;
+  top:20px;
+ margin-left:-200px;
+}
+.sli-hd {
+    margin-bottom: 30px;
+}

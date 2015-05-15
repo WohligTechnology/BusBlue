@@ -1,9 +1,9 @@
 var lat = 0;
 var long = 0;
-var phonecatControllers = angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'restservicemod', 'ngRoute', 'infinite-scroll', 'ngAnimate', 'toaster', 'wu.masonry', 'iso.directives','ui.bootstrap']);
+var phonecatControllers = angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'restservicemod', 'ngRoute', 'ngDialog', 'infinite-scroll', 'ngAnimate', 'toaster', 'wu.masonry', 'iso.directives', 'ui.bootstrap']);
 
 phonecatControllers.controller('home',
-    function($scope, TemplateService, NavigationService, RestService, $filter, $location, $timeout, toaster) {
+    function ($scope, TemplateService, NavigationService, RestService, $filter, $location, $timeout, toaster) {
 
         $scope.template = TemplateService;
         $scope.menutitle = NavigationService.makeactive("Bus");
@@ -15,31 +15,31 @@ phonecatControllers.controller('home',
         $scope.pageClass = "page-home";
         $scope.pageready = "true";
 
-        angular.element(document).ready(function() {
+        angular.element(document).ready(function () {
             $scope.pageready = "false";
 
 
             /************ date picker **********/
-            $scope.today = function() {
+            $scope.today = function () {
                 $scope.dt = new Date();
             };
             $scope.today();
 
-            $scope.clear = function() {
+            $scope.clear = function () {
                 $scope.dt = null;
             };
 
             // Disable weekend selection
-            $scope.disabled = function(date, mode) {
+            $scope.disabled = function (date, mode) {
                 return (mode === 'day' && (date.getDay() === 0 || date.getDay() === 6));
             };
 
-            $scope.toggleMin = function() {
+            $scope.toggleMin = function () {
                 $scope.minDate = $scope.minDate ? null : new Date();
             };
             $scope.toggleMin();
 
-            $scope.open = function($event) {
+            $scope.open = function ($event) {
                 console.log('Open Calendar');
                 $event.preventDefault();
                 $event.stopPropagation();
@@ -67,7 +67,7 @@ phonecatControllers.controller('home',
                 status: 'partially'
             }];
 
-            $scope.getDayClass = function(date, mode) {
+            $scope.getDayClass = function (date, mode) {
                 if (mode === 'day') {
                     var dayToCheck = new Date(date).setHours(0, 0, 0, 0);
 
@@ -89,15 +89,15 @@ phonecatControllers.controller('home',
 
         $scope.list = [];
         for (var i = 0; i < 6; i++) {
-            $timeout(function() {
+            $timeout(function () {
                 $scope.list.push({
                     title: "item"
                 });
             }, 500 * i);
         };
 
-        $scope.myPagingFunction = function() {
-            $timeout(function() {
+        $scope.myPagingFunction = function () {
+            $timeout(function () {
                 $scope.list.push({
                     title: "item"
                 });
@@ -124,7 +124,7 @@ phonecatControllers.controller('home',
     });
 
 phonecatControllers.controller('car',
-    function($scope, TemplateService, NavigationService, RestService, $location, $http) {
+    function ($scope, TemplateService, NavigationService, RestService, $location, $http) {
         $scope.template = TemplateService;
         $scope.menutitle = NavigationService.makeactive("Car");
         TemplateService.title = $scope.menutitle;
@@ -133,7 +133,7 @@ phonecatControllers.controller('car',
     });
 
 phonecatControllers.controller('myprofile',
-    function($scope, TemplateService, NavigationService, RestService, $location, $http) {
+    function ($scope, TemplateService, NavigationService, RestService, $location, $http) {
         $scope.template = TemplateService;
         $scope.menutitle = NavigationService.makeactive("My Profile");
         TemplateService.title = $scope.menutitle;
@@ -142,30 +142,30 @@ phonecatControllers.controller('myprofile',
     });
 
 phonecatControllers.controller('Datepicker',
-    function($scope, TemplateService, NavigationService, RestService, $location, $http) {
+    function ($scope, TemplateService, NavigationService, RestService, $location, $http) {
 
 
         console.log("int datepicker");
-        $scope.today = function() {
+        $scope.today = function () {
             $scope.dt = new Date();
         };
         $scope.today();
 
-        $scope.clear = function() {
+        $scope.clear = function () {
             $scope.dt = null;
         };
 
         // Disable weekend selection
-        $scope.disabled = function(date, mode) {
+        $scope.disabled = function (date, mode) {
             return (mode === 'day' && (date.getDay() === 0 || date.getDay() === 6));
         };
 
-        $scope.toggleMin = function() {
+        $scope.toggleMin = function () {
             $scope.minDate = $scope.minDate ? null : new Date();
         };
         $scope.toggleMin();
 
-        $scope.open = function($event) {
+        $scope.open = function ($event) {
             $event.preventDefault();
             $event.stopPropagation();
 
@@ -192,7 +192,7 @@ phonecatControllers.controller('Datepicker',
             status: 'partially'
         }];
 
-        $scope.getDayClass = function(date, mode) {
+        $scope.getDayClass = function (date, mode) {
             if (mode === 'day') {
                 var dayToCheck = new Date(date).setHours(0, 0, 0, 0);
 
@@ -211,14 +211,14 @@ phonecatControllers.controller('Datepicker',
     });
 
 phonecatControllers.controller('login',
-    function($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+    function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/login.html";
         $scope.navigation = NavigationService.getnav();
         $scope.pageClass = "page-login";
-    $scope.headclass = 'changehead';
-        $scope.loginfunc = function(login) {
+        $scope.headclass = 'changehead';
+        $scope.loginfunc = function (login) {
             console.log("in login");
             toaster.pop("error", "Login Error", "Invalid username or password", 5000);
             toaster.pop("success", "Welcome", "Registered successfully", 5000);
@@ -226,14 +226,14 @@ phonecatControllers.controller('login',
 
     });
 phonecatControllers.controller('forgetpass',
-    function($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+    function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/forgetpass.html";
         $scope.navigation = NavigationService.getnav();
         $scope.pageClass = "page-login";
-    $scope.headclass = 'changehead';
-        $scope.loginfunc = function(login) {
+        $scope.headclass = 'changehead';
+        $scope.loginfunc = function (login) {
             console.log("in login");
             toaster.pop("error", "Login Error", "Invalid username or password", 5000);
             toaster.pop("success", "Welcome", "Registered successfully", 5000);
@@ -242,14 +242,14 @@ phonecatControllers.controller('forgetpass',
     });
 
 phonecatControllers.controller('resetpass',
-    function($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+    function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/resetpass.html";
         $scope.navigation = NavigationService.getnav();
         $scope.pageClass = "page-login";
-    $scope.headclass = 'changehead';
-        $scope.loginfunc = function(login) {
+        $scope.headclass = 'changehead';
+        $scope.loginfunc = function (login) {
             console.log("in login");
             toaster.pop("error", "Login Error", "Invalid username or password", 5000);
             toaster.pop("success", "Welcome", "Registered successfully", 5000);
@@ -258,29 +258,113 @@ phonecatControllers.controller('resetpass',
     });
 
 phonecatControllers.controller('about',
-    function($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+    function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/about.html";
         $scope.navigation = NavigationService.getnav();
         $scope.pageClass = "page-login";
-    $scope.headclass1 = 'changeheads';
-        $scope.loginfunc = function(login) {
+        $scope.headclass1 = 'changeheads';
+        $scope.loginfunc = function (login) {
             console.log("in login");
             toaster.pop("error", "Login Error", "Invalid username or password", 5000);
             toaster.pop("success", "Welcome", "Registered successfully", 5000);
         }
 
     });
+phonecatControllers.controller('bus',
+    function ($scope, TemplateService, NavigationService, RestService, $location, toaster, ngDialog) {
+        $scope.template = TemplateService;
+        TemplateService.title = $scope.menutitle;
+        TemplateService.content = "views/bus.html";
+        $scope.navigation = NavigationService.getnav();
+        $scope.pageClass = "page-login";
+        $scope.headclass1 = 'changeheads';
+        $scope.loginfunc = function (login) {
+            console.log("in login");
+            toaster.pop("error", "Login Error", "Invalid username or password", 5000);
+            toaster.pop("success", "Welcome", "Registered successfully", 5000);
+        }
+
+
+        $scope.rate = 4.5;
+        $scope.max = 5;
+        $scope.isReadonly = false;
+
+    $scope.myInterval = 3000;
+  $scope.slides = [
+    {
+      image: 'http://lorempixel.com/400/200/'
+    },
+    {
+      image: 'http://lorempixel.com/400/200/food'
+    },
+    {
+      image: 'http://lorempixel.com/400/200/sports'
+    },
+    {
+      image: 'http://lorempixel.com/400/200/people'
+    }
+  ]; 
+        $scope.ratingStates = [
+            {
+                stateOn: 'glyphicon-ok-sign',
+                stateOff: 'glyphicon-ok-circle'
+            },
+            {
+                stateOn: 'glyphicon-star',
+                stateOff: 'glyphicon-star-empty'
+            },
+            {
+                stateOn: 'glyphicon-heart',
+                stateOff: 'glyphicon-ban-circle'
+            },
+            {
+                stateOn: 'glyphicon-heart'
+            },
+            {
+                stateOff: 'glyphicon-off'
+            }
+  ];
+
+        $scope.onemailclick = function (listing) {
+            $scope.listingid = listing;
+            console.log("Demo is wokring");
+            ngDialog.open({
+                template: 'views/buspop.html',
+                controller: 'bus'
+            });
+        };
+
+        $scope.seat = function (listings) {
+            $scope.listingid = listings;
+            console.log("Demo is wokring");
+            ngDialog.open({
+                template: 'views/seat.html',
+                controller: 'bus'
+            });
+        };
+    
+       $scope.slide = function (slidess) {
+            $scope.listingid = slidess;
+            console.log("Demo is wokring");
+            ngDialog.open({
+                template: 'views/bslide.html',
+                controller: 'bus'
+            });
+        };
+
+    });
+
 phonecatControllers.controller('terms',
-    function($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+    function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/terms.html";
         $scope.navigation = NavigationService.getnav();
         $scope.pageClass = "page-login";
-   $scope.headclass1 = 'changeheads';
-        $scope.loginfunc = function(login) {
+        $scope.headclass1 = 'changeheads';
+        $scope.loginfunc = function (login) {
             console.log("in login");
             toaster.pop("error", "Login Error", "Invalid username or password", 5000);
             toaster.pop("success", "Welcome", "Registered successfully", 5000);
@@ -289,16 +373,16 @@ phonecatControllers.controller('terms',
     });
 
 phonecatControllers.controller('signup',
-    function($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+    function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
         $scope.template = TemplateService;
-      $scope.headclass = 'changehead';
+        $scope.headclass = 'changehead';
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/signup.html";
         $scope.navigation = NavigationService.getnav();
         $scope.pageClass = "page-signup";
 
 
-        $scope.signupfunc = function(login) {
+        $scope.signupfunc = function (login) {
             console.log("toaster");
             toaster.pop("error", "Signup Error", "Already Exist. Choose Another Email Address", 5000);
             toaster.pop("success", "Welcome", "Registered successfully", 5000);
@@ -306,26 +390,26 @@ phonecatControllers.controller('signup',
 
     });
 phonecatControllers.controller('logout',
-    function($scope, TemplateService, NavigationService, RestService, $location) {
+    function ($scope, TemplateService, NavigationService, RestService, $location) {
 
     });
 phonecatControllers.controller('contactus',
-    function($scope, TemplateService, NavigationService) {
+    function ($scope, TemplateService, NavigationService) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
-     $scope.headclass1 = 'changeheads';
+        $scope.headclass1 = 'changeheads';
         TemplateService.content = "views/contactus.html";
         $scope.navigation = NavigationService.getnav();
     });
 
 phonecatControllers.controller('listing',
-    function($scope, TemplateService, NavigationService) {
+    function ($scope, TemplateService, NavigationService) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/listing.html";
         $scope.navigation = NavigationService.getnav();
 
-        $scope.changeorderto = function(neworder) {
+        $scope.changeorderto = function (neworder) {
             $scope.order = neworder;
         };
 
@@ -531,7 +615,7 @@ phonecatControllers.controller('listing',
     });
 
 phonecatControllers.controller('forgot',
-    function($scope, TemplateService, NavigationService, RestService) {
+    function ($scope, TemplateService, NavigationService, RestService) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/forgot.html";
@@ -540,7 +624,7 @@ phonecatControllers.controller('forgot',
     });
 
 phonecatControllers.controller('headerctrl',
-    function($scope, TemplateService) {
+    function ($scope, TemplateService) {
         $scope.template = TemplateService;
 
         //        $scope.imagepath = imagepath;

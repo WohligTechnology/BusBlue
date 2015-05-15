@@ -5,7 +5,8 @@ var firstapp = angular.module('firstapp', [
     'phonecatControllers',
     'templateservicemod',
     'navigationservice',
-    'restservicemod'
+    'restservicemod',
+    'pageslide-directive'
 ]);
 
 firstapp.config(['$routeProvider',
@@ -36,6 +37,9 @@ firstapp.config(['$routeProvider',
         }).when('/listing', {
             templateUrl: 'views/template.html',
             controller: 'listing'
+        }).when('/bus', {
+            templateUrl: 'views/template.html',
+            controller: 'bus'
         }).when('/contactus', {
             templateUrl: 'views/template.html',
             controller: 'contactus'

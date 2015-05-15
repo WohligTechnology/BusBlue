@@ -1,0 +1,48 @@
+<section class="bus-set">
+    <div class="container">
+        <div class="row">
+            <div class="tbl-set">
+                <table class="table table-striped">
+
+                    <thead>
+                        <tr>
+                            <th>Travels</th>
+                            <th>Depart</th>
+                            <th>Arrive</th>
+                            <th>Seats</th>
+                            <th>Ratings</th>
+                            <th>Fare</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td-st">Naik Tours And Travels
+                                <br>Non A/C Seater (2+2)
+                                <br><i class="fa fa-align-left" ng-click="onemailclick(list.listing);"></i><i class="fa fa-picture-o" ng-click="slide(list.slidess);"></i><i class="fa fa-mobile"></i>
+                            </td>
+                            <td>07:00 PM
+                                <br>Duration</td>
+                            <td>16:00 PM
+                                <br>16:00 Hrs</td>
+                            <td>8 seats
+                                <br> Window 3</td>
+                            <td>
+                                <rating ng-model="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
+                                <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+                                <br>Ratings (5)</td>
+                            <td>Rs 1000
+                                <br>
+                                <button class="" ng-click="seat(list.listings);">View Seats</button>
+                                <br>
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+   
+   
+            </div>
+        </div>
+    </div>
+</section>
