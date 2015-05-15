@@ -264,7 +264,7 @@ phonecatControllers.controller('about',
         TemplateService.content = "views/about.html";
         $scope.navigation = NavigationService.getnav();
         $scope.pageClass = "page-login";
-    $scope.headclass = 'changehead';
+    $scope.headclass1 = 'changeheads';
         $scope.loginfunc = function(login) {
             console.log("in login");
             toaster.pop("error", "Login Error", "Invalid username or password", 5000);
@@ -279,7 +279,7 @@ phonecatControllers.controller('terms',
         TemplateService.content = "views/terms.html";
         $scope.navigation = NavigationService.getnav();
         $scope.pageClass = "page-login";
-    $scope.headclass = 'changehead';
+   $scope.headclass1 = 'changeheads';
         $scope.loginfunc = function(login) {
             console.log("in login");
             toaster.pop("error", "Login Error", "Invalid username or password", 5000);
@@ -313,6 +313,7 @@ phonecatControllers.controller('contactus',
     function($scope, TemplateService, NavigationService) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
+     $scope.headclass1 = 'changeheads';
         TemplateService.content = "views/contactus.html";
         $scope.navigation = NavigationService.getnav();
     });

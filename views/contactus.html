@@ -1,43 +1,57 @@
-<div class="loginform text-center">
-    <toaster-container></toaster-container>
-    <h3>Contact Us</h3>
-    </p>
+<div class="container contact-set">
 
-    <center>
-        <form name="myForm" novalidate>
-            <p>
-                <input type="text" name="name" class="form-control signup" placeholder="Name" ng-model="contactus.name" required>
-                <span style="color:red" ng-show="myForm.name.$dirty && myForm.name.$invalid">
-                    <span ng-show="myForm.name.$error.required">Name is required.</span>
-                <span ng-show="myForm.name.$error.name">Invalid Name address.</span>
-                </span>
-            </p>
-            <p>
-                <input type="email" name="email" class="form-control signup" placeholder="Email" ng-model="contactus.email" required>
-                <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
-                    <span ng-show="myForm.email.$error.required">Email is required.</span>
-                <span ng-show="myForm.email.$error.email">Invalid email address.</span>
-                </span>
-            </p>
-            <p>
-                <input type="text" name="subject" class="form-control signup" placeholder="Subject" ng-model="contactus.subject" required>
-                <span style="color:red" ng-show="myForm.subject.$dirty && myForm.subject.$invalid">
-                    <span ng-show="myForm.subject.$error.required">Subject is required.</span>
-                <span ng-show="myForm.subject.$error.subject">Invalid Subject.</span>
-                </span>
-            </p>
-            <p>
-                <textarea name="message" class="form-control signup" placeholder="Message" ng-model="contactus.message" required>
-                    
-                </textarea>
-                <span style="color:red" ng-show="myForm.subject.$dirty && myForm.subject.$invalid">
-                    <span ng-show="myForm.subject.$error.required">Message is required.</span>
-                <span ng-show="myForm.subject.$error.subject">Invalid Message.</span>
-                </span>
-            </p>
-            <p>
-                <button class="btn btn-success" ng-click="signupfunc(login)" ng-disabled="myForm.name.$dirty && myForm.name.$invalid || myForm.email.$dirty && myForm.email.$invalid || myForm.subject.$dirty && myForm.$invalid || myForm.message.$dirty && myForm.message.$invalid">Send Message</button>
-            </p>
-        </form>
-    </center>
+    <div class="row">
+        <div class="col-md-7" ng-bind-html="content.content | rawHtml">
+
+            
+            <div class="map">
+                <h2>MAP</h2>
+              
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.801298552383!2d72.90016399999998!3d19.072472000000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6277363c179%3A0x36691e6c95a165c3!2sWohlig+Technologies+LLP!5e0!3m2!1sen!2sin!4v1431668867782" width="100%" height="230" frameborder="0" style="border:0"></iframe>
+
+                </iframe>
+            </div>
+            <div class="middle">
+
+                <h2 class="ucase">CONTACT US</h2>
+                <p class="weightchange">Address - 201, Saurabh Building, Modi Industrial Estate, LBS Marg, Ghatkopar West - 400086.</p>
+                <p class="weightchange">Email - support@wohlig.org</p>
+                <p class="weightchange">Number - 022 67000000</p>
+            </div>
+
+       
+        </div>
+        <div class="col-md-5">
+
+            <div class="formprarmy form-horizontal">
+                <div ng-if="!message">
+                    <h2>GET IN TOUCH</h2>
+
+                                    <form class="frm-bdr" ng-submit="submitcontactform(form);">
+                    <input type="text" ng-model="form.name" placeholder="Name *" ng-class="allvalidation[0].validation" required>
+                    <input type="text" ng-model="form.contact" placeholder="Number *" ng-class="allvalidation[1].validation" required>
+                    <input type="text" ng-model="form.email" placeholder="Email *" ng-class="allvalidation[2].validation" required>
+                
+                    <input type="text" placeholder="City *" ng-model="form.city" ng-class="allvalidation[4].validation" required>
+                    <textarea placeholder="Message *" ng-model="form.message" ng-class="allvalidation[5].validation" required></textarea>
+
+                    <button type="submit" class="subbtn">SEND</button>
+
+                    <!--                <div ng-class="message" ng-bind="textmessage"></div>-->
+                </div>
+                <div class="form-msg thankyou-img" ng-if="message">
+                    <a href="#/Home"><img src="images/thnq-msg.png" alt=""></a>
+                    <p>Thank you for your message the team will get back to you in a maximum of 72 hours.</p>
+                </div>
+                <!--                    <div class="all_set" ng-if="message='true'">All the best</div>-->
+                <!--                    <div  class="error" ng-if="message='false'">Please try again</div>-->
+
+                                </form>
+            </div>
+        </div>
+
+    </div>
 </div>
+
+<div id="veil" ng-show="isLoading"></div>
+<div id="feedLoading" ng-show="isLoading">Loading...</div>
