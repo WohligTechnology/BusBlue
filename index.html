@@ -6,6 +6,9 @@
     <!--    <title ng-bind="'Eglapp - '+template.title">Eglapp</title>-->
     <title ng-bind="'Bus & Car - '"></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1">
+    <meta name="viewport" content="width=device-width">
+
     <link rel="shortcut icon" href="lib/images/favicon.ico" />
     <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="lib/bootstrap/bootstrap-theme.min.css" rel="stylesheet">
@@ -31,7 +34,7 @@
             debug: true,
         };
     </script>
-    
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular-isotope/demo/scripts/vendor/jquery.isotope.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
@@ -43,7 +46,7 @@
     <script src="lib/js/ng-infinite-scroll.min.js"></script>
     <script src="lib/js/ngDialog.js"></script>
     <script src="lib/js/angular-pageslide-directive.js"></script>
- 
+
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.0.js"></script>
@@ -58,7 +61,7 @@
     <script type="text/javascript" src="bower_components/angular-ui-map/ui-map.min.js"></script>
     <script src="bower_components/angular-ui-utils/ui-utils.min.js"></script>
     <script src="js/app.js"></script>
-    	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
 
 
 </head>
@@ -66,7 +69,7 @@
 <body>
     <!--   <div class="view-animate-container">-->
 
-        <div class="page {{pageClass}} repeated-item" ng-view></div>
+    <div class="page {{pageClass}} repeated-item" ng-view></div>
 
 
     <!--  </    div>-->
@@ -86,18 +89,18 @@
 
         function showError(error) {
             switch (error.code) {
-                case error.PERMISSION_DENIED:
-                    x.innerHTML = "User denied the request for Geolocation."
-                    break;
-                case error.POSITION_UNAVAILABLE:
-                    x.innerHTML = "Location information is unavailable."
-                    break;
-                case error.TIMEOUT:
-                    x.innerHTML = "The request to get user location timed out."
-                    break;
-                case error.UNKNOWN_ERROR:
-                    x.innerHTML = "An unknown error occurred."
-                    break;
+            case error.PERMISSION_DENIED:
+                x.innerHTML = "User denied the request for Geolocation."
+                break;
+            case error.POSITION_UNAVAILABLE:
+                x.innerHTML = "Location information is unavailable."
+                break;
+            case error.TIMEOUT:
+                x.innerHTML = "The request to get user location timed out."
+                break;
+            case error.UNKNOWN_ERROR:
+                x.innerHTML = "An unknown error occurred."
+                break;
             }
 
         }
