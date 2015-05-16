@@ -1,0 +1,309 @@
+<section class="maincont">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <div class="bus-form" ng-controller="Datepicker">
+                    <div class="">
+                        <div class="head">
+                            <h4>Online Car Tickets Booking with Zero Booking Fees</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="car-set">
+                            <div class="col-md-2 col-sm-6">
+                                <a tabindex="1" class="row segmented_btn first " ng-class="classd" ng-click="tabchange('out',1)">
+            Outstation </a>
+                            </div>
+
+                            <div class="col-md-2 col-sm-6">
+                                <a tabindex="1" class="row segmented_btn  " ng-class="class" ng-click="tabchange('local',2)">
+            Local </a>
+                            </div>
+                            <div class="col-md-2 col-sm-6">
+                                <a tabindex="1" class="row segmented_btn  " ng-class="classe" ng-click="tabchange('trans',7)">
+            Transfer </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="out" ng-show="tab=='out'">
+                        <div class="row">
+                            <div class="rd-set">
+                                <div class="col-md-4 col-sm-6">
+                                    <form>
+                                        <input type="radio" name="sex" value="male" checked>One way
+
+                                        <input type="radio" name="sex" value="female" class="rd2">Round trip
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row frm-main">
+                            <div class="col-md-6">
+
+                                <div class="form-group from-mainpage">
+                                    <label class="labels">From</label>
+                                    <input type="text" class="form-control" placeholder="Enter Your City">
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+
+                                <div class="form-group from-mainpage">
+                                    <label class="labels">To</label>
+                                    <input type="text" class="form-control" placeholder="Enter Your City">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row frm-main home-cal">
+                            <div class="col-md-6">
+
+                                <div class="form-group from-mainpage">
+                                    <label class="labels">Date of Journey</label>
+                                    <p class="input-group">
+                                        <input type="date" class="form-control" datepicker-popup ng-model="dt1" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                        <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group from-mainpage">
+                                            <label class="labels">No of day</label>
+                                            <p class="input-group slc">
+                                                <select>
+                                                    <option value="No of day" class="trn">No of day</option>
+                                                    <option value="saab">1 Day</option>
+                                                    <option value="mercedes">1 Day</option>
+                                                    <option value="audi">1 Day</option>
+                                                </select>
+                                                <!--
+                      <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+-->
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group from-mainpage">
+                                            <label class="labels">Time</label>
+                                            <p class="input-group">
+                                                <timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></timepicker>
+                                                <!--
+                                            <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+-->
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="local" ng-show="tab=='local'">
+                        <div class="row">
+                            <div class="rd-set">
+                                <div class="col-md-4 col-sm-6">
+                                    <form>
+                                        <input type="radio" name="sex" value="male" checked>Full day
+
+                                        <input type="radio" name="sex" value="female" class="rd2">Half day
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row frm-main">
+                            <div class="col-md-6">
+
+                                <div class="form-group from-mainpage">
+                                    <label class="labels">From</label>
+                                    <input type="text" class="form-control" placeholder="Enter Your City">
+                                </div>
+
+                            </div>
+                            <!--
+                        <div class="col-md-6">
+
+                            <div class="form-group from-mainpage">
+                                <label class="labels">To</label>
+                                <input type="text" class="form-control" placeholder="Enter Your City">
+                            </div>
+
+                        </div>
+-->
+                        </div>
+                        <div class="row frm-main home-cal">
+                            <div class="col-md-6">
+
+                                <div class="form-group from-mainpage">
+                                    <label class="labels">Date of Journey</label>
+                                    <p class="input-group">
+                                        <input type="date" class="form-control" datepicker-popup ng-model="dt1" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                        <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group from-mainpage">
+                                            <label class="labels">No of day</label>
+                                            <p class="input-group slc">
+                                                <select>
+                                                    <option value="No of day" class="trn">No of day</option>
+                                                    <option value="saab">1 Day</option>
+                                                    <option value="mercedes">1 Day</option>
+                                                    <option value="audi">1 Day</option>
+                                                </select>
+                                                <!--
+                      <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+-->
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group from-mainpage">
+                                            <label class="labels">Time</label>
+                                            <p class="input-group">
+                                                <timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></timepicker>
+                                                <!--
+                                            <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+-->
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer" ng-show="tab=='trans'">
+                        <div class="row">
+                            <div class="rd-set">
+                                <div class="col-md-6 col-sm-6">
+                                    <form>
+                                        <input type="radio" name="sex" value="male" checked>Airport
+
+                                        <input type="radio" name="sex" value="female" class="rd2">Railway station
+                                        <input type="radio" name="sex" value="female" class="rd2">Area/Hotel
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row frm-main">
+                            <div class="col-md-6">
+
+                                <div class="form-group from-mainpage">
+                                    <label class="labels">From</label>
+                                    <input type="text" class="form-control" placeholder="Enter Your City">
+                                </div>
+
+                            </div>
+                            
+<!--
+                        <div class="col-md-6">
+
+                            <div class="form-group from-mainpage">
+                                <label class="labels">Pick up</label>
+                                <input type="text" class="form-control" placeholder="Enter Your City">
+                            </div>
+
+                        </div>
+-->
+
+                        </div>
+                                <div class="row frm-main">
+                            <div class="col-md-6">
+
+                                <div class="form-group from-mainpage">
+                                    <label class="labels">Pick up</label>
+                                    <input type="text" class="form-control" placeholder="Enter Your City">
+                                </div>
+
+                            </div>
+                            
+                        <div class="col-md-6">
+
+                            <div class="form-group from-mainpage">
+                                <label class="labels">Drop of</label>
+                                <input type="text" class="form-control" placeholder="Enter Your City">
+                            </div>
+
+                        </div>
+
+                        </div>
+                        <div class="row frm-main home-cal">
+                            <div class="col-md-6">
+
+                                <div class="form-group from-mainpage">
+                                    <label class="labels">Date of Journey</label>
+                                    <p class="input-group">
+                                        <input type="date" class="form-control" datepicker-popup ng-model="dt1" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                        <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group from-mainpage">
+                                            <label class="labels">No of day</label>
+                                            <p class="input-group slc">
+                                                <select>
+                                                    <option value="No of day" class="trn">No of day</option>
+                                                    <option value="saab">1 Day</option>
+                                                    <option value="mercedes">1 Day</option>
+                                                    <option value="audi">1 Day</option>
+                                                </select>
+                                                <!--
+                      <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+-->
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group from-mainpage">
+                                            <label class="labels">Time</label>
+                                            <p class="input-group">
+                                                <timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></timepicker>
+                                                <!--
+                                            <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+-->
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btnhome text-right">
+                        <button type="button" class="btn btn-primary">Search</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

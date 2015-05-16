@@ -1,11 +1,83 @@
 <section class="bus-set">
+
+    <div class="bus-filter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="trvl">
+                        <p>Filter by: Travels</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="bus-type">
+                        <p href="#" data-toggle="dropdown" class="dropdown-toggle">Bus Type <b class="caret"></b>
+                        </p>
+                        <ul class="dropdown-menu">
+                            <li class="checkbox" ng-repeat="choice in items">
+                                <label>
+                                    <input type="checkbox" value="">{{choice}}</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="bus-type">
+                        <p href="#" data-toggle="dropdown" class="dropdown-toggle">Amenities <b class="caret"></b>
+                        </p>
+                        <ul class="dropdown-menu">
+                            <li class="checkbox" ng-repeat="amen in amenties">
+                                <label>
+                                    <input type="checkbox" value="">{{amen}}</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="bus-type">
+                        <p href="#" data-toggle="dropdown" class="dropdown-toggle">Boarding <b class="caret"></b>
+                        </p>
+                        <ul class="dropdown-menu">
+                            <li class="checkbox" ng-repeat="board in boearding">
+                                <label>
+                                    <input type="checkbox" value="">{{board}}</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                     <div class="bus-type">
+                        <p href="#" data-toggle="dropdown" class="dropdown-toggle">Dropping <b class="caret"></b>
+                        </p>
+                        <ul class="dropdown-menu">
+                            <li class="checkbox" ng-repeat="drop in dropping">
+                                <label>
+                                    <input type="checkbox" value="">{{drop}}</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                     <div class="bus-type">
+                        <p href="#" data-toggle="dropdown" class="dropdown-toggle">Ratings <b class="caret"></b>
+                        </p>
+                        <ul class="dropdown-menu">
+                            <li class="checkbox" ng-repeat="rate in rating">
+                                <label>
+                                    <input type="checkbox" value="">{{rate}}</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="tbl-set">
                 <table class="table table-striped">
 
                     <thead>
-                        <tr>
+                        <tr class="tbl-tr">
                             <th>Travels</th>
                             <th>Depart</th>
                             <th>Arrive</th>
@@ -17,19 +89,19 @@
                     <tbody>
                         <tr>
                             <td class="td-st">Naik Tours And Travels
-                                <br>Non A/C Seater (2+2)
-                                <br><i class="fa fa-align-left" ng-click="onemailclick(list.listing);"></i><i class="fa fa-picture-o" ng-click="slide(list.slidess);"></i><i class="fa fa-mobile"></i>
+                                <br><span class="sml-fn">Non A/C Seater (2+2)</span>
+                                <br><i class="fa fa-align-left" ng-click="onemailclick(list.listing);"></i><i class="fa fa-picture-o" ng-click="slide(list.slidess);"></i>
                             </td>
                             <td>07:00 PM
-                                <br>Duration</td>
+                                <br><span class="sml-fn">Duration</span></td>
                             <td>16:00 PM
-                                <br>16:00 Hrs</td>
+                                <br><span class="sml-fn">16:00 Hrs</span></td>
                             <td>8 seats
-                                <br> Window 3</td>
+                                <br><span class="sml-fn"> Window 3</span></td>
                             <td>
                                 <rating ng-model="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
                                 <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
-                                <br>Ratings (5)</td>
+                                <br><span class="sml-fn">Ratings (5)</span></td>
                             <td>Rs 1000
                                 <br>
                                 <button class="" ng-click="seat(list.listings);">View Seats</button>
@@ -37,11 +109,98 @@
 
                             </td>
                         </tr>
+                    <tr>
+                            <td class="td-st">Naik Tours And Travels
+                                <br><span class="sml-fn">Non A/C Seater (2+2)</span>
+                                <br><i class="fa fa-align-left" ng-click="onemailclick(list.listing);"></i><i class="fa fa-picture-o" ng-click="slide(list.slidess);"></i>
+                            </td>
+                            <td>07:00 PM
+                                <br><span class="sml-fn">Duration</span></td>
+                            <td>16:00 PM
+                                <br><span class="sml-fn">16:00 Hrs</span></td>
+                            <td>8 seats
+                                <br><span class="sml-fn"> Window 3</span></td>
+                            <td>
+                                <rating ng-model="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
+                                <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+                                <br><span class="sml-fn">Ratings (5)</span></td>
+                            <td>Rs 1000
+                                <br>
+                                <button class="" ng-click="seat(list.listings);">View Seats</button>
+                                <br>
 
+                            </td>
+                        </tr>
+                               <tr>
+                            <td class="td-st">Naik Tours And Travels
+                                <br><span class="sml-fn">Non A/C Seater (2+2)</span>
+                                <br><i class="fa fa-align-left" ng-click="onemailclick(list.listing);"></i><i class="fa fa-picture-o" ng-click="slide(list.slidess);"></i>
+                            </td>
+                            <td>07:00 PM
+                                <br><span class="sml-fn">Duration</span></td>
+                            <td>16:00 PM
+                                <br><span class="sml-fn">16:00 Hrs</span></td>
+                            <td>8 seats
+                                <br><span class="sml-fn"> Window 3</span></td>
+                            <td>
+                                <rating ng-model="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
+                                <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+                                <br><span class="sml-fn">Ratings (5)</span></td>
+                            <td>Rs 1000
+                                <br>
+                                <button class="" ng-click="seat(list.listings);">View Seats</button>
+                                <br>
+
+                            </td>
+                        </tr>
+                               <tr>
+                            <td class="td-st">Naik Tours And Travels
+                                <br><span class="sml-fn">Non A/C Seater (2+2)</span>
+                                <br><i class="fa fa-align-left" ng-click="onemailclick(list.listing);"></i><i class="fa fa-picture-o" ng-click="slide(list.slidess);"></i>
+                            </td>
+                            <td>07:00 PM
+                                <br><span class="sml-fn">Duration</span></td>
+                            <td>16:00 PM
+                                <br><span class="sml-fn">16:00 Hrs</span></td>
+                            <td>8 seats
+                                <br><span class="sml-fn"> Window 3</span></td>
+                            <td>
+                                <rating ng-model="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
+                                <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+                                <br><span class="sml-fn">Ratings (5)</span></td>
+                            <td>Rs 1000
+                                <br>
+                                <button class="" ng-click="seat(list.listings);">View Seats</button>
+                                <br>
+
+                            </td>
+                        </tr>
+                               <tr>
+                            <td class="td-st">Naik Tours And Travels
+                                <br><span class="sml-fn">Non A/C Seater (2+2)</span>
+                                <br><i class="fa fa-align-left" ng-click="onemailclick(list.listing);"></i><i class="fa fa-picture-o" ng-click="slide(list.slidess);"></i>
+                            </td>
+                            <td>07:00 PM
+                                <br><span class="sml-fn">Duration</span></td>
+                            <td>16:00 PM
+                                <br><span class="sml-fn">16:00 Hrs</span></td>
+                            <td>8 seats
+                                <br><span class="sml-fn"> Window 3</span></td>
+                            <td>
+                                <rating ng-model="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
+                                <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+                                <br><span class="sml-fn">Ratings (5)</span></td>
+                            <td>Rs 1000
+                                <br>
+                                <button class="" ng-click="seat(list.listings);">View Seats</button>
+                                <br>
+
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
-   
-   
+
+
             </div>
         </div>
     </div>

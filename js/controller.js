@@ -129,7 +129,133 @@ phonecatControllers.controller('car',
         $scope.menutitle = NavigationService.makeactive("Car");
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/car.html";
+        $scope.pageClass = "page-home";
         $scope.navigation = NavigationService.getnav();
+        $scope.tab = 'out';
+        $scope.class = '';
+        $scope.classd = 'active';
+        $scope.classe = '';
+        $scope.tabchange = function (tab, a) {
+            console.log(tab);
+            $scope.tab = tab;
+            if (a == 1) {
+                $scope.class = '';
+                $scope.classd = "active";
+                $scope.classe = '';
+            } else if (a == 2) {
+                $scope.class = "active";
+                $scope.classd = '';
+                $scope.classe = '';
+            } else {
+                $scope.class = '';
+                $scope.classd = '';
+                $scope.classe = "active";
+            }
+        };
+
+
+
+        //        $scope.changeClass = function (a) {
+        //         
+        //        }
+        angular.element(document).ready(function () {
+            $scope.pageready = "false";
+
+
+            /************ date picker **********/
+            $scope.today = function () {
+                $scope.dt = new Date();
+            };
+            $scope.today();
+
+            $scope.clear = function () {
+                $scope.dt = null;
+            };
+
+            // Disable weekend selection
+            $scope.disabled = function (date, mode) {
+                return (mode === 'day' && (date.getDay() === 0 || date.getDay() === 6));
+            };
+
+            $scope.toggleMin = function () {
+                $scope.minDate = $scope.minDate ? null : new Date();
+            };
+            $scope.toggleMin();
+
+            $scope.open = function ($event) {
+                console.log('Open Calendar');
+                $event.preventDefault();
+                $event.stopPropagation();
+
+                $scope.opened = true;
+            };
+
+            $scope.dateOptions = {
+                formatYear: 'yy',
+                startingDay: 1
+            };
+
+            $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
+            $scope.format = $scope.formats[0];
+
+            var tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            var afterTomorrow = new Date();
+            afterTomorrow.setDate(tomorrow.getDate() + 2);
+            $scope.events = [{
+                date: tomorrow,
+                status: 'full'
+            }, {
+                date: afterTomorrow,
+                status: 'partially'
+            }];
+
+            $scope.getDayClass = function (date, mode) {
+                if (mode === 'day') {
+                    var dayToCheck = new Date(date).setHours(0, 0, 0, 0);
+
+                    for (var i = 0; i < $scope.events.length; i++) {
+                        var currentDay = new Date($scope.events[i].date).setHours(0, 0, 0, 0);
+
+                        if (dayToCheck === currentDay) {
+                            return $scope.events[i].status;
+                        }
+                    }
+                }
+
+                return '';
+            };
+
+            /************ End date picker **********/
+
+        });
+        /**** Time picker ********/
+
+        $scope.mytime = new Date();
+
+        $scope.hstep = 1;
+        $scope.mstep = 15;
+
+        $scope.options = {
+            hstep: [1, 2, 3],
+            mstep: [1, 5, 10, 15, 25, 30]
+        };
+
+        $scope.ismeridian = true;
+        $scope.toggleMode = function () {
+            $scope.ismeridian = !$scope.ismeridian;
+        };
+
+        $scope.update = function () {
+            var d = new Date();
+            d.setHours(14);
+            d.setMinutes(0);
+            $scope.mytime = d;
+        };
+
+        /**** Time picker end *****/
+
+
     });
 
 phonecatControllers.controller('myprofile',
@@ -286,26 +412,73 @@ phonecatControllers.controller('bus',
             toaster.pop("success", "Welcome", "Registered successfully", 5000);
         }
 
+        $scope.jqueryScrollbarOptions = {
+            "type": "simpble",
+            "onScroll": function (y, x) {
+                if (y.scroll == y.maxScroll) {
+                    alert('Scrolled to bottom');
+                }
+            }
+        };
+
+
+
+
+
+        $scope.items = [
+    'Option 1',
+    'Option 2',
+    'Option 3'
+  ];
+        $scope.amenties = [
+    'Option 1',
+    'Option 2',
+    'Option 3'
+  ];
+        $scope.boearding = [
+    'Option 1',
+    'Option 2',
+    'Option 3'
+  ];
+        $scope.dropping = [
+    'Option 1',
+    'Option 2',
+    'Option 3'
+  ];
+        $scope.rating = [
+    'Option 1',
+    'Option 2',
+    'Option 3'
+  ];
+
+
+
+
+
 
         $scope.rate = 4.5;
         $scope.max = 5;
         $scope.isReadonly = false;
 
-    $scope.myInterval = 3000;
-  $scope.slides = [
-    {
-      image: 'http://lorempixel.com/400/200/'
+        $scope.myInterval = 3000;
+        $scope.slides = [
+            {
+                image: 'http://lorempixel.com/400/200/'
     },
-    {
-      image: 'http://lorempixel.com/400/200/food'
+            {
+                image: 'http://lorempixel.com/400/200/food'
     },
-    {
-      image: 'http://lorempixel.com/400/200/sports'
+            {
+                image: 'http://lorempixel.com/400/200/sports'
     },
-    {
-      image: 'http://lorempixel.com/400/200/people'
+            {
+                image: 'http://lorempixel.com/400/200/people'
     }
-  ]; 
+  ];
+
+
+
+
         $scope.ratingStates = [
             {
                 stateOn: 'glyphicon-ok-sign',
@@ -344,8 +517,8 @@ phonecatControllers.controller('bus',
                 controller: 'bus'
             });
         };
-    
-       $scope.slide = function (slidess) {
+
+        $scope.slide = function (slidess) {
             $scope.listingid = slidess;
             console.log("Demo is wokring");
             ngDialog.open({
