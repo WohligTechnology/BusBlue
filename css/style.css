@@ -1110,8 +1110,13 @@ button.src-bt {
     border: 1px solid #3DAEDF;
     text-transform: uppercase;
     padding: 5px 25px 5px 25px;
+    transition: all 0.5s ease;
 }
-
+.coupon-bt button:hover {
+  background: #fff;
+  border: 1px solid #3DAEDF;
+  color: #3daedf;
+}
 .cpn-img .coupon-wrapper {
     background: #34495e url('../images/coupon-placeholder-s.png') no-repeat center center;
 }
@@ -1263,6 +1268,7 @@ img.heros {
 }
 .sli-cp {
     margin-top: 40px;
+    margin-bottom: 10px;
 }
  .curtain {
   -moz-transform: rotate(-45deg) translate3d(0,48%,0);
