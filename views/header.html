@@ -1,4 +1,4 @@
-<div class="content {{headclass}} {{headclass1}}">
+<div class="content {{headclass}} {{headclass1}} {{headclass3}}">
     <header class="container">
         <div class="row">
             <div class="col-md-4 col-xs-6">
@@ -9,11 +9,24 @@
                 </div>
             </div>
 
-            <div class="col-md-4 text-center col-xs-6">
+            <div class="col-md-4 text-center col-xs-6 cpn">
                 <div ng-include="template.menu"></div>
+              
+            </div>
+            <div class="col-md-4 text-center col-xs-6 cpns">
+               
+                <div class="coupon-bt">
+                    <button type="submit">skip coupon</button>
+                </div>
             </div>
 
             <div class="col-md-4 hidden-xs">
+               <div class="cart-set">
+                   <i class="fa fa-shopping-cart" ng-click="toggle()"></i>
+               </div>
+               <div class="user-set text-right">
+                   <i class="fa fa-user"></i>
+               </div>
                 <div class="text-right login">
                     <a href="#/login"><i class="ln-user"></i> Login</a>
                 </div>

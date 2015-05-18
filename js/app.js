@@ -43,6 +43,9 @@ firstapp.config(['$routeProvider',
         }).when('/car', {
             templateUrl: 'views/template.html',
             controller: 'car'
+        }).when('/coupon', {
+            templateUrl: 'views/template.html',
+            controller: 'coupon'
         }).when('/contactus', {
             templateUrl: 'views/template.html',
             controller: 'contactus'

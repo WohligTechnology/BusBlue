@@ -11,6 +11,7 @@ phonecatControllers.controller('home',
         TemplateService.content = "views/home.html";
         $scope.navigation = NavigationService.getnav();
         $scope.coords = {};
+    
         $scope.showw = false;
         $scope.pageClass = "page-home";
         $scope.pageready = "true";
@@ -131,6 +132,23 @@ phonecatControllers.controller('car',
         TemplateService.content = "views/car.html";
         $scope.pageClass = "page-home";
         $scope.navigation = NavigationService.getnav();
+    
+       
+ $scope.isCollapse = true;
+    
+    //date slider
+    
+      $scope.Interval = 5000;
+  var slides = $scope.slides = [];
+//     $scope.slides = [{
+//            date: '26-05-2015',
+//            
+//        }, {
+//            date: '27-05-2015',
+//           
+//        }];
+    
+    // slider end
         $scope.tab = 'out';
         $scope.class = '';
         $scope.classd = 'active';
@@ -351,6 +369,39 @@ phonecatControllers.controller('login',
         }
 
     });
+phonecatControllers.controller('coupon',
+    function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+        $scope.template = TemplateService;
+        TemplateService.title = $scope.menutitle;
+        TemplateService.content = "views/coupon.html";
+        $scope.navigation = NavigationService.getnav();
+        $scope.pageClass = "page-login";
+        $scope.headclass3 = 'coupon';
+        $scope.loginfunc = function (login) {
+            console.log("in login");
+            toaster.pop("error", "Login Error", "Invalid username or password", 5000);
+            toaster.pop("success", "Welcome", "Registered successfully", 5000);
+        }
+        
+           $scope.checked = false; // This will be binded using the ps-open attribute
+
+                $scope.toggle = function(){
+                    $scope.checked = !$scope.checked
+                }
+                
+                 angular.element(document).ready(function(){
+
+                c = angular.element(document.querySelector('#controller-demo')).scope();
+            });
+
+            // Test
+            angular.element(document).ready(function () {
+                if (console.assert)
+                    console.assert(document.querySelectorAll('body > .ng-pageslide').length == 9, 'Made all of them')
+            });
+
+    });
+
 phonecatControllers.controller('forgetpass',
     function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
         $scope.template = TemplateService;

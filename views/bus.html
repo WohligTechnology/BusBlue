@@ -1,5 +1,86 @@
 <section class="bus-set">
+    <div class="bus-update">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="bs-up">
+                        <button class="" ng-click="isCollapse = !isCollapse">Update Result</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-5 text-center">
+                            <div class="bs-dt">
+                                <h5>Mumbai <i class="fa fa-arrow-right"></i> Goa</h5>
+                                <h4>26-12-2015</h4>
 
+                            </div>
+                        </div>
+                        <div class="col-md-7"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bs-ht bs-src ">
+        <div class="container">
+            <div clas="row">
+                <div class="col-md-12">
+                    <div collapse="isCollapse" class="bus-rsl">
+                        <div class="row">
+                            <div class="col-mm-3">
+                               <div class="rs-det">
+                                <div class="form-group from-mainpage">
+                                    <label class="labels">From</label>
+                                    <input type="text" class="form-control" placeholder="Enter Your City">
+                                </div>
+</div>
+                            </div>
+                            <div class="col-mm-3">
+                               <div class="rs-det">
+                                <div class="form-group from-mainpage">
+                                    <label class="labels">To</label>
+                                    <input type="text" class="form-control" placeholder="Enter Your City">
+                                </div>
+</div>
+                            </div>
+                            <div class="col-mm-3">
+                               <div class="rs-date">
+                                    <div class="form-group from-mainpage">
+                                    <label class="labels">Date of Journey</label>
+                                    <p class="input-group">
+                                        <input type="date" class="form-control" datepicker-popup ng-model="dt1" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                        <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+                                    </p>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="col-mm-3">
+                                       <div class="rs-date">
+                                    <div class="form-group from-mainpage">
+                                    <label class="labels">Date of Return</label>
+                                    <p class="input-group">
+                                        <input type="date" class="form-control" datepicker-popup ng-model="dt1" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                        <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+                                    </p>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="col-mm-3">
+                                <div class="bs-up">
+                        <button class="src-bt" >Search</button>
+                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="bus-filter">
         <div class="container">
             <div class="row">
@@ -45,7 +126,7 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                     <div class="bus-type">
+                    <div class="bus-type">
                         <p href="#" data-toggle="dropdown" class="dropdown-toggle">Dropping <b class="caret"></b>
                         </p>
                         <ul class="dropdown-menu">
@@ -57,7 +138,7 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                     <div class="bus-type">
+                    <div class="bus-type">
                         <p href="#" data-toggle="dropdown" class="dropdown-toggle">Ratings <b class="caret"></b>
                         </p>
                         <ul class="dropdown-menu">
@@ -93,15 +174,19 @@
                                 <br><i class="fa fa-align-left" ng-click="onemailclick(list.listing);"></i><i class="fa fa-picture-o" ng-click="slide(list.slidess);"></i>
                             </td>
                             <td>07:00 PM
-                                <br><span class="sml-fn">Duration</span></td>
+                                <br><span class="sml-fn">Duration</span>
+                            </td>
                             <td>16:00 PM
-                                <br><span class="sml-fn">16:00 Hrs</span></td>
+                                <br><span class="sml-fn">16:00 Hrs</span>
+                            </td>
                             <td>8 seats
-                                <br><span class="sml-fn"> Window 3</span></td>
+                                <br><span class="sml-fn"> Window 3</span>
+                            </td>
                             <td>
                                 <rating ng-model="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
                                 <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
-                                <br><span class="sml-fn">Ratings (5)</span></td>
+                                <br><span class="sml-fn">Ratings (5)</span>
+                            </td>
                             <td>Rs 1000
                                 <br>
                                 <button class="" ng-click="seat(list.listings);">View Seats</button>
@@ -109,21 +194,25 @@
 
                             </td>
                         </tr>
-                    <tr>
+                        <tr>
                             <td class="td-st">Naik Tours And Travels
                                 <br><span class="sml-fn">Non A/C Seater (2+2)</span>
                                 <br><i class="fa fa-align-left" ng-click="onemailclick(list.listing);"></i><i class="fa fa-picture-o" ng-click="slide(list.slidess);"></i>
                             </td>
                             <td>07:00 PM
-                                <br><span class="sml-fn">Duration</span></td>
+                                <br><span class="sml-fn">Duration</span>
+                            </td>
                             <td>16:00 PM
-                                <br><span class="sml-fn">16:00 Hrs</span></td>
+                                <br><span class="sml-fn">16:00 Hrs</span>
+                            </td>
                             <td>8 seats
-                                <br><span class="sml-fn"> Window 3</span></td>
+                                <br><span class="sml-fn"> Window 3</span>
+                            </td>
                             <td>
                                 <rating ng-model="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
                                 <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
-                                <br><span class="sml-fn">Ratings (5)</span></td>
+                                <br><span class="sml-fn">Ratings (5)</span>
+                            </td>
                             <td>Rs 1000
                                 <br>
                                 <button class="" ng-click="seat(list.listings);">View Seats</button>
@@ -131,21 +220,25 @@
 
                             </td>
                         </tr>
-                               <tr>
+                        <tr>
                             <td class="td-st">Naik Tours And Travels
                                 <br><span class="sml-fn">Non A/C Seater (2+2)</span>
                                 <br><i class="fa fa-align-left" ng-click="onemailclick(list.listing);"></i><i class="fa fa-picture-o" ng-click="slide(list.slidess);"></i>
                             </td>
                             <td>07:00 PM
-                                <br><span class="sml-fn">Duration</span></td>
+                                <br><span class="sml-fn">Duration</span>
+                            </td>
                             <td>16:00 PM
-                                <br><span class="sml-fn">16:00 Hrs</span></td>
+                                <br><span class="sml-fn">16:00 Hrs</span>
+                            </td>
                             <td>8 seats
-                                <br><span class="sml-fn"> Window 3</span></td>
+                                <br><span class="sml-fn"> Window 3</span>
+                            </td>
                             <td>
                                 <rating ng-model="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
                                 <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
-                                <br><span class="sml-fn">Ratings (5)</span></td>
+                                <br><span class="sml-fn">Ratings (5)</span>
+                            </td>
                             <td>Rs 1000
                                 <br>
                                 <button class="" ng-click="seat(list.listings);">View Seats</button>
@@ -153,21 +246,25 @@
 
                             </td>
                         </tr>
-                               <tr>
+                        <tr>
                             <td class="td-st">Naik Tours And Travels
                                 <br><span class="sml-fn">Non A/C Seater (2+2)</span>
                                 <br><i class="fa fa-align-left" ng-click="onemailclick(list.listing);"></i><i class="fa fa-picture-o" ng-click="slide(list.slidess);"></i>
                             </td>
                             <td>07:00 PM
-                                <br><span class="sml-fn">Duration</span></td>
+                                <br><span class="sml-fn">Duration</span>
+                            </td>
                             <td>16:00 PM
-                                <br><span class="sml-fn">16:00 Hrs</span></td>
+                                <br><span class="sml-fn">16:00 Hrs</span>
+                            </td>
                             <td>8 seats
-                                <br><span class="sml-fn"> Window 3</span></td>
+                                <br><span class="sml-fn"> Window 3</span>
+                            </td>
                             <td>
                                 <rating ng-model="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
                                 <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
-                                <br><span class="sml-fn">Ratings (5)</span></td>
+                                <br><span class="sml-fn">Ratings (5)</span>
+                            </td>
                             <td>Rs 1000
                                 <br>
                                 <button class="" ng-click="seat(list.listings);">View Seats</button>
@@ -175,21 +272,25 @@
 
                             </td>
                         </tr>
-                               <tr>
+                        <tr>
                             <td class="td-st">Naik Tours And Travels
                                 <br><span class="sml-fn">Non A/C Seater (2+2)</span>
                                 <br><i class="fa fa-align-left" ng-click="onemailclick(list.listing);"></i><i class="fa fa-picture-o" ng-click="slide(list.slidess);"></i>
                             </td>
                             <td>07:00 PM
-                                <br><span class="sml-fn">Duration</span></td>
+                                <br><span class="sml-fn">Duration</span>
+                            </td>
                             <td>16:00 PM
-                                <br><span class="sml-fn">16:00 Hrs</span></td>
+                                <br><span class="sml-fn">16:00 Hrs</span>
+                            </td>
                             <td>8 seats
-                                <br><span class="sml-fn"> Window 3</span></td>
+                                <br><span class="sml-fn"> Window 3</span>
+                            </td>
                             <td>
                                 <rating ng-model="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
                                 <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
-                                <br><span class="sml-fn">Ratings (5)</span></td>
+                                <br><span class="sml-fn">Ratings (5)</span>
+                            </td>
                             <td>Rs 1000
                                 <br>
                                 <button class="" ng-click="seat(list.listings);">View Seats</button>
