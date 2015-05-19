@@ -40,6 +40,12 @@ firstapp.config(['$routeProvider',
         }).when('/bus', {
             templateUrl: 'views/template.html',
             controller: 'bus'
+        }).when('/car-det', {
+            templateUrl: 'views/template.html',
+            controller: 'car-det'
+        }).when('/myprofile', {
+            templateUrl: 'views/template.html',
+            controller: 'myprofile'
         }).when('/car', {
             templateUrl: 'views/template.html',
             controller: 'car'

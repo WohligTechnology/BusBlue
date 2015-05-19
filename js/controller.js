@@ -11,7 +11,7 @@ phonecatControllers.controller('home',
         TemplateService.content = "views/home.html";
         $scope.navigation = NavigationService.getnav();
         $scope.coords = {};
-    
+
         $scope.showw = false;
         $scope.pageClass = "page-home";
         $scope.pageready = "true";
@@ -132,23 +132,23 @@ phonecatControllers.controller('car',
         TemplateService.content = "views/car.html";
         $scope.pageClass = "page-home";
         $scope.navigation = NavigationService.getnav();
-    
-       
- $scope.isCollapse = true;
-    
-    //date slider
-    
-      $scope.Interval = 5000;
-  var slides = $scope.slides = [];
-//     $scope.slides = [{
-//            date: '26-05-2015',
-//            
-//        }, {
-//            date: '27-05-2015',
-//           
-//        }];
-    
-    // slider end
+
+
+        $scope.isCollapse = true;
+
+        //date slider
+
+        $scope.Interval = 5000;
+        var slides = $scope.slides = [];
+        //     $scope.slides = [{
+        //            date: '26-05-2015',
+        //            
+        //        }, {
+        //            date: '27-05-2015',
+        //           
+        //        }];
+
+        // slider end
         $scope.tab = 'out';
         $scope.class = '';
         $scope.classd = 'active';
@@ -382,25 +382,69 @@ phonecatControllers.controller('coupon',
             toaster.pop("error", "Login Error", "Invalid username or password", 5000);
             toaster.pop("success", "Welcome", "Registered successfully", 5000);
         }
-        
-           $scope.checked = false; // This will be binded using the ps-open attribute
 
-                $scope.toggle = function(){
-                    $scope.checked = !$scope.checked
-                }
-                
-                 angular.element(document).ready(function(){
+        $scope.checked = false; // This will be binded using the ps-open attribute
 
-                c = angular.element(document.querySelector('#controller-demo')).scope();
-            });
+        $scope.toggle = function () {
+            $scope.checked = !$scope.checked
+        }
 
-            // Test
-            angular.element(document).ready(function () {
-                if (console.assert)
-                    console.assert(document.querySelectorAll('body > .ng-pageslide').length == 9, 'Made all of them')
-            });
+        angular.element(document).ready(function () {
+
+            c = angular.element(document.querySelector('#controller-demo')).scope();
+        });
+
+        // Test
+        angular.element(document).ready(function () {
+            if (console.assert)
+                console.assert(document.querySelectorAll('body > .ng-pageslide').length == 9, 'Made all of them')
+        });
 
     });
+
+phonecatControllers.controller('myprofile',
+    function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+        $scope.show1 = true;
+        $scope.show2 = false;
+        $scope.template = TemplateService;
+        TemplateService.title = $scope.menutitle;
+        TemplateService.content = "views/myprofile.html";
+        $scope.navigation = NavigationService.getnav();
+        $scope.pageClass = "page-login";
+        $scope.headclass4 = 'profile';
+        $scope.loginfunc = function (login) {
+            console.log("in login");
+            toaster.pop("error", "Login Error", "Invalid username or password", 5000);
+            toaster.pop("success", "Welcome", "Registered successfully", 5000);
+        }
+
+        $scope.checked = false; // This will be binded using the ps-open attribute
+
+        $scope.toggle = function () {
+            $scope.checked = !$scope.checked
+        }
+
+        angular.element(document).ready(function () {
+
+            c = angular.element(document.querySelector('#controller-demo')).scope();
+        });
+
+        // Test
+        angular.element(document).ready(function () {
+            if (console.assert)
+                console.assert(document.querySelectorAll('body > .ng-pageslide').length == 9, 'Made all of them')
+        });
+        $scope.toggle = function () {
+            $scope.show1 = true;
+            $scope.show2 = false;
+        }
+        $scope.toggle1 = function () {
+            $scope.show1 = false;
+            $scope.show2 = true;
+        }
+
+    });
+
 
 phonecatControllers.controller('forgetpass',
     function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
@@ -449,6 +493,263 @@ phonecatControllers.controller('about',
         }
 
     });
+phonecatControllers.controller('car-det',
+    function ($scope, TemplateService, NavigationService, RestService, $location, toaster, ngDialog) {
+        $scope.template = TemplateService;
+        TemplateService.title = $scope.menutitle;
+        TemplateService.content = "views/car-det.html";
+        $scope.navigation = NavigationService.getnav();
+        $scope.pageClass = "page-login";
+        $scope.headclass1 = 'changeheads';
+        $scope.loginfunc = function (login) {
+            console.log("in login");
+            toaster.pop("error", "Login Error", "Invalid username or password", 5000);
+            toaster.pop("success", "Welcome", "Registered successfully", 5000);
+        }
+
+        angular.element(document).ready(function () {
+            $scope.pageready = "false";
+
+
+            $scope.isCollapse = true;
+
+            /************ date picker **********/
+            $scope.today = function () {
+                $scope.dt = new Date();
+            };
+            $scope.today();
+
+            $scope.clear = function () {
+                $scope.dt = null;
+            };
+
+            // Disable weekend selection
+            $scope.disabled = function (date, mode) {
+                return (mode === 'day' && (date.getDay() === 0 || date.getDay() === 6));
+            };
+
+            $scope.toggleMin = function () {
+                $scope.minDate = $scope.minDate ? null : new Date();
+            };
+            $scope.toggleMin();
+
+            $scope.open = function ($event) {
+                console.log('Open Calendar');
+                $event.preventDefault();
+                $event.stopPropagation();
+
+                $scope.opened = true;
+            };
+
+            $scope.dateOptions = {
+                formatYear: 'yy',
+                startingDay: 1
+            };
+
+            $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
+            $scope.format = $scope.formats[0];
+
+            var tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            var afterTomorrow = new Date();
+            afterTomorrow.setDate(tomorrow.getDate() + 2);
+            $scope.events = [{
+                date: tomorrow,
+                status: 'full'
+            }, {
+                date: afterTomorrow,
+                status: 'partially'
+            }];
+
+            $scope.getDayClass = function (date, mode) {
+                if (mode === 'day') {
+                    var dayToCheck = new Date(date).setHours(0, 0, 0, 0);
+
+                    for (var i = 0; i < $scope.events.length; i++) {
+                        var currentDay = new Date($scope.events[i].date).setHours(0, 0, 0, 0);
+
+                        if (dayToCheck === currentDay) {
+                            return $scope.events[i].status;
+                        }
+                    }
+                }
+
+                return '';
+            };
+
+            /************ End date picker **********/
+
+        });
+        /**** Time picker ********/
+
+        $scope.mytime = new Date();
+
+        $scope.hstep = 1;
+        $scope.mstep = 15;
+
+        $scope.options = {
+            hstep: [1, 2, 3],
+            mstep: [1, 5, 10, 15, 25, 30]
+        };
+
+        $scope.ismeridian = true;
+        $scope.toggleMode = function () {
+            $scope.ismeridian = !$scope.ismeridian;
+        };
+
+        $scope.update = function () {
+            var d = new Date();
+            d.setHours(14);
+            d.setMinutes(0);
+            $scope.mytime = d;
+        };
+
+        /**** Time picker end *****/
+
+
+        // search tab change 
+        $scope.tab = 'out';
+        $scope.class = '';
+        $scope.classd = 'active';
+        $scope.classe = '';
+        $scope.tabchange = function (tab, a) {
+            console.log(tab);
+            $scope.tab = tab;
+            if (a == 1) {
+                $scope.class = '';
+                $scope.classd = "active";
+                $scope.classe = '';
+            } else if (a == 2) {
+                $scope.class = "active";
+                $scope.classd = '';
+                $scope.classe = '';
+            } else {
+                $scope.class = '';
+                $scope.classd = '';
+                $scope.classe = "active";
+            }
+        };
+
+
+        // end
+
+        $scope.jqueryScrollbarOptions = {
+            "type": "simpble",
+            "onScroll": function (y, x) {
+                if (y.scroll == y.maxScroll) {
+                    alert('Scrolled to bottom');
+                }
+            }
+        };
+
+
+
+
+
+        $scope.items = [
+    'Option 1',
+    'Option 2',
+    'Option 3'
+  ];
+        $scope.amenties = [
+    'Option 1',
+    'Option 2',
+    'Option 3'
+  ];
+        $scope.boearding = [
+    'Option 1',
+    'Option 2',
+    'Option 3'
+  ];
+        $scope.dropping = [
+    'Option 1',
+    'Option 2',
+    'Option 3'
+  ];
+        $scope.rating = [
+    'Option 1',
+    'Option 2',
+    'Option 3'
+  ];
+
+
+
+
+
+
+        $scope.rate = 4.5;
+        $scope.max = 5;
+        $scope.isReadonly = false;
+
+        $scope.myInterval = 3000;
+        $scope.slides = [
+            {
+                image: 'http://lorempixel.com/400/200/'
+    },
+            {
+                image: 'http://lorempixel.com/400/200/food'
+    },
+            {
+                image: 'http://lorempixel.com/400/200/sports'
+    },
+            {
+                image: 'http://lorempixel.com/400/200/people'
+    }
+  ];
+
+
+
+
+        $scope.ratingStates = [
+            {
+                stateOn: 'glyphicon-ok-sign',
+                stateOff: 'glyphicon-ok-circle'
+            },
+            {
+                stateOn: 'glyphicon-star',
+                stateOff: 'glyphicon-star-empty'
+            },
+            {
+                stateOn: 'glyphicon-heart',
+                stateOff: 'glyphicon-ban-circle'
+            },
+            {
+                stateOn: 'glyphicon-heart'
+            },
+            {
+                stateOff: 'glyphicon-off'
+            }
+  ];
+
+        //        $scope.onemailclick = function (listing) {
+        //            $scope.listingid = listing;
+        //            console.log("Demo is wokring");
+        //            ngDialog.open({
+        //                template: 'views/buspop.html',
+        //                controller: 'bus'
+        //            });
+        //        };
+        //
+        //        $scope.seat = function (listings) {
+        //            $scope.listingid = listings;
+        //            console.log("Demo is wokring");
+        //            ngDialog.open({
+        //                template: 'views/seat.html',
+        //                controller: 'bus'
+        //            });
+        //        };
+        //
+        //        $scope.slide = function (slidess) {
+        //            $scope.listingid = slidess;
+        //            console.log("Demo is wokring");
+        //            ngDialog.open({
+        //                template: 'views/bslide.html',
+        //                controller: 'bus'
+        //            });
+        //        };
+
+    });
+
 phonecatControllers.controller('bus',
     function ($scope, TemplateService, NavigationService, RestService, $location, toaster, ngDialog) {
         $scope.template = TemplateService;
@@ -550,6 +851,8 @@ phonecatControllers.controller('bus',
                 stateOff: 'glyphicon-off'
             }
   ];
+
+        $scope.isCollapse = true;
 
         $scope.onemailclick = function (listing) {
             $scope.listingid = listing;

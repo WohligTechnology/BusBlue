@@ -1,0 +1,560 @@
+<section class="car-det">
+    <div class="container">
+        <div class="bus-update">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="bs-up">
+                            <button class="" ng-click="isCollapse = !isCollapse">Update Result</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                            <div class=" text-center">
+                                <div class="bs-dt">
+                                    <h5>Mumbai <i class="fa fa-arrow-right"></i> Goa</h5>
+                                    <h4>26-12-2015</h4>
+
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bs-ht bs-src " collapse="isCollapse">
+        <div class="container">
+            <div class="row">
+                <div class="car-sets">
+                    <div class="col-md-2 col-sm-6">
+                        <a tabindex="1" class="row segmented_btns first " ng-class="classd" ng-click="tabchange('out',1)">
+            Outstation </a>
+                    </div>
+
+                    <div class="col-md-2 col-sm-6">
+                        <a tabindex="1" class="row segmented_btns  " ng-class="class" ng-click="tabchange('local',2)">
+            Local </a>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <a tabindex="1" class="row segmented_btns  " ng-class="classe" ng-click="tabchange('trans',7)">
+            Transfer </a>
+                    </div>
+                </div>
+            </div>
+            <div class="out car-rsl" ng-show="tab=='out'">
+                <div class="row">
+                    <div class="rd-set">
+                        <div class="col-md-4 col-sm-6">
+                            <form>
+                                <input type="radio" name="sex" value="male" checked><span class="rd-cl">One way</span>
+
+                                <input type="radio" name="sex" value="female" class="rd2"><span class="rd-cl">Round trip</span>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div clas="row">
+                    <div class="col-md-12">
+                        <div collapse="" class="bus-rsl">
+                            <div class="row">
+                                <div class="col-mm-3">
+                                    <div class="rs-det">
+                                        <div class="form-group from-mainpage">
+                                            <label class="labels">From</label>
+                                            <input type="text" class="form-control" placeholder="Enter Your City">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-mm-3">
+                                    <div class="rs-det">
+                                        <div class="form-group from-mainpage">
+                                            <label class="labels">To</label>
+                                            <input type="text" class="form-control" placeholder="Enter Your City">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-mm-3">
+                                    <div class="rs-date">
+                                        <div class="form-group from-mainpage">
+                                            <label class="labels">Date of Journey</label>
+                                            <p class="input-group">
+                                                <input type="date" class="form-control" datepicker-popup ng-model="dt1" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-mm-4">
+                                    <div class="row">
+                                        <div class="col-mn-4">
+                                            <div class="rs-det">
+                                                <div class="form-group from-mainpage">
+                                                    <label class="labels mhs">No of day</label>
+                                                    <p class="input-group slc">
+                                                        <select>
+                                                            <option value="No of day" class="trn">No of day</option>
+                                                            <option value="saab">1 Day</option>
+                                                            <option value="mercedes">1 Day</option>
+                                                            <option value="audi">1 Day</option>
+                                                        </select>
+                                                        <!--
+                      <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+-->
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-mn-6">
+                                            <div class="rs-det">
+                                                <div class="form-group from-mainpage">
+                                                    <label class="labels">Time</label>
+                                                    <p class="input-group">
+                                                        <timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></timepicker>
+                                                        <!--
+                                            <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+-->
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-mm-2">
+                                    <div class="bs-ups">
+                                        <button class="src-bt">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="local car-rsl" ng-show="tab=='local'">
+                <div class="row">
+                    <div class="rd-set">
+                        <div class="col-md-4 col-sm-6">
+                            <form>
+                                <input type="radio" name="sex" value="male" checked><span class="rd-cl">Full day</span>
+
+                                <input type="radio" name="sex" value="female" class="rd2"><span class="rd-cl">Half day</span>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div clas="row">
+                    <div class="col-md-12">
+                        <div collapse="" class="bus-rsl">
+                            <div class="row">
+                                <div class="col-mm-3">
+                                    <div class="rs-det">
+                                        <div class="form-group from-mainpage">
+                                            <label class="labels">From</label>
+                                            <input type="text" class="form-control" placeholder="Enter Your City">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                                <div class="col-mm-3">
+                                    <div class="rs-det">
+                                        <div class="form-group from-mainpage">
+                                            <label class="labels">To</label>
+                                            <input type="text" class="form-control" placeholder="Enter Your City">
+                                        </div>
+                                    </div>
+                                </div>
+-->
+                                <div class="col-mm-3">
+                                    <div class="rs-date">
+                                        <div class="form-group from-mainpage">
+                                            <label class="labels">Date of Journey</label>
+                                            <p class="input-group">
+                                                <input type="date" class="form-control" datepicker-popup ng-model="dt1" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-mm-4">
+                                    <div class="row">
+                                        <div class="col-mn-4">
+                                            <div class="rs-det">
+                                                <div class="form-group from-mainpage">
+                                                    <label class="labels mhs">No of day</label>
+                                                    <p class="input-group slc">
+                                                        <select>
+                                                            <option value="No of day" class="trn">No of day</option>
+                                                            <option value="saab">1 Day</option>
+                                                            <option value="mercedes">1 Day</option>
+                                                            <option value="audi">1 Day</option>
+                                                        </select>
+                                                        <!--
+                      <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+-->
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-mn-6">
+                                            <div class="rs-det">
+                                                <div class="form-group from-mainpage">
+                                                    <label class="labels">Time</label>
+                                                    <p class="input-group">
+                                                        <timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></timepicker>
+                                                        <!--
+                                            <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+-->
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-mm-2">
+                                    <div class="bs-ups">
+                                        <button class="src-bt">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="transfer car-rsl" ng-show="tab=='trans'">
+                <div class="row">
+                    <div class="rd-set">
+                        <div class="col-md-4 col-sm-6">
+                            <form>
+                                <input type="radio" name="sex" value="male" checked><span class="rd-cl">Airport</span>
+
+                                <input type="radio" name="sex" value="female" class="rd2"><span class="rd-cl">Railway station</span>
+                                <input type="radio" name="sex" value="female" class="rd2"><span class="rd-cl">Area / Hotel</span>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div clas="row">
+                    <div class="col-md-12">
+                        <div collapse="" class="bus-rsl">
+                            <div class="row">
+                                <div class="col-mm-3">
+                                    <div class="rs-det">
+                                        <div class="form-group from-mainpage">
+                                            <label class="labels">From</label>
+                                            <input type="text" class="form-control" placeholder="Enter Your City">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-mm-3">
+                                    <div class="rs-det">
+                                        <div class="form-group from-mainpage">
+                                            <label class="labels">To</label>
+                                            <input type="text" class="form-control" placeholder="Enter Your City">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-mm-3">
+                                    <div class="rs-date">
+                                        <div class="form-group from-mainpage">
+                                            <label class="labels">Drop of</label>
+                                            <p class="input-group">
+                                                <input type="date" class="form-control" datepicker-popup ng-model="dt1" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-mm-3">
+                                    <div class="rs-date">
+                                        <div class="form-group from-mainpage">
+                                            <label class="labels">Date of Journey</label>
+                                            <p class="input-group">
+                                                <input type="date" class="form-control" datepicker-popup ng-model="dt1" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-mm-4">
+                                    <div class="row">
+                                        <div class="col-mn-4">
+                                            <div class="rs-det">
+                                                <div class="form-group from-mainpage">
+                                                    <label class="labels mhs">No of day</label>
+                                                    <p class="input-group slc">
+                                                        <select>
+                                                            <option value="No of day" class="trn">No of day</option>
+                                                            <option value="saab">1 Day</option>
+                                                            <option value="mercedes">1 Day</option>
+                                                            <option value="audi">1 Day</option>
+                                                        </select>
+                                                        <!--
+                      <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+-->
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-mn-6">
+                                            <div class="rs-det">
+                                                <div class="form-group from-mainpage">
+                                                    <label class="labels">Time</label>
+                                                    <p class="input-group">
+                                                        <timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></timepicker>
+                                                        <!--
+                                            <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-outline" ng-click="open($event)"><i class="ln-calendar3"></i></button>
+              </span>
+-->
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-mm-2">
+                                    <div class="bs-ups">
+                                        <button class="src-bt">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bus-filter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <div class="trvl">
+                        <p>Filter by: Travels</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="bus-type">
+                        <p href="#" data-toggle="dropdown" class="dropdown-toggle">Car Type <b class="caret"></b>
+                        </p>
+                        <ul class="dropdown-menu">
+                            <li class="checkbox" ng-repeat="choice in items">
+                                <label>
+                                    <input type="checkbox" value="">{{choice}}</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="bus-type">
+                        <p href="#" data-toggle="dropdown" class="dropdown-toggle">Amenities <b class="caret"></b>
+                        </p>
+                        <ul class="dropdown-menu">
+                            <li class="checkbox" ng-repeat="amen in amenties">
+                                <label>
+                                    <input type="checkbox" value="">{{amen}}</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="bus-type">
+                        <p href="#" data-toggle="dropdown" class="dropdown-toggle">Boarding <b class="caret"></b>
+                        </p>
+                        <ul class="dropdown-menu">
+                            <li class="checkbox" ng-repeat="board in boearding">
+                                <label>
+                                    <input type="checkbox" value="">{{board}}</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="bus-type">
+                        <p href="#" data-toggle="dropdown" class="dropdown-toggle">Dropping <b class="caret"></b>
+                        </p>
+                        <ul class="dropdown-menu">
+                            <li class="checkbox" ng-repeat="drop in dropping">
+                                <label>
+                                    <input type="checkbox" value="">{{drop}}</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <!--
+                <div class="col-md-2">
+                    <div class="bus-type">
+                        <p href="#" data-toggle="dropdown" class="dropdown-toggle">Ratings <b class="caret"></b>
+                        </p>
+                        <ul class="dropdown-menu">
+                            <li class="checkbox" ng-repeat="rate in rating">
+                                <label>
+                                    <input type="checkbox" value="">{{rate}}</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+-->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="tbl-set">
+                <table class="table table-striped">
+
+                    <thead>
+                        <tr class="tbl-tr">
+                            <th>Car</th>
+                            <th>Seats</th>
+                            <th>Details</th>
+                            <th>Fare</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td-st">Tata Indico
+                                <br><span class="sml-fn">Non A/C Seater (2+2)</span>
+
+                            </td>
+                            <td>8 seats
+                                <br><span class="sml-fn"> Window 4</span>
+                            </td>
+                            <td>Fare detail
+                                <br><span class="sml-fn">Per Km : 10.25</span>
+                            </td>
+
+                            <td>Rs 1000
+                              
+                                <br><span class="sml-fn">For 1 day</span>
+
+                            </td>
+                            <td>
+                                <button class="" ng-click="seat(list.listings);">Book now</button>
+
+
+                            </td>
+                        </tr>
+                 <tr>
+                            <td class="td-st">Tata Indico
+                                <br><span class="sml-fn">Non A/C Seater (2+2)</span>
+
+                            </td>
+                            <td>8 seats
+                                <br><span class="sml-fn"> Window 4</span>
+                            </td>
+                            <td>Fare detail
+                                <br><span class="sml-fn">Per Km : 10.25</span>
+                            </td>
+
+                            <td>Rs 1000
+                              
+                                <br><span class="sml-fn">For 1 day</span>
+
+                            </td>
+                            <td>
+                                <button class="" ng-click="seat(list.listings);">Book now</button>
+
+
+                            </td>
+                        </tr>
+                  <tr>
+                            <td class="td-st">Tata Indico
+                                <br><span class="sml-fn">Non A/C Seater (2+2)</span>
+
+                            </td>
+                            <td>8 seats
+                                <br><span class="sml-fn"> Window 4</span>
+                            </td>
+                            <td>Fare detail
+                                <br><span class="sml-fn">Per Km : 10.25</span>
+                            </td>
+
+                            <td>Rs 1000
+                              
+                                <br><span class="sml-fn">For 1 day</span>
+
+                            </td>
+                            <td>
+                                <button class="" ng-click="seat(list.listings);">Book now</button>
+
+
+                            </td>
+                        </tr>
+                 <tr>
+                            <td class="td-st">Tata Indico
+                                <br><span class="sml-fn">Non A/C Seater (2+2)</span>
+
+                            </td>
+                            <td>8 seats
+                                <br><span class="sml-fn"> Window 4</span>
+                            </td>
+                            <td>Fare detail
+                                <br><span class="sml-fn">Per Km : 10.25</span>
+                            </td>
+
+                            <td>Rs 1000
+                              
+                                <br><span class="sml-fn">For 1 day</span>
+
+                            </td>
+                            <td>
+                                <button class="" ng-click="seat(list.listings);">Book now</button>
+
+
+                            </td>
+                        </tr>
+                    <tr>
+                            <td class="td-st">Tata Indico
+                                <br><span class="sml-fn">Non A/C Seater (2+2)</span>
+
+                            </td>
+                            <td>8 seats
+                                <br><span class="sml-fn"> Window 4</span>
+                            </td>
+                            <td>Fare detail
+                                <br><span class="sml-fn">Per Km : 10.25</span>
+                            </td>
+
+                            <td>Rs 1000
+                              
+                                <br><span class="sml-fn">For 1 day</span>
+
+                            </td>
+                            <td>
+                                <button class="" ng-click="seat(list.listings);">Book now</button>
+
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+</section>

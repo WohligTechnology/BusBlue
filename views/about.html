@@ -1,14 +1,22 @@
-                    <div class="more-text">
-                        <h2 class=" text-center" style="color:#049fb3;text-transform: uppercase;">Enquiry</h2>
-                        <div class="signup-forms">
-                            <div class="popupenquiry" ng-if="enquirymsg!=''">
-                                {{enquirymsg}}
-                            </div>
-                            <input type="text" ng-model="enquiry.name" ng-pattern="/^(\D)+$/" class="form-control" ng-class="allvalidation[0].validation" placeholder="Name *" required/>
-                            <input type="email" ng-model="enquiry.email" class="form-control" ng-class="allvalidation[1].validation" placeholder="Email *" required/>
-                            <input type="number" ng-model="enquiry.phone" ng-pattern="/^[0-9]+$/" ng-minlength="10" ng-maxlength="15" class="form-control" ng-class="allvalidation[2].validation" placeholder="Phone *" required/>
-                            <textarea ng-model="enquiry.comment" class="form-control" ng-class="allvalidation[3].validation" placeholder="Comment *" required></textarea>
-<!--                            <button class="btn" >Send</button>-->
-                            <a class="btn btn-primary mrr" href="" ng-click="enquiryuser(enquiry)">Send</a>
-                        </div>
-                    </div>
+<section class="login-set">
+    <div class="container">
+       <div class="row">
+     <div class="col-md-12">
+        <div class="abt">
+         <h2>About us</h2>
+         <h4>In using this website you are deemed to have read and agreed to the following terms and conditions:</h4>
+         <p>Want to know who we are? We are FreeCharge, a business unit of Accelyst Solutions Pvt. Ltd. And our focus is to create an innovative channel that can deliver more for less to the Indian consumer.</p>
+         <p>We don't just make the process of recharging convenient, we make it rewarding, by way of discount coupons. And while we're at it, our super efficient and professionally sound team makes sure our customers are 100% satisfied. Today, we help customers recharge their prepaid mobile phones, DTH connections or data cards, but wait and watch what we get into next. Whatever it is, we promise to make it just as rewarding!</p>
+         <h4>Payment</h4>
+         <p>We accept Visa and Master Credit Card, Debit Cards and Net banking as mode of payments which are processed through our payment gateway partner Avenues (India) Pvt Ltd. No information pertaining to payment is shared with us as you fill all the payment related information on your bank's site.</p>
+         <h4>Recharge</h4>
+         <p>FreeCharge has tied up with a third party enabler for the recharge. FreeCharge is not responsible for any delay, pricing or cancellation of recharge from mobile operators end. Though, best efforts are made to keep the service above acceptance levels.</p>
+
+<p>User is solely responsible for the selection of mobile operator and the recharge amount. FreeCharge is not responsible for talk-time given against recharge done through FreeCharge.in as this is purely at mobile operator's disposal.</p>
+        <h4>Coupon Redemption</h4>
+        <p>Coupon redemption is purely subjected to standard and specified terms and conditions mentioned by the respective retailer. Coupons are issued on behalf of the respective retailer. Hence, any damages, injuries, losses incurred by the end user by using the coupon is not the responsibility of FreeCharge.in.</p>
+         </div>
+     </div>
+     </div>
+    </div>
+</section>
