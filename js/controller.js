@@ -3,7 +3,7 @@ var long = 0;
 var phonecatControllers = angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'restservicemod', 'ngRoute', 'ngDialog', 'infinite-scroll', 'ngAnimate', 'toaster', 'wu.masonry', 'iso.directives', 'ui.bootstrap']);
 
 phonecatControllers.controller('home',
-    function ($scope, TemplateService, NavigationService, RestService, $filter, $location, $timeout, toaster) {
+    function ($scope, TemplateService, NavigationService, RestService, $filter, $location, $timeout, toaster,ngDialog) {
 
         $scope.template = TemplateService;
         $scope.menutitle = NavigationService.makeactive("Bus");
@@ -16,10 +16,21 @@ phonecatControllers.controller('home',
         $scope.pageClass = "page-home";
         $scope.pageready = "true";
 
+  $scope.login = function (listing) {
+                    $scope.listingid = listing;
+                    console.log("Demo is wokring");
+                    ngDialog.open({
+                        template: 'views/login.html',
+                        controller: 'home'
+                    });
+                };
+    
         angular.element(document).ready(function () {
             $scope.pageready = "false";
 
-
+      
+            
+            
             /************ date picker **********/
             $scope.today = function () {
                 $scope.dt = new Date();
@@ -125,7 +136,7 @@ phonecatControllers.controller('home',
     });
 
 phonecatControllers.controller('car',
-    function ($scope, TemplateService, NavigationService, RestService, $location, $http) {
+    function ($scope, TemplateService, NavigationService, RestService, $location, $http, ngDialog) {
         $scope.template = TemplateService;
         $scope.menutitle = NavigationService.makeactive("Car");
         TemplateService.title = $scope.menutitle;
@@ -134,6 +145,16 @@ phonecatControllers.controller('car',
         $scope.navigation = NavigationService.getnav();
 
 
+       $scope.login = function (logins) {
+            $scope.listingid = logins;
+            console.log("Demo is wokring");
+            ngDialog.open({
+                template: 'views/login.html',
+                controller: 'car'
+            });
+        };
+
+    
         $scope.isCollapse = true;
 
         //date slider
@@ -1243,8 +1264,25 @@ phonecatControllers.controller('forgot',
     });
 
 phonecatControllers.controller('headerctrl',
-    function ($scope, TemplateService) {
+    function ($scope, TemplateService , ngDialog) {
         $scope.template = TemplateService;
 
         //        $scope.imagepath = imagepath;
+    //            ******** login pop ******
+                     
+              $scope.login = function () {
+//            $scope.listingid = listing;
+          
+            ngDialog.open({
+                template: 'views/login.html',
+                controller: 'headerctrl'
+            });
+        };
+
+       
+            
+            
+//            ********* end ********
+      
+    
     });

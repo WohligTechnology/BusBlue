@@ -16,10 +16,12 @@ firstapp.config(['$routeProvider',
         when('/home', {
             templateUrl: 'views/template.html',
             controller: 'home'
-        }).when('/login', {
+        })
+            .when('/login', {
             templateUrl: 'views/template.html',
             controller: 'login'
-        }).when('/forgetpass', {
+        })
+            .when('/forgetpass', {
             templateUrl: 'views/template.html',
             controller: 'forgetpass'
         }).when('/signup', {
