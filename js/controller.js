@@ -1,9 +1,13 @@
 var lat = 0;
 var long = 0;
-var phonecatControllers = angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'restservicemod', 'ngRoute', 'ngDialog', 'infinite-scroll', 'ngAnimate', 'toaster', 'wu.masonry', 'iso.directives', 'ui.bootstrap']);
+var phonecatControllers = angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'restservicemod', 'ngRoute', 'ngDialog', 'infinite-scroll', 'wu.masonry', 'iso.directives', 'ui.bootstrap']);
 
 phonecatControllers.controller('home',
+<<<<<<< Updated upstream
     function ($scope, TemplateService, NavigationService, RestService, $filter, $location, $timeout, toaster,ngDialog) {
+=======
+    function ($scope, TemplateService, NavigationService, RestService, $filter, $location, $timeout) {
+>>>>>>> Stashed changes
 
         $scope.template = TemplateService;
         $scope.menutitle = NavigationService.makeactive("Bus");
@@ -376,7 +380,7 @@ phonecatControllers.controller('Datepicker',
     });
 
 phonecatControllers.controller('login',
-    function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+    function ($scope, TemplateService, NavigationService, RestService, $location) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/login.html";
@@ -391,7 +395,7 @@ phonecatControllers.controller('login',
 
     });
 phonecatControllers.controller('coupon',
-    function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+    function ($scope, TemplateService, NavigationService, RestService, $location) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/coupon.html";
@@ -516,7 +520,7 @@ phonecatControllers.controller('coupon',
     });
 
 phonecatControllers.controller('myprofile',
-    function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+    function ($scope, TemplateService, NavigationService, RestService, $location) {
         $scope.show1 = true;
         $scope.show2 = false;
         $scope.template = TemplateService;
@@ -560,7 +564,7 @@ phonecatControllers.controller('myprofile',
 
 
 phonecatControllers.controller('forgetpass',
-    function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+    function ($scope, TemplateService, NavigationService, RestService, $location) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/forgetpass.html";
@@ -576,7 +580,7 @@ phonecatControllers.controller('forgetpass',
     });
 
 phonecatControllers.controller('resetpass',
-    function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+    function ($scope, TemplateService, NavigationService, RestService, $location) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/resetpass.html";
@@ -592,7 +596,7 @@ phonecatControllers.controller('resetpass',
     });
 
 phonecatControllers.controller('about',
-    function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+    function ($scope, TemplateService, NavigationService, RestService, $location) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/about.html";
@@ -607,7 +611,7 @@ phonecatControllers.controller('about',
 
     });
 phonecatControllers.controller('car-det',
-    function ($scope, TemplateService, NavigationService, RestService, $location, toaster, ngDialog) {
+    function ($scope, TemplateService, NavigationService, RestService, $location, ngDialog) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/car-det.html";
@@ -864,7 +868,7 @@ phonecatControllers.controller('car-det',
     });
 
 phonecatControllers.controller('bus',
-    function ($scope, TemplateService, NavigationService, RestService, $location, toaster, ngDialog) {
+    function ($scope, TemplateService, NavigationService, RestService, $location, ngDialog) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/bus.html";
@@ -997,7 +1001,7 @@ phonecatControllers.controller('bus',
     });
 
 phonecatControllers.controller('terms',
-    function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+    function ($scope, TemplateService, NavigationService, RestService, $location) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/terms.html";
@@ -1013,7 +1017,7 @@ phonecatControllers.controller('terms',
     });
 
 phonecatControllers.controller('signup',
-    function ($scope, TemplateService, NavigationService, RestService, $location, toaster) {
+    function ($scope, TemplateService, NavigationService, RestService, $location) {
         $scope.template = TemplateService;
         $scope.headclass = 'changehead';
         TemplateService.title = $scope.menutitle;
