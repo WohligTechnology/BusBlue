@@ -787,7 +787,7 @@ td.td-st i {
 .bus-filter {
     background: rgba(61, 174, 223, 0.54);
     color: #fff;
-    padding: 10px 0px 0px;
+    padding: 20px 0px 9px;
 }
 
 .bus-type p {
@@ -1052,7 +1052,10 @@ a:hover {
     text-align: center;
     margin-top: 13px;
 }
-
+.bss-up {
+    text-align: center;
+    margin-top: 13px;
+}
 .bs-up button {
     background: transparent;
     border: 1px solid #FFFFFF;
@@ -1157,10 +1160,11 @@ button.src-bt {
 }
 
 .rs-date button.btn.btn-outline {
-    background: transparent;
-    color: #3DAEDF;
+    background: rgb(243, 243, 243);
+    color: #999;
     padding: 7px;
     font-size: 18px;
+    border: 0;
 }
 
 .rs-date .btn-default {
@@ -1687,4 +1691,15 @@ ul.list-groups li a span {
 }
 .profile-edit {
     margin: 0 22px;
+}
+.bss-up button {
+  background: transparent;
+  border: 1px solid #3DAEDF;
+  color: #3DAEDF;
+/*  padding: 8px;*/
+}
+.rs-date .btn-default, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger {
+   text-shadow: none; 
+   -webkit-box-shadow: none; 
+   box-shadow: none; 
 }
