@@ -382,6 +382,98 @@ phonecatControllers.controller('coupon',
             toaster.pop("error", "Login Error", "Invalid username or password", 5000);
             toaster.pop("success", "Welcome", "Registered successfully", 5000);
         }
+        $scope.filter = {
+            tags: ""
+        };
+        $scope.changefilter = function (data) {
+            for (var i = 0; i < $scope.filters.length; i++) {
+                if ($scope.filters[i].name == data) {
+                    $scope.filters[i].class = "select";
+                } else {
+                    $scope.filters[i].class = "";
+                }
+
+                if (data == "all") {
+                    data = "";
+                } {
+                    $scope.filter.tags = data;
+                }
+            }
+        };
+
+        $scope.filters = [{
+            "class": "select",
+            "name": "all"
+        }, {
+            "class": "",
+            "name": "food"
+        }, {
+            "class": "",
+            "name": "entertainment"
+        }, {
+            "class": "",
+            "name": "store"
+        }, {
+            "class": "",
+            "name": "care"
+        }, {
+            "class": "",
+            "name": "travel"
+        }, {
+            "class": "",
+            "name": "lifestyle"
+        }];
+
+        $scope.coupons = [{
+            "title": "you can pick this coupon only once",
+            "image": "images/810_1416552824765.png",
+            "name": "Free Garlic bread!",
+            "button": "pick for ₹0",
+            "tags": ["food", "care"]
+        },{
+            "title": "you can pick this coupon only once",
+            "image": "images/810_1416552824765.png",
+            "name": "Free Butter bread!",
+            "button": "pick for ₹0",
+            "tags": ["food", "care"]
+        },{
+            "title": "you can pick this coupon only once",
+            "image": "images/810_1416552824765.png",
+            "name": "Free Tushar bread!",
+            "button": "pick for ₹0",
+            "tags": ["food", "care"]
+        },{
+            "title": "you can pick this coupon only once",
+            "image": "images/810_1416552824765.png",
+            "name": "Free Mahesh bread!",
+            "button": "pick for ₹0",
+            "tags": ["food", "care"]
+        },{
+            "title": "you can pick this coupon only once",
+            "image": "images/810_1416552824765.png",
+            "name": "Free Chintan bread!",
+            "button": "pick for ₹0",
+            "tags": ["food", "care"]
+        },{
+            "title": "you can pick this coupon only once",
+            "image": "images/810_1416552824765.png",
+            "name": "Free Sohan bread!",
+            "button": "pick for ₹0",
+            "tags": ["food", "lifestyle"]
+        },{
+            "title": "you can pick this coupon only once",
+            "image": "images/810_1416552824765.png",
+            "name": "Free Sexy bread!",
+            "button": "pick for ₹0",
+            "tags": ["entertainment", "store"]
+        },{
+            "title": "you can pick this coupon only once",
+            "image": "images/810_1416552824765.png",
+            "name": "Free Android bread!",
+            "button": "pick for ₹0",
+            "tags": ["food", "care"]
+        },];
+        
 
         $scope.checked = false; // This will be binded using the ps-open attribute
 

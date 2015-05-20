@@ -1,9 +1,9 @@
 <div class="container">
     <div class="row">
-       <div class="col-md-12 text-center">
-        <div class="cpn-hd ">
-            <h3>Grab Unlimited offer with your coupons!</h3>
-        </div>
+        <div class="col-md-12 text-center">
+            <div class="cpn-hd ">
+                <h3>Grab Unlimited offer with your coupons!</h3>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -11,376 +11,45 @@
         <div class="col-md-8">
             <div class="cat-cpn">
                 <ul>
-                    <li class="select" data-type="all"><a class=""  data-type="all">All</li>
-                    <li><a  data-type="color-1">Food</li>
-                    <li><a  data-type="color-2">Enternaitment</li>
-                    <li><a  data-type="color-3">Store</li>
-                    <li><a  data-type="color-4">Care</li>
-                    <li><a  data-type="color-5">Travel</li>
-                    <li><a  data-type="color-6">Lifestyle</li>
+                  
+                    <li ng-class="filter.class" ng-repeat="filter in filters"><a ng-click="changefilter(filter.name);" style="text-transform:capitalize;">{{filter.name}}</li>
+                    
                 </ul>
             </div>
         </div>
         <div class="col-md-2"></div>
     </div>
-    <div class="row sli-cp cd-gallery">
-        <div class="cpn-img coupons-grid ">
-           <div class="col-md-1"></div>
-            <div class="col-md-2 ">
-               <div class="coupons couponss ">
-                <div class="coupon-wrapper">
-                    <img class="heros" src="images/810_1416552824765.png">
-                    <div class="gradient-overlay">
-                        <span class="msg">you can pick this coupon only once</span>
-                    </div>
-                    <div class="curtain"></div>
-                    <div class="coupon-content">
-                        <div class="tags">
-                            <span class="tag food">
-                                food
-                            </span>
-                            <span class="save">
-                                save
-                            </span>
-                        </div>
-                        <h1>Free Garlic bread!</h1>
-                    </div>
-                    <button class="btn green pickCoupon">pick for ₹0</button>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-               <div class="coupons couponss ">
-                <div class="coupon-wrapper">
-                    <img class="heros" src="images/810_1416552824765.png">
-                       <div class="gradient-overlay">
-                        <span class="msg">you can pick this coupon only once</span>
-                    </div>
-                     <div class="curtain"></div>
-                    <div class="coupon-content">
-                        <div class="tags">
-                            <span class="tag food">
-                                food
-                            </span>
-                            <span class="save">
-                                save
-                            </span>
-                        </div>
-                        <h1>Free Garlic bread!</h1>
-                    </div>
-                    <button class="btn green pickCoupon">pick for ₹0</button>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-               <div class="coupons couponss ">
-                <div class="coupon-wrapper">
-                    <img class="heros" src="images/810_1416552824765.png">
-                       <div class="gradient-overlay">
-                        <span class="msg">you can pick this coupon only once</span>
-                    </div>
-                     <div class="curtain"></div>
-                    <div class="coupon-content">
-                        <div class="tags">
-                            <span class="tag food">
-                                food
-                            </span>
-                            <span class="save">
-                                save
-                            </span>
-                        </div>
-                        <h1>Free Garlic bread!</h1>
-                    </div>
-                    <button class="btn green pickCoupon">pick for ₹0</button>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-2">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="sli-cp cd-gallery">
+        <div class="cpn-img coupons-grid"  >
+           
+            <div class="galleryitem" ng-repeat="coupon in coupons|filter:filter">
                <div class="coupons couponss">
                 <div class="coupon-wrapper">
-                    <img class="heros" src="images/810_1416552824765.png">
+                    <img class="heros" ng-src="{{coupon.image}}">
                        <div class="gradient-overlay">
-                        <span class="msg">you can pick this coupon only once</span>
+                        <span class="msg">{{coupon.title}}</span>
                     </div>
                      <div class="curtain"></div>
                     <div class="coupon-content">
-                        <div class="tags">
-                            <span class="tag food">
-                                food
+                        <div class="tags" >
+                            <span class="tag {{tag}}" ng-repeat="tag in coupon.tags">
+                                {{tag}}
                             </span>
-                            <span class="save">
-                                save
-                            </span>
+                          
                         </div>
-                        <h1>Free Garlic bread!</h1>
+                        <h1>{{coupon.name}}</h1>
                     </div>
-                    <button class="btn green pickCoupon">pick for ₹0</button>
+                    <button class="btn green pickCoupon">{{coupon.button}}</button>
                 </div>
                 </div>
             </div>
-              <div class="col-md-2 ">
-               <div class="coupons couponss">
-                <div class="coupon-wrapper">
-                    <img class="heros" src="images/810_1416552824765.png">
-                       <div class="gradient-overlay">
-                        <span class="msg">you can pick this coupon only once</span>
-                    </div>
-                     <div class="curtain"></div>
-                    <div class="coupon-content">
-                        <div class="tags">
-                            <span class="tag food">
-                                food
-                            </span>
-                            <span class="save">
-                                save
-                            </span>
-                        </div>
-                        <h1>Free Garlic bread!</h1>
-                    </div>
-                    <button class="btn green pickCoupon">pick for ₹0</button>
-                </div>
-                  </div>
-            </div>
-             <div class="col-md-1"></div>
+      
         </div>
-        <div class="cpn-img coupons-grid ">
-           <div class="col-md-1"></div>
-            <div class="col-md-2 ">
-               <div class="coupons couponss">
-                <div class="coupon-wrapper">
-                    <img class="heros" src="images/810_1416552824765.png">
-                    <div class="gradient-overlay">
-                        <span class="msg">you can pick this coupon only once</span>
-                    </div>
-                     <div class="curtain"></div>
-                    <div class="coupon-content">
-                        <div class="tags">
-                            <span class="tag food">
-                                food
-                            </span>
-                            <span class="save">
-                                save
-                            </span>
-                        </div>
-                        <h1>Free Garlic bread!</h1>
-                    </div>
-                    <button class="btn green pickCoupon">pick for ₹0</button>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-               <div class="coupons couponss">
-                <div class="coupon-wrapper">
-                    <img class="heros" src="images/810_1416552824765.png">
-                       <div class="gradient-overlay">
-                        <span class="msg">you can pick this coupon only once</span>
-                    </div>
-                     <div class="curtain"></div>
-                    <div class="coupon-content">
-                        <div class="tags">
-                            <span class="tag food">
-                                food
-                            </span>
-                            <span class="save">
-                                save
-                            </span>
-                        </div>
-                        <h1>Free Garlic bread!</h1>
-                    </div>
-                    <button class="btn green pickCoupon">pick for ₹0</button>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-               <div class="coupons couponss">
-                <div class="coupon-wrapper">
-                    <img class="heros" src="images/810_1416552824765.png">
-                       <div class="gradient-overlay">
-                        <span class="msg">you can pick this coupon only once</span>
-                    </div>
-                     <div class="curtain"></div>
-                    <div class="coupon-content">
-                        <div class="tags">
-                            <span class="tag food">
-                                food
-                            </span>
-                            <span class="save">
-                                save
-                            </span>
-                        </div>
-                        <h1>Free Garlic bread!</h1>
-                    </div>
-                    <button class="btn green pickCoupon">pick for ₹0</button>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-               <div class="coupons couponss">
-                <div class="coupon-wrapper">
-                    <img class="heros" src="images/810_1416552824765.png">
-                       <div class="gradient-overlay">
-                        <span class="msg">you can pick this coupon only once</span>
-                    </div>
-                     <div class="curtain"></div>
-                    <div class="coupon-content">
-                        <div class="tags">
-                            <span class="tag food">
-                                food
-                            </span>
-                            <span class="save">
-                                save
-                            </span>
-                        </div>
-                        <h1>Free Garlic bread!</h1>
-                    </div>
-                    <button class="btn green pickCoupon">pick for ₹0</button>
-                </div>
-                </div>
-            </div>
-              <div class="col-md-2 ">
-               <div class="coupons couponss">
-                <div class="coupon-wrapper">
-                    <img class="heros" src="images/810_1416552824765.png">
-                       <div class="gradient-overlay">
-                        <span class="msg">you can pick this coupon only once</span>
-                    </div>
-                     <div class="curtain"></div>
-                    <div class="coupon-content">
-                        <div class="tags">
-                            <span class="tag food">
-                                food
-                            </span>
-                            <span class="save">
-                                save
-                            </span>
-                        </div>
-                        <h1>Free Garlic bread!</h1>
-                    </div>
-                    <button class="btn green pickCoupon">pick for ₹0</button>
-                </div>
-                  </div>
-            </div>
-             <div class="col-md-1"></div>
-        </div>
-        <div class="cpn-img coupons-grid ">
-           <div class="col-md-1"></div>
-            <div class="col-md-2 ">
-               <div class="coupons couponss">
-                <div class="coupon-wrapper">
-                    <img class="heros" src="images/810_1416552824765.png">
-                    <div class="gradient-overlay">
-                        <span class="msg">you can pick this coupon only once</span>
-                    </div>
-                     <div class="curtain"></div>
-                    <div class="coupon-content">
-                        <div class="tags">
-                            <span class="tag food">
-                                food
-                            </span>
-                            <span class="save">
-                                save
-                            </span>
-                        </div>
-                        <h1>Free Garlic bread!</h1>
-                    </div>
-                    <button class="btn green pickCoupon">pick for ₹0</button>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-               <div class="coupons couponss">
-                <div class="coupon-wrapper">
-                    <img class="heros" src="images/810_1416552824765.png">
-                       <div class="gradient-overlay">
-                        <span class="msg">you can pick this coupon only once</span>
-                    </div>
-                     <div class="curtain"></div>
-                    <div class="coupon-content">
-                        <div class="tags">
-                            <span class="tag food">
-                                food
-                            </span>
-                            <span class="save">
-                                save
-                            </span>
-                        </div>
-                        <h1>Free Garlic bread!</h1>
-                    </div>
-                    <button class="btn green pickCoupon">pick for ₹0</button>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-               <div class="coupons couponss">
-                <div class="coupon-wrapper">
-                    <img class="heros" src="images/810_1416552824765.png">
-                       <div class="gradient-overlay">
-                        <span class="msg">you can pick this coupon only once</span>
-                    </div>
-                     <div class="curtain"></div>
-                    <div class="coupon-content">
-                        <div class="tags">
-                            <span class="tag food">
-                                food
-                            </span>
-                            <span class="save">
-                                save
-                            </span>
-                        </div>
-                        <h1>Free Garlic bread!</h1>
-                    </div>
-                    <button class="btn green pickCoupon">pick for ₹0</button>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-               <div class="coupons couponss">
-                <div class="coupon-wrapper">
-                    <img class="heros" src="images/810_1416552824765.png">
-                       <div class="gradient-overlay">
-                        <span class="msg">you can pick this coupon only once</span>
-                    </div>
-                     <div class="curtain"></div>
-                    <div class="coupon-content">
-                        <div class="tags">
-                            <span class="tag food">
-                                food
-                            </span>
-                            <span class="save">
-                                save
-                            </span>
-                        </div>
-                        <h1>Free Garlic bread!</h1>
-                    </div>
-                    <button class="btn green pickCoupon">pick for ₹0</button>
-                </div>
-                </div>
-            </div>
-              <div class="col-md-2 ">
-               <div class="coupons couponss">
-                <div class="coupon-wrapper">
-                    <img class="heros" src="images/810_1416552824765.png">
-                       <div class="gradient-overlay">
-                        <span class="msg">you can pick this coupon only once</span>
-                    </div>
-                     <div class="curtain"></div>
-                    <div class="coupon-content">
-                        <div class="tags">
-                            <span class="tag food">
-                                food
-                            </span>
-                            <span class="save">
-                                save
-                            </span>
-                        </div>
-                        <h1>Free Garlic bread!</h1>
-                    </div>
-                    <button class="btn green pickCoupon">pick for ₹0</button>
-                </div>
-                  </div>
-            </div>
-             <div class="col-md-1"></div>
-        </div>
+        
+    </div>
+    </div>
     </div>
     <div pageslide ps-open="checked" ps-speed="0.8">
                    <div class="clos-btn" id="demo-right">

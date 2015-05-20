@@ -1,49 +1,57 @@
-<section class="login-set">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <div class="abt text-center">
-                    <h2>My profile</h2>
+<section class="">
+    <div class="abt text-center">
+        <h2>My profile</h2>
 
+    </div>
+    <div class="container">
+        <div class="row ">
+
+            <div class="col-md-3">
+                <div class="row lef-up">
+                    <div class="col-md-5">
+                        <div class="left-img">
+                            <img src="images/jason.jpg" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="left-nm">
+                            <h4>Mahesh maurya</h4>
+                            <h5>mahesh@wohlig.com</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                   <div class="col-md-12">
+                    <div class="list-grp">
+                        <ul class="list-groups">
+                            <li><a href=""><i class="ln-cash"></i><span>My Transactions</span></a></li>
+                            <li><a href=""><i class="ln-user"></i> <span>Profile</span></a></li>
+                            <li><a href=""><i class="ln-ticket"></i><span>My Coupons</span></a></li>
+                           
+                        </ul>
+                    </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-2"></div>
-        </div>
-        
-        <div class="profile-all animate-show" ng-if="show1==true">
-            <div class="row ">
-                <div class="">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8 profile-set">
-                        <div class="row">
+            <div class="col-md-8 border-left">
+               <div class="mypro">
+                <div class=" profile-all" ng-if="show1==true">
+                    <div class="row profile-set">
 
-                            <div class="col-md-4">
-                                <div class="pro-img">
-                                    <img src="images/jason.jpg">
-                                </div>
-
-
-
-                            </div>
-                            <div class="col-md-8 ">
-                                <div class="pro-det">
-                                    <i class="fa fa-pencil" ng-click="toggle1();"></i>
-                                    <h3>Mahesh Maurya</h3>
-                                    <h5>Transaction Summary</h5>
-                                    <h5>0 transactions as of today</h5>
-                                </div>
+                        <div class="col-md-4">
+                            <div class="pro-img">
+                                <img src="images/jason.jpg">
                             </div>
                         </div>
-
+                        <div class="col-md-8 ">
+                            <div class="pro-det">
+                                <i class="fa fa-pencil" ng-click="toggle1();"></i>
+                                <h3>Mahesh Maurya</h3>
+                                <h5>Transaction Summary</h5>
+                                <h5>0 transactions as of today</h5>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="col-md-2"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 profile-set">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="con-hd">
@@ -51,7 +59,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row cont-set">
+                    <div class="row cont-set profile-set">
 
 
                         <div class="col-xs-4 col-md-4">
@@ -62,7 +70,7 @@
                                 <p>Address :</p>
                             </div>
                         </div>
-                        <div class="col-xs-8 col-md-8">
+                        <div class="col-xs-6 col-md-6">
                             <div class="names">
                                 <p>Mahesh maurya</p>
                                 <p>8796622179</p>
@@ -71,74 +79,71 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-                <div class="col-md-2"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="edit-pro text-center">
-                        <button type="submit" ng-click="toggle1();">Edit profile</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="profile-edit animate-show" ng-if="show2==true">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8 profile-sets">
-                        <div class="edit-hd">
-                            <h4><span class="pen"><i class="fa fa-pencil"></i>Edit profile</span></h4>
-                        </div>
-                    </div>
-                    <div class="col-md-2"></div>
-                </div>
-                <div class="row ">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8 profile-sets">
-                        <div class="row">
-                            <div class="col-md-3 col-xs-4">
-                                <div class="info">
-
-                                    <h5>Full Name</h5>
-                                    <h5>Mobile</h5>
-                                    <h5>Address</h5>
-                                    <h5>Area</h5>
-                                    <h5>State</h5>
-                                    <h5>City</h5>
-                                    <h5>Pincode</h5>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xs-8">
-                                <div class="info-txt">
-                                    <input type="text" placeholder="Full name">
-                                    <input type="number" placeholder="Mobile">
-                                    <input type="text" placeholder="Address">
-                                    <input type="text" placeholder="Area">
-                                    <select>
-                                        <option value="volvo">Volvo</option>
-                                        <option value="saab">Saab</option>
-                                        <option value="opel">Opel</option>
-                                        <option value="audi">Audi</option>
-                                    </select>
-                                    <input type="text" placeholder="City">
-                                    <input type="text" placeholder="Pincode">
-                                </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="edit-pro text-center">
+                                <button type="submit" ng-click="toggle1();">Edit profile</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2"></div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="edit-pros text-center">
-                        <button type="submit">Save changes</button>
-                        <button type="submit" ng-click="toggle();">Cancel</button>
+                <div class="profile-edit" ng-if="show2==true">
+                    <div class="edit-hd profile-sets">
+                        <h4><span class="pen"><i class="fa fa-pencil"></i>Edit profile</span></h4>
                     </div>
+                    <div class="row ">
+
+                        <div class="col-md-12 profile-sets">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-4">
+                                    <div class="info">
+
+                                        <h5>Full Name</h5>
+                                        <h5>Mobile</h5>
+                                        <h5>Address</h5>
+                                        <h5>Area</h5>
+                                        <h5>State</h5>
+                                        <h5>City</h5>
+                                        <h5>Pincode</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-8">
+                                    <div class="info-txt">
+                                        <input type="text" placeholder="Full name">
+                                        <input type="number" placeholder="Mobile">
+                                        <input type="text" placeholder="Address">
+                                        <input type="text" placeholder="Area">
+                                        <select>
+                                            <option value="volvo">Volvo</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="opel">Opel</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                        <input type="text" placeholder="City">
+                                        <input type="text" placeholder="Pincode">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="edit-pros text-center">
+                                <button type="submit">Save changes</button>
+                                <button type="submit" ng-click="toggle();">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="mytrans">
+                    <div class="trns">
+                        <h2>my transaction</h2>
+                    </div>
+                </div>
+                <div class="mycoup">
+                    <h2>my coupon</h2>
                 </div>
             </div>
         </div>

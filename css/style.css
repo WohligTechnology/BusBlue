@@ -71,7 +71,7 @@ a:hover {
 
 .cat-cpn {
     text-align: center;
-    margin-top: 13px;
+    margin-top: 20px;
 }
 
 .input-group select {
@@ -835,6 +835,7 @@ span.sml-fn {
 
 .bs-det.scrollbar-dynamic {
     font-family: "lato" sans-serif;
+    margin: 22px auto;
 }
 
 .hd-det p {
@@ -1210,13 +1211,23 @@ img.heros {
     height: 104%;
     width: 104%;
 }
-
+.galleryitem.ng-scope {
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    float: left;
+    max-width: 100%;
+}
 .coupons-grid {
     color: #fff;
     position: relative;
     width: 100%;
     min-height: 200px;
     backface-visibility: hidden;
+    margin: 0 auto;
+    text-align: center;
+    left: 6%;
+    right: 0px;
 }
 
 .coupons {
@@ -1225,10 +1236,10 @@ img.heros {
 }
 
 .couponss {
-    float: left;
-    display: inline;
-    border: 0;
-    margin: 0;
+    /* float: left; */
+    /* display: inline; */
+    /* border: 0; */
+    /* margin: 0; */
     padding: 8px;
     background: 0 0;
 }
@@ -1253,8 +1264,9 @@ img.heros {
 
 .tags {
     padding: 0;
-    margin: 0px 56px 0px 0px;
     overflow: hidden;
+    text-align: left;
+    margin: 0px 0px 0px 11px;
 }
 
 .tag {
@@ -1267,9 +1279,15 @@ img.heros {
     overflow: hidden;
     transform-origin: 0 50%;
     transition: all .2s ease;
+    text-align: start;
+    margin: 0px 2px;
 }
 
 .tag.food {
+    background: #b22853;
+    border-color: #b22853;
+}
+.tag.entertainment {
     background: #b22853;
     border-color: #b22853;
 }
@@ -1289,6 +1307,7 @@ img.heros {
     text-transform: uppercase;
     padding: 0px 14px 6px;
     font-weight: bold;
+    text-align: left;
 }
 .couponss .btn {
   position: absolute;
@@ -1331,6 +1350,11 @@ img.heros {
 .sli-cp {
     margin-top: 18px;
     margin-bottom: 10px;
+    text-align: center;
+    /* position: relative; */
+    /* left: 56%; */
+    /* right: 50%; */
+    /* transform: translatex(-50%); */
 }
  .curtain {
   -moz-transform: rotate(-45deg) translate3d(0,48%,0);
@@ -1398,7 +1422,7 @@ img.img-cl {
 */
 .cat-cpn ul li {
     display: inline-block;
-    margin: 0px;
+    margin: 3px;
     padding: 4px 15px;
 /*
     transition: all 0.5s ease;
@@ -1414,7 +1438,6 @@ li.select {
   border: 1px solid #3DAEDF;
   border-radius: 25px;
   height: 30px;
-  width: 56px;
   color: #3DAEDF;
 }
 .cat-cpn ul li:hover{
@@ -1533,7 +1556,7 @@ span.rd-cl {
     margin-top: 20px;
 }
 .edit-pro.text-center {
-  margin-top: 20px;
+  margin: 22px auto;
 }
 .edit-pro button {
   background: #3DAEDF;
@@ -1594,22 +1617,67 @@ span.pen i {
   color: #3daedf;
 }
 .edit-pros.text-center {
-    margin-top: 20px;
+    margin: 22px auto;
 }
 
-/*
-.profile-all {
-    -webkit-transition:all linear 0.3s;
-  -moz-transition:all linear 0.3s;
-  -ms-transition:all linear 0.3s;
-  -o-transition:all linear 0.3s;
-  transition:all linear 0.3s;
+.cpn-hd h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 26px;
+    color: #e76f62;
+}
+.cpn-hd {
+    margin-top: 35px;
+}
+.left-img img {
+    background: transparent;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    float: right;
+}
+
+.left-img {
+    text-align: center;
+    /* margin: 0 auto; */
+}
+.row.lef-up {
+    margin: 22px auto;
+}
+.left-nm h4 {
+    line-height: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(61, 174, 223);
+}
+
+.left-nm {
+    margin-top: 13px;
+}
+.border-left{
+border-left:1px solid rgb(234, 237, 239);
+}
+.left-nm h5 {
+    font-size: 13px;
+}
+.list-groups {
+  border: 0;
+}
+.list-grp ul li {
+    list-style: none;
+    display: block;
+    padding: 8px 0px;
+}
+
+ul.list-groups li a i {
+    font-size: 28px;
+    color: rgb(61, 174, 223);
+}
+ul.list-groups li a span {
+    font-size: 16px;
+    color: #3DAEDF;
+    padding: 0px 10px;
 }
 .profile-edit {
-    -webkit-transition:all linear 0.3s;
-  -moz-transition:all linear 0.3s;
-  -ms-transition:all linear 0.3s;
-  -o-transition:all linear 0.3s;
-  transition:all linear 0.3s;
+    margin: 0 22px;
 }
-*/
