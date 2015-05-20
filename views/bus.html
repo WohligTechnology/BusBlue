@@ -2,16 +2,28 @@
     <div class="bus-update">
         <div class="container">
             <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
+
+                    <div class=" text-center">
+                                <div class="bs-dt">
+                                    <h5>Mumbai <i class="fa fa-arrow-right"></i> Goa</h5>
+                                    <h4>26-12-2015</h4>
+
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        
                         <div class="bs-up">
                             <button class="" ng-click="isCollapse = !isCollapse">Update Result</button>
                         </div>
+
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
 
                             <div class=" text-center">
                                 <div class="bs-dt">
-                                    <h5>Mumbai <i class="fa fa-arrow-right"></i> Goa</h5>
+                                    <h5>Mumbai <i class="fa fa-arrow-left"></i> Goa</h5>
                                     <h4>26-12-2015</h4>
 
                                 </div>
@@ -84,8 +96,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
-                    <div class="trvl">
-                        <p>Filter by: Travels</p>
+                    <div class="trvl bus-type">
+                        <p data-toggle="dropdown" class="dropdown-toggle">Filter by: Travels <b class="caret"></b></p>
+                        <ul class="dropdown-menu">
+                            <li class="checkbox" ng-repeat="choice in items">
+                                <label>
+                                    <input type="checkbox" value="">{{choice}}</label>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-md-2">
