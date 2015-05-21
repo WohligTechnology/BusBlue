@@ -549,15 +549,28 @@ phonecatControllers.controller('myprofile',
         
 //        ***** tabchange ****
             
-           $scope.tab = 'profile';
-      $scope.class = '';
+        $scope.tab = 'coupon';
+        $scope.class = '';
         $scope.classd = 'selected';
         $scope.classe = '';
-    $scope.tabchange = function (tab) {
-        console.log(tab);
-        $scope.tab = tab;
-    };    
-        
+        $scope.tabchange = function (tab,a) {
+            //        console.log(tab);
+            $scope.tab = tab;
+            if (a == 1) {
+                $scope.class = '';
+                $scope.classd = "selected";
+                $scope.classe = '';
+            } else if (a == 2) {
+                $scope.class = '';
+                $scope.classd = '';
+                $scope.classe = 'selected';
+            } else {
+                $scope.class = 'selected';
+                $scope.classd = '';
+                $scope.classe = '';
+            }
+        };
+ 
         
 //            ******** end *******
             
