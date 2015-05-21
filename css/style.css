@@ -1668,4 +1668,5 @@ ul.list-groups li a span {
     position: absolute;
   right: -9px;
   top: -25px;
+    cursor: pointer;
 }

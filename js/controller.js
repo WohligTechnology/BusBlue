@@ -154,17 +154,22 @@ phonecatControllers.controller('car',
         $scope.pageClass = "page-home";
         $scope.navigation = NavigationService.getnav();
 
+//
+//        $scope.login = function(logins) {
+//            $scope.listingid = logins;
+//            console.log("Demo is wokring");
+//            ngDialog.open({
+//                template: 'views/login.html',
+//                controller: 'car'
+//            });
+//        };
 
-        $scope.login = function(logins) {
-            $scope.listingid = logins;
-            console.log("Demo is wokring");
-            ngDialog.open({
-                template: 'views/login.html',
-                controller: 'car'
-            });
-        };
-
-
+ $scope.loginshow = function() {
+            $scope.logindiv = true;
+        }
+        $scope.hidelogin = function() {
+            $scope.logindiv = false;
+        }
         $scope.isCollapse = true;
 
         //date slider
