@@ -1,4 +1,4 @@
-<div class="content {{headclass}} {{headclass1}} {{headclass3}} {{headclass4}}"  ng-controller="home">
+<div class="content {{headclass}} {{headclass1}} {{headclass3}} {{headclass4}}">
     <header class="container">
         <div class="row">
             <div class="col-md-4 col-xs-6">
@@ -27,10 +27,59 @@
                <div class="user-set text-right">
                    <i class="fa fa-user"></i>
                </div>
-                <div class="text-right login">
-                    <a ng-click="openlogin();"><i class="ln-user"></i> Login</a>
+                <div class="text-right login" ng-click="loginshow();">
+                    <a><i class="ln-user"></i> Login</a>
                 </div>
             </div>
         </div>
     </header>
 </div>
+
+
+<section class=""  ng-show="logindiv">
+    <div class="container login-set">
+      <div class="popoverlay">
+       <div class="form-fixhead"></div>
+        <div class="holder1">
+            <div class="row">
+
+                <div class="col-md-7">
+                    <div class="signin">
+                        <h3 class="createtitle">Signin with your account</h3>
+                        <h5 class="createcon">Welcome back! Enter your password to login!</h5>
+                        <div class="signinor">
+                            <form class="frm-bdr" ng-submit="userlogin(user)">
+                                <input type="email" class="custom-input signin-input" ng-model="form.email" placeholder="Enter your email *" ng-class="allvalidation[0].validation" required>
+                                <br>
+                                <input type="password" class="custom-input signin-input" ng-model="form.password" placeholder="Password *" ng-class="allvalidation[1].validation" required>
+                                <br>
+                                <a href="#/forgetpass" class="forgetlink"> Forgot your password? </a>
+                                <br>
+                                <button type="submit" class="createacc cpointer"> Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                   <i class="ln-cross closebtn" ng-click="hidelogin()"></i>
+                    <div class="gogbtn">
+                        <a href="#" class="btnsoc  fa fa-google-plus"> <span class="ic">Sign in with Google </span></a>
+                        <a href="#" class="btnsoc fa fa-facebook"> <span class="ic">Sign in with Facebook </span></a>
+                        <a href="#" class="btnsoc fa fa-twitter"> <span class="ic">Sign in with Twitter</span> </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border1">
+                <p class="abc"> <span class="alreadys">Don't have an account ? Click <a href="#/signup" class="loginlink">here</a> to  create one </span>
+                </p>
+
+
+            </div>
+
+        </div>
+        </div>
+    </div>
+</section>

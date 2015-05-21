@@ -1654,3 +1654,18 @@ ul.list-groups li a span {
     -moz-box-shadow: none;
     box-shadow: none;
 }
+.popoverlay {
+    background-color: rgba(0, 0, 0, .4);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999999;
+}
+.closebtn{
+    position: absolute;
+  right: -9px;
+  top: -25px;
+}

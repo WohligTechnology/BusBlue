@@ -17,14 +17,23 @@ phonecatControllers.controller('home',
         $scope.pageClass = "page-home";
         $scope.pageready = "true";
 
-        $scope.login = function(listing) {
-            $scope.listingid = listing;
-           
-            ngDialog.open({
-                template: 'views/login.html',
-                controller: 'home'
-            });
-        };
+//        $scope.login = function(listing) {
+//            $scope.listingid = listing;
+//           
+//            ngDialog.open({
+//                template: 'views/login.html',
+//                controller: 'home'
+//            });
+//        };
+    
+//        $scope.logindiv = false;
+    
+        $scope.loginshow = function() {
+            $scope.logindiv = true;
+        }
+        $scope.hidelogin = function() {
+            $scope.logindiv = false;
+        }
 
         angular.element(document).ready(function() {
             $scope.pageready = "false";
