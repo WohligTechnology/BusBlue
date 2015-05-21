@@ -14,11 +14,29 @@
     transition: all 0.5s ease;
     font-size: 10px;
 }
+
 ul.cpn-details li {
     list-style: none;
-    height: 200px;    width: 250px;    border: 1px solid rgb(234, 237, 239);
+    height: 180px;
+    width: 225px;
+    border: 1px solid rgb(234, 237, 239);
+    display: inline-block;
 }
 
 .cpn-pack {
-    padding: 5px;
+    padding: 5px 10px 0px 6px;
+}
+.pack-img img {
+    width: 100%;
+    height: 80px;
+}
+
+.pack-right h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(235, 93, 93);
+}
+
+.pack-right {
+    text-align: right;
 }
