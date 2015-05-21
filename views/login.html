@@ -10,9 +10,9 @@
                         <h5 class="createcon">Welcome back! Enter your password to login!</h5>
                         <div class="signinor">
                             <form class="frm-bdr" ng-submit="userlogin(user)">
-                                <input type="email" class="custom-input signin-input" ng-model="" placeholder="Enter your email *" ng-class="allvalidation[0].validation" required>
+                                <input type="email" class="custom-input signin-input" ng-model="form.email" placeholder="Enter your email *" ng-class="allvalidation[0].validation" required>
                                 <br>
-                                <input type="password" class="custom-input signin-input" ng-model="" placeholder="Password *" ng-class="allvalidation[1].validation" required>
+                                <input type="password" class="custom-input signin-input" ng-model="form.password" placeholder="Password *" ng-class="allvalidation[1].validation" required>
                                 <br>
                                 <a href="#/forgetpass" class="forgetlink"> Forgot your password? </a>
                                 <br>

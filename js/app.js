@@ -17,10 +17,10 @@ firstapp.config(['$routeProvider',
             templateUrl: 'views/template.html',
             controller: 'home'
         })
-            .when('/login', {
-            templateUrl: 'views/template.html',
-            controller: 'login'
-        })
+//            .when('/login', {
+//            templateUrl: 'views/template.html',
+//            controller: 'login'
+//        })
             .when('/forgetpass', {
             templateUrl: 'views/template.html',
             controller: 'forgetpass'

@@ -1,4 +1,4 @@
-<div class="content {{headclass}} {{headclass1}} {{headclass3}} {{headclass4}}">
+<div class="content {{headclass}} {{headclass1}} {{headclass3}} {{headclass4}}"  ng-controller="home">
     <header class="container">
         <div class="row">
             <div class="col-md-4 col-xs-6">
@@ -28,7 +28,7 @@
                    <i class="fa fa-user"></i>
                </div>
                 <div class="text-right login">
-                    <a href="#/login"><i class="ln-user"></i> Login</a>
+                    <a ng-click="openlogin();"><i class="ln-user"></i> Login</a>
                 </div>
             </div>
         </div>
