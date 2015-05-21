@@ -28,11 +28,25 @@ phonecatControllers.controller('home',
     
 //        $scope.logindiv = false;
     
+    //LOGIN POP DIV
+    
         $scope.loginshow = function() {
             $scope.logindiv = true;
+            $scope.forgetdiv = false;
         }
         $scope.hidelogin = function() {
             $scope.logindiv = false;
+        }
+        
+        //FORGET PASSWORD DIV
+        $scope.forgetdiv = false;
+    
+         $scope.forgetshow = function() {
+            $scope.forgetdiv = true;
+             $scope.logindiv= false;
+        }
+        $scope.forgethide = function() {
+            $scope.forgetdiv = false;
         }
 
         angular.element(document).ready(function() {
