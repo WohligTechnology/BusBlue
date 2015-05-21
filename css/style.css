@@ -1616,11 +1616,18 @@ span.pen i {
 .list-grp ul li {
     list-style: none;
     display: block;
-    padding: 8px 0px;
+    padding: 10px;
+    cursor: pointer;
+}
+li.selected {
+  background: rgb(234, 237, 239);
+  padding: 10px 0px 10px 10px;
+  margin: 5px 0px;
 }
 ul.list-groups li a i {
-    font-size: 28px;
+    font-size: 26px;
     color: rgb(61, 174, 223);
+    vertical-align: sub;
 }
 ul.list-groups li a span {
     font-size: 16px;

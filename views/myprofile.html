@@ -24,9 +24,9 @@
                    <div class="col-md-12">
                     <div class="list-grp">
                         <ul class="list-groups">
-                            <li><a href=""><i class="ln-cash"></i><span>My Transactions</span></a></li>
-                            <li><a href=""><i class="ln-user"></i> <span>Profile</span></a></li>
-                            <li><a href=""><i class="ln-ticket"></i><span>My Coupons</span></a></li>
+                            <li ng-class="class"><a href=""><i class="ln-cash"></i><span>My Transactions</span></a></li>
+                            <li ng-class="classd" ng-click="tabchange('profile')" ><a ><i class="ln-user" ></i> <span>Profile</span></a></li>
+                            <li ng-class="classe" ng-click="tabchange('coupon')"  ><a ><i class="ln-ticket" ></i><span>My Coupons</span></a></li>
                            
                         </ul>
                     </div>
@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="col-md-8 border-left">
-               <div class="mypro">
+               <div class="mypro" ng-show="tab=='profile'">
                 <div class=" profile-all" ng-if="show1==true">
                     <div class="row profile-set">
 
@@ -137,16 +137,13 @@
                     </div>
                 </div>
                 </div>
-<!--
-                <div class="mytrans">
-                    <div class="trns">
-                        <h2>my transaction</h2>
-                    </div>
-                </div>
-                <div class="mycoup">
-                    <h2>my coupon</h2>
-                </div>
--->
+<div class="mycoupon" ng-show="tab=='coupon'">
+    <div class="copn-sct">
+        <button type="submit">All</button>
+        <button type="submit">Active</button>
+        
+    </div>
+</div>
             </div>
         </div>
     </div>

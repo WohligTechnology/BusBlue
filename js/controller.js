@@ -298,14 +298,19 @@ phonecatControllers.controller('car',
 
     });
 
-phonecatControllers.controller('myprofile',
-    function($scope, TemplateService, NavigationService, RestService, $location, $http) {
-        $scope.template = TemplateService;
-        $scope.menutitle = NavigationService.makeactive("My Profile");
-        TemplateService.title = $scope.menutitle;
-        TemplateService.content = "views/myprofile.html";
-        $scope.navigation = NavigationService.getnav();
-    });
+//phonecatControllers.controller('myprofile',
+//    function($scope, TemplateService, NavigationService, RestService, $location, $http) {
+//        $scope.template = TemplateService;
+//        $scope.menutitle = NavigationService.makeactive("My Profile");
+//        TemplateService.title = $scope.menutitle;
+//        TemplateService.content = "views/myprofile.html";
+//        $scope.navigation = NavigationService.getnav();
+//    
+//  
+//
+//    
+//    
+//    });
 
 phonecatControllers.controller('Datepicker',
     function($scope, TemplateService, NavigationService, RestService, $location, $http) {
@@ -532,6 +537,21 @@ phonecatControllers.controller('myprofile',
             toaster.pop("success", "Welcome", "Registered successfully", 5000);
         }
 
+        
+//        ***** tabchange ****
+            
+           $scope.tab = 'profile';
+      $scope.class = '';
+        $scope.classd = 'selected';
+        $scope.classe = '';
+    $scope.tabchange = function (tab) {
+        console.log(tab);
+        $scope.tab = tab;
+    };    
+        
+        
+//            ******** end *******
+            
         $scope.checked = false; // This will be binded using the ps-open attribute
 
         $scope.toggle = function() {
