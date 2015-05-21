@@ -611,9 +611,69 @@ phonecatControllers.controller('myprofile',
         }
 
 
+        //        ****** Data for coupons *****
+
+
+        $scope.coupon = [{
+
+            "image": "images/r51.jpg",
+            "price": "50",
+            "code": "548000",
+            "month": "May",
+            "date": "26",
+
+        }, {
+            "image": "images/r51.jpg",
+            "price": "50",
+            "code": "548000",
+            "month": "May",
+            "date": "26",
+        }, {
+            "image": "images/r51.jpg",
+            "price": "50",
+            "code": "548000",
+            "month": "May",
+            "date": "26",
+        }, {
+            "image": "images/r51.jpg",
+            "price": "50",
+            "code": "548000",
+            "month": "May",
+            "date": "26",
+        }, {
+            "image": "images/r51.jpg",
+            "price": "50",
+            "code": "548000",
+            "month": "May",
+            "date": "26",
+        }, {
+            "image": "images/r51.jpg",
+            "price": "50",
+            "code": "548000",
+            "month": "May",
+            "date": "26",
+        }, {
+          "image": "images/r51.jpg",
+            "price": "50",
+            "code": "548000",
+            "month": "May",
+            "date": "26",
+        }, {
+            "image": "images/r51.jpg",
+            "price": "50",
+            "code": "548000",
+            "month": "May",
+            "date": "26",
+        }, ];
+
+
+
+
+        //        ***** End ****    
+
         //        ***** tabchange ****
 
-        $scope.tab = 'coupon';
+        $scope.tab = 'profile';
         $scope.class = '';
         $scope.classd = 'selected';
         $scope.classe = '';
@@ -1088,8 +1148,8 @@ phonecatControllers.controller('bus',
         $scope.selectMe = function (event) {
             $(event.target).toggleClass('selected-seat');
         };
-    
-     $scope.selectbea = function (event) {
+
+        $scope.selectbea = function (event) {
             $(event.target).toggleClass('selected-sleeper');
         };
 

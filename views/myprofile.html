@@ -139,7 +139,7 @@
                 </div>
 <div class="mycoupon" ng-show="tab=='coupon'">
    <div class="row">
-   <div class="col-md-6 text-center">
+   <div class="col-md-6">
     <div class="copn-sct">
         <button type="submit">All</button>
         <button type="submit">Active</button>
@@ -150,18 +150,18 @@
     <div class="row">
         <div class="col-md-12">
         <div class="cpn-li">
-            <ul class="cpn-details">
-                <li>
+            <ul class="cpn-details" >
+                <li ng-repeat="cpn in coupon">
                     <div class="cpn-pack">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="pack-img">
-                                    <img src="images/r51.jpg" class="img-responsive">
+                                    <img ng-src="{{cpn.image}}" class="img-responsive">
                                 </div>
                             </div>
                              <div class="col-md-6">
                                 <div class="pack-right">
-                                    <h1>Rs.50</h1>
+                                    <h1>Rs.{{cpn.price}}</h1>
                                     <h4>Details</h4>
                                 </div>
                             </div>
@@ -176,7 +176,7 @@
                              <div class="col-md-6">
                                 <div class="cpn-code">
                                    
-                                    <p>568004</p>
+                                    <p>{{cpn.code}}</p>
                                 </div>
                             </div>
                         </div>
@@ -185,8 +185,8 @@
                                 <div class="pack-dat">
                                     <p>Expires on</p>
                                     <div class="pck-cal">
-                                        <h5>May</h5>
-                                        <h3>26</h3>
+                                        <h5>{{cpn.month}}</h5>
+                                        <h3>{{cpn.date}}</h3>
                                     </div>
                                 </div>
                             </div>
@@ -199,6 +199,7 @@
                         </div>
                     </div>
                 </li>
+<!--
                          <li>
                     <div class="cpn-pack">
                         <div class="row">
@@ -247,6 +248,8 @@
                         </div>
                     </div>
                 </li>
+-->
+<!--
                          <li>
                     <div class="cpn-pack">
                         <div class="row">
@@ -295,6 +298,7 @@
                         </div>
                     </div>
                 </li>
+-->
             </ul>
         </div>
         </div>
