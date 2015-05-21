@@ -11,22 +11,22 @@
 
             <div class="col-md-4 text-center col-xs-6 cpn">
                 <div ng-include="template.menu"></div>
-              
+
             </div>
             <div class="col-md-4 text-center col-xs-6 cpns">
-               
+
                 <div class="coupon-bt">
                     <button type="submit">skip coupon</button>
                 </div>
             </div>
 
             <div class="col-md-4 hidden-xs">
-               <div class="cart-set">
-                   <i class="fa fa-shopping-cart" ng-click="toggle()"></i>
-               </div>
-               <div class="user-set text-right">
-                   <i class="fa fa-user"></i>
-               </div>
+                <div class="cart-set">
+                    <i class="fa fa-shopping-cart" ng-click="toggle()"></i>
+                </div>
+                <div class="user-set text-right">
+                    <i class="fa fa-user"></i>
+                </div>
                 <div class="text-right login" ng-click="loginshow();">
                     <a><i class="ln-user"></i> Login</a>
                 </div>
@@ -36,50 +36,52 @@
 </div>
 
 
-<section class=""  ng-show="logindiv">
+<section class="" ng-show="logindiv">
     <div class="container login-set">
-      <div class="popoverlay">
-       <div class="form-fixhead"></div>
-        <div class="holder1">
-            <div class="row">
+        <div class="popoverlay">
+            <div class="form-fixhead"></div>
+            <div class="holder1">
+                <div class="row">
 
-                <div class="col-md-7">
-                    <div class="signin">
-                        <h3 class="createtitle">Signin with your account</h3>
-                        <h5 class="createcon">Welcome back! Enter your password to login!</h5>
-                        <div class="signinor">
-                            <form class="frm-bdr" ng-submit="userlogin(user)">
-                                <input type="email" class="custom-input signin-input" ng-model="form.email" placeholder="Enter your email *" ng-class="allvalidation[0].validation" required>
-                                <br>
-                                <input type="password" class="custom-input signin-input" ng-model="form.password" placeholder="Password *" ng-class="allvalidation[1].validation" required>
-                                <br>
-                                <a ng-click="forgetshow();" class="forgetlink"> Forgot your password? </a>
-                                <br>
-                                <button type="submit" class="createacc cpointer"> Login</button>
-                            </form>
+                    <div class="col-md-7">
+                        <div class="signin">
+                            <h3 class="createtitle">Signin with your account</h3>
+                            <h5 class="createcon">Welcome back! Enter your password to login!</h5>
+                            <div class="signinor">
+                                <form class="frm-bdr" ng-submit="userlogin(user)">
+                                    <input type="email" class="custom-input signin-input" ng-model="form.email" placeholder="Enter your email *" ng-class="allvalidation[0].validation" required>
+                                    <br>
+                                    <input type="password" class="custom-input signin-input" ng-model="form.password" placeholder="Password *" ng-class="allvalidation[1].validation" required>
+                                    <br>
+                                    <a ng-click="forgetshow();" class="forgetlink"> Forgot your password? </a>
+                                    <br>
+                                    <button type="submit" class="createacc cpointer"> Login</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-5">
-                   <i class="ln-cross closebtn" ng-click="hidelogin()"></i>
-                    <div class="gogbtn">
-                        <a href="#" class="btnsoc  fa fa-google-plus"> <span class="ic">Sign in with Google </span></a>
-                        <a href="#" class="btnsoc fa fa-facebook"> <span class="ic">Sign in with Facebook </span></a>
-                        <a href="#" class="btnsoc fa fa-twitter"> <span class="ic">Sign in with Twitter</span> </a>
+                    <div class="col-md-5">
+                        <i class="ln-cross closebtn" ng-click="hidelogin()"></i>
+                        <div class="gogbtn">
+                            <a href="#" class="btnsoc  fa fa-google-plus"> <span class="ic">Sign in with Google </span>
+                            </a>
+                            <a href="#" class="btnsoc fa fa-facebook"> <span class="ic">Sign in with Facebook </span>
+                            </a>
+                            <a href="#" class="btnsoc fa fa-twitter"> <span class="ic">Sign in with Twitter</span> </a>
+                        </div>
                     </div>
+
+                </div>
+
+                <div class="border1">
+                    <p class="abc"> <span class="alreadys">Don't have an account ? Click <a ng-click="createshow();" class="loginlink">here</a> to  create one </span>
+                    </p>
+
+
                 </div>
 
             </div>
-
-            <div class="border1">
-                <p class="abc"> <span class="alreadys">Don't have an account ? Click <a href="#/signup" class="loginlink">here</a> to  create one </span>
-                </p>
-
-
-            </div>
-
-        </div>
         </div>
     </div>
 </section>
@@ -87,39 +89,94 @@
 
 <section class="login-set" ng-show="forgetdiv">
     <div class="container">
-      <div class="popoverlay">
-       <div class="form-fixhead"></div>
-        <div class="holder2">
-            <div class="row">
+        <div class="popoverlay">
+            <div class="form-fixhead"></div>
+            <div class="holder2">
+                <div class="row">
 
-                <div class="col-md-12">
-                   <i class="ln-cross closebtn" ng-click="forgethide()"></i>
-                    <div class="for-hd">
-                        <h5>Enter your E-Mail address and we will send you a link to reset your password </h5>
+                    <div class="col-md-12">
+                        <i class="ln-cross closebtn" ng-click="forgethide()"></i>
+                        <div class="for-hd">
+                            <h5>Enter your E-Mail address and we will send you a link to reset your password </h5>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <input type="email" class="custom-input signin-input" ng-model="form.email" placeholder="Enter your email *" ng-class="allvalidation[0].validation" required>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="createa cpointer"> Send Link</button>
                     </div>
                 </div>
 
-            </div>
-            <div class="row">
-                <div class="col-md-8">
-                     <input type="email" class="custom-input signin-input" ng-model="form.email" placeholder="Enter your email *" ng-class="allvalidation[0].validation" required>
+                <div class="border1">
+                    <p class="abc"> <span class="alreadys">Don't have an account ? Click <a ng-click="createshow();" class="loginlink">here</a> to  create one </span>
+                    </p>
+                    <p class="abc"> <span class="alreadys">Already have a  account? Click <a ng-click="loginshow();" class="loginlink"> here</a> to login </span>
+                    </p>
+
+
+
                 </div>
-                <div class="col-md-4">
-                      <button type="submit" class="createa cpointer"> Send Link</button>
-                </div>
-            </div>
-
-            <div class="border1">
-                <p class="abc"> <span class="alreadys">Don't have an account ? Click <a href="#/signup" class="loginlink">here</a> to  create one </span>
-                </p>
-                <p class="abc"> <span class="alreadys">Already have a  account? Click <a href="#/login" class="loginlink"> here</a> to login </span>
-                </p>
-                
-
 
             </div>
-
         </div>
+    </div>
+</section>
+
+
+<section class="login-set" ng-show="creatediv">
+    <div class="container">
+        <div class="popoverlay">
+            <div class="form-fixhead"></div>
+            <div class="holder1">
+                <div class="row">
+
+                    <div class="col-md-7">
+                        <div class="signin">
+                            <h3 class="createtitle">Create a free account</h3>
+                            <h5 class="createcon">Enter your details and we will create a account for you</h5>
+                            <div class="signinor">
+                                <form class="frm-bdr" ng-submit="userlogin(user)">
+                                    <input type="email" class="custom-input signin-input" ng-model="form.email" placeholder="Enter your email *" ng-class="allvalidation[0].validation" required>
+                                    <br>
+                                    <input type="name" class="custom-input signin-input" ng-model="form.name" placeholder="Enter your name *" ng-class="allvalidation[0].validation" required>
+                                    <br>
+                                    <input type="number" class="custom-input signin-input" ng-model="form.number" placeholder="mobile number *" ng-class="allvalidation[0].validation" required>
+                                    <br>
+                                    <input type="password" class="custom-input signin-input" ng-model="form.password" placeholder="Password *" ng-class="allvalidation[1].validation" required>
+                                    <br>
+                                    <p class="si-p"> Tip: Protect your account. Use a mixed case alphanumeric password with special characters.</p>
+
+                                    <button type="submit" class="createacc cpointer"> Create an account</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <i class="ln-cross closebtn" ng-click="createhide();"></i>
+                        <div class="gogbtn">
+                            <a href="#" class="btnsoc  fa fa-google-plus"> <span class="ic">Sign in with Google </span>
+                            </a>
+                            <a href="#" class="btnsoc fa fa-facebook"> <span class="ic">Sign in with Facebook </span>
+                            </a>
+                            <a href="#" class="btnsoc fa fa-twitter"> <span class="ic">Sign in with Twitter</span> </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="border1">
+                    <p class="abc"> <span class="alreadys">Already have a  account? Click <a ng-click="loginshow();" class="loginlink"> here</a> to login </span>
+                    </p>
+
+
+                </div>
+
+            </div>
         </div>
     </div>
 </section>
