@@ -527,7 +527,7 @@ a.forgetlink {
 section.login-set.ng-scope {
     padding-bottom: 45px;
 }
-.cpointer{
+.cpointer {
     cursor: pointer;
 }
 .changehead header {
@@ -1623,9 +1623,9 @@ span.pen i {
     cursor: pointer;
 }
 li.selected {
-  background: rgb(234, 237, 239);
-  padding: 10px 0px 10px 10px;
-  margin: 5px 0px;
+    background: rgb(234, 237, 239);
+    padding: 10px 0px 10px 10px;
+    margin: 5px 0px;
 }
 ul.list-groups li a i {
     font-size: 26px;
@@ -1664,12 +1664,83 @@ ul.list-groups li a span {
     position: fixed;
     left: 0;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 9999999;
 }
-.closebtn{
+.closebtn {
     position: absolute;
-  right: -9px;
-  top: -25px;
+    right: -9px;
+    top: -25px;
     cursor: pointer;
+}
+.holder {
+    background: #E4E4E4;
+    width: 100%;
+    display: block;
+    height: 100%;
+    padding: 10px;
+}
+.bus-ui {
+    position: relative;
+    height: 120px;
+    width: 385px;
+    background: white;
+    border: 1px solid #C7C7C7;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.drivercabin {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 65px;
+}
+.jon.steering {
+    background-position: -22px -101px;
+    margin: 10px 7px;
+}
+.jon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url('../images/bus-layout.png');
+    cursor: pointer;
+}
+.jon.none {
+    background-image: none;
+}
+.passengerseats {
+    position: absolute;
+    left: 65px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.row-seats.margined {
+    margin-top: 10px;
+}
+.row-seats {
+    height: 20px;
+}
+.jon.empty-seat {
+    background-position: 0 0;
+}
+.jon.lady-seat {
+    background-position: 0 -20px;
+}
+.jon.reserved-seat {
+    background-position: 0 -40px;
+}
+.jon.selected-seat {
+    background-position: 0 -60px;
+}
+.last-seat {
+    float: right;
+    margin-right: 6px;
 }

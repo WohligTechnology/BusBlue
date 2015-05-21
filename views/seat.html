@@ -1,102 +1,71 @@
-
-   <div class="bs-det scrollbar-dynamic" data-jquery-scrollbar="jqueryScrollbarOptions">
-    <div class="hd-det">
-        <p><span style="color:#3DAEDF ">Mumbai</span> to<span style="color:#3DAEDF "> Goa</span> , Naik Tours And Travels, 22-May-2015</p>
-    </div>
-    <div class="cnl-det">
-        <h5>Cancellation Policy</h5>
-        <table class="table table-striped">
-           
-            <thead>
-                <tr>
-                    <th>Cancellation time</th>
-                    <th>Cancellation charges</th>
-
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>After 07:00 AM on 22nd May</td>
-                    <td>Rs. 800</td>
-
-                </tr>
-                <tr>
-                    <td>Between 07:00 PM on 21st May-07:00 AM on 22nd May</td>
-                    <td>Rs. 400</td>
-
-                </tr>
-                <tr>
-                    <td>Till 07:00 PM on 21st May</td>
-                    <td> Rs. 80</td>
-
-                </tr>
-            </tbody>
-        </table>
-        <div class="bord-det">
-            <table class="table table-striped">
-   
-   <thead>
-      <tr>
-         <th>Boarding Point</th>
-         <th>Land Mark</th>
-         <th>Address</th>
-         <th>Boarding Time</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Fashion Street - M.G.Road</td>
-         <td>Fashion Street - M.G.Road</td>
-         <td>Fashion Street - M.G.Road</td>
-         <td>07:00 PM</td>
-      </tr>
-      <tr>
-         <td>V.T</td>
-         <td>V.T.- St. Xaviers Collage, Next Kama Hospital</td>
-         <td>V.T.- St. Xaviers Collage, Next Kama Hospital</td>
-         <td>07:10 PM</td>
-      </tr>
-      <tr>
-          <td>V.T</td>
-         <td>V.T.- St. Xaviers Collage, Next Kama Hospital</td>
-         <td>V.T.- St. Xaviers Collage, Next Kama Hospital</td>
-         <td>07:10 PM</td>
-      </tr>
-   </tbody>
-</table>
+<div class="holder" ng-controller="bus">
+    <div class="bus-ui">
+        <div class="drivercabin"><i class="jon steering"></i>
         </div>
-        <div class="drop-det">
-                        <table class="table table-striped">
-   
-   <thead>
-      <tr>
-         <th>Dropping Point</th>
-         <th>Land Mark</th>
-         <th>Address</th>
-         <th>Boarding Time</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Fashion Street - M.G.Road</td>
-         <td>Fashion Street - M.G.Road</td>
-         <td>Fashion Street - M.G.Road</td>
-         <td>07:00 PM</td>
-      </tr>
-      <tr>
-         <td>V.T</td>
-         <td>V.T.- St. Xaviers Collage, Next Kama Hospital</td>
-         <td>V.T.- St. Xaviers Collage, Next Kama Hospital</td>
-         <td>07:10 PM</td>
-      </tr>
-      <tr>
-          <td>V.T</td>
-         <td>V.T.- St. Xaviers Collage, Next Kama Hospital</td>
-         <td>V.T.- St. Xaviers Collage, Next Kama Hospital</td>
-         <td>07:10 PM</td>
-      </tr>
-   </tbody>
-</table>
+        <div class="passengerseats">
+            <div class="row-seats margined">
+                <i class="jon none"></i>
+                <i class="jon lady-seat" ng-click="selectMe($event);"></i>
+                <i class="jon reserved-seat"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+            </div>
+            <div class="row-seats">
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+            </div>
+            <div class="row-seats">
+                <i class="jon empty-seat last-seat" ng-click="selectMe($event);"></i>
+            </div>
+            <div class="row-seats">
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+            </div>
+            <div class="row-seats">
+                <i class="jon none"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+                <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+            </div>
         </div>
     </div>
 </div>
