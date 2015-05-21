@@ -1,0 +1,24 @@
+.copn-sct {
+    margin: 20px auto;
+}
+
+.copn-sct button {
+    background: #3DAEDF;
+    color: #fff;
+    border: 1px solid #3DAEDF;
+    text-transform: uppercase;
+    padding: 5px 25px 5px 25px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-size: 10px;
+}
+ul.cpn-details li {
+    list-style: none;
+    height: 200px;    width: 250px;    border: 1px solid rgb(234, 237, 239);
+}
+
+.cpn-pack {
+    padding: 5px;
+}
