@@ -18,7 +18,7 @@
 ul.cpn-details li {
     list-style: none;
     min-height: 188px;
-    min-width: 214px;
+    max-width: 203px;
     border: 1px solid rgb(234, 237, 239);
     display: inline-block;
     margin: 0px 0px;
@@ -50,7 +50,7 @@ ul.cpn-details li {
     text-align: center;
 }
 .cpn-code h4 {
-    font-size: 14px;
+    font-size: 13px;
     color: #999;
 }
 
@@ -61,7 +61,7 @@ ul.cpn-details li {
     padding: 3px 0px 4px 1px;
 }
 .pack-dat p {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: bold;
     color: rgb(119, 119, 119);
 }
@@ -69,7 +69,7 @@ ul.cpn-details li {
     border: 1px solid #EAEDEF;
     text-align: center;
     padding: 0px 0px;
-    margin: -6px 13px 0px 7px;
+    margin: -6px 7px 0px 7px;
 }
 
 .pck-cal h5 {
@@ -86,5 +86,5 @@ ul.cpn-details li {
     margin: 0px;
 }
 .pack-dat {
-    margin: 0px 5px;
+    margin: 0px 2px;
 }
