@@ -399,8 +399,8 @@ button.btn.btn-outline {
     border: 1px solid #eaedef;
     padding: 40px 40px 20px;
     background-color: #FFF;
-    width: 80%;
-    height: 379ppx;
+    width: 60%;
+    min-height: 365ppx;
     margin: -15px auto;
 }
 h3.createtitle {
@@ -561,8 +561,8 @@ span.alreadys {
     border: 1px solid #eaedef;
     padding: 40px 40px 20px;
     background-color: #FFF;
-    width: 80%;
-    height: 379ppx;
+    width: 60%;
+    min-height: 275ppx;
     margin: 50px auto;
 }
 p.si-p {
