@@ -13,13 +13,13 @@ phonecatControllers.controller('home',
         $scope.navigation = NavigationService.getnav();
         $scope.coords = {};
 
-        $scope.showw = false;
+        $scope.show = false;
         $scope.pageClass = "page-home";
         $scope.pageready = "true";
 
         $scope.login = function(listing) {
             $scope.listingid = listing;
-            console.log("Demo is wokring");
+           
             ngDialog.open({
                 template: 'views/login.html',
                 controller: 'home'
