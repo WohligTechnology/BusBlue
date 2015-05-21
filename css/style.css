@@ -1693,6 +1693,10 @@ ul.list-groups li a span {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .drivercabin {
     position: absolute;
