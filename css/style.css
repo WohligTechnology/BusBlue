@@ -1698,6 +1698,15 @@ ul.list-groups li a span {
     -ms-user-select: none;
     user-select: none;
 }
+.upperlbl{
+    margin-top:30px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.lowerlbl{
+    margin-left: 10px;
+    font-size: 12px;
+}
 .drivercabin {
     position: absolute;
     height: 100%;
@@ -1747,4 +1756,19 @@ ul.list-groups li a span {
 .last-seat {
     float: right;
     margin-right: 6px;
+}
+.jon.empty-sleeper{
+    background-position: -40px 0;
+    width:40px;
+}
+.jon.sleeper-booked{
+    background-position: -40px -40px;
+    width:40px;
+}
+.jon.lady-sleeper{
+    background-position: -40px -20px;
+    width:40px;
+}
+.jon.selected-sleeper{
+    background-position: -40px -60px;
 }
