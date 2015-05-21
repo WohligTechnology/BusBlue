@@ -21,13 +21,14 @@ firstapp.config(['$routeProvider',
 //            templateUrl: 'views/template.html',
 //            controller: 'login'
 //        })
-            .when('/forgetpass', {
-            templateUrl: 'views/template.html',
-            controller: 'forgetpass'
-        }).when('/signup', {
-            templateUrl: 'views/template.html',
-            controller: 'signup'
-        }).when('/resetpass', {
+//            .when('/forgetpass', {
+//            templateUrl: 'views/template.html',
+//            controller: 'forgetpass'
+//        }).when('/signup', {
+//            templateUrl: 'views/template.html',
+//            controller: 'signup'
+//        })
+            .when('/resetpass', {
             templateUrl: 'views/template.html',
             controller: 'resetpass'
         }).when('/about', {
