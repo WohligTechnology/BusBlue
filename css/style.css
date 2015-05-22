@@ -1778,3 +1778,11 @@ button.select-btn {
     background: #3DAEDF !important;
     color: #fff !important;
 }
+span.rtn i {
+    color: #fff;
+    font-size: 17px;
+    position: absolute;
+    left: -9px;
+    top: 31px;
+    font-weight: bold;
+}
