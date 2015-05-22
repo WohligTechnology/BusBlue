@@ -85,6 +85,8 @@ ul.cpn-details li {
     font-size: 15px;
     padding: 6px 0px 6px 0px;
     margin: 0px;
+    color: rgb(202, 202, 202);
+    font-weight: bold;
 }
 .pack-dat {
     margin: 0px 2px;
