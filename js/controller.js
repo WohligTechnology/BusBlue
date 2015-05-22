@@ -613,9 +613,36 @@ phonecatControllers.controller('myprofile',
 
         //        ****** Data for coupons *****
 
+  $scope.filter = {
+            tags: ""
+        };
+        $scope.changefilter = function (data) {
+            for (var i = 0; i < $scope.filters.length; i++) {
+                if ($scope.filters[i].name == data) {
+                    $scope.filters[i].class = "select";
+                } else {
+                    $scope.filters[i].class = "";
+                }
 
+                if (data == "all") {
+                    data = "";
+                } {
+                    $scope.filter.tags = data;
+                }
+            }
+        };
+
+        $scope.filters = [{
+            "class": "select",
+            "name": "all"
+        }, {
+            "class": "",
+            "name": "active"
+        }];
+        
+        
         $scope.coupon = [{
-
+            "name": "active",
             "image": "images/r51.jpg",
             "price": "50",
             "code": "548000",
@@ -623,12 +650,14 @@ phonecatControllers.controller('myprofile',
             "date": "26",
 
         }, {
+            "name": "active",
             "image": "images/r51.jpg",
             "price": "50",
             "code": "548000",
             "month": "May",
             "date": "26",
         }, {
+            "name": "yes",
             "image": "images/r51.jpg",
             "price": "50",
             "code": "548000",

@@ -30,6 +30,9 @@ ul.cpn-details li {
 .pack-img img {
     width: 70px;
     height: 70px;
+    overflow: hidden;
+    text-align: center;
+    display: block;
 }
 
 .pack-right h1 {
