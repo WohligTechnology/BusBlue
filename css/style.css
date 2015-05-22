@@ -1701,11 +1701,13 @@ ul.list-groups li a span {
 .upperlbl{
     margin-top:30px;
     margin-left: 10px;
-    font-size: 12px;
+    font-size: 13px;
+    font-family: "lato";
 }
 .lowerlbl{
     margin-left: 10px;
     font-size: 12px;
+    font-family: "lato";
 }
 .drivercabin {
     position: absolute;
