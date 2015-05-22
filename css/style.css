@@ -1774,3 +1774,7 @@ ul.list-groups li a span {
 .jon.selected-sleeper{
     background-position: -40px -60px;
 }
+button.select-btn {
+    background: #3DAEDF !important;
+    color: #fff !important;
+}
