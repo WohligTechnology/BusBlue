@@ -1774,9 +1774,22 @@ ul.list-groups li a span {
 .jon.selected-sleeper{
     background-position: -40px -60px;
 }
+.jon.sleeperV-booked{
+    background-position: -166px -0px;
+    width: 20px;
+  height: 40px;
+}
 button.select-btn {
     background: #3DAEDF !important;
     color: #fff !important;
+}
+.last-sleeper{
+    position: absolute;
+  top: 30px;
+  right: 15px;
+}
+.sleeper-bus-ht{
+    height: 102px;
 }
 span.rtn i {
     color: #fff;
