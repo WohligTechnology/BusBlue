@@ -618,7 +618,8 @@ a.btnsoc.fa.fa-google-plus {
 }
 
 .border1 {
-    border-top: 1px solid #eaedef;
+    /* border-top: 1px solid #eaedef; */
+    padding-left: 17px;
 }
 
 .form-fixhead {
@@ -2176,6 +2177,7 @@ ul.cat-li button {
     border: 1px solid #eaedef;
     border-top: 0;
     max-width: 400px;
+    margin-left: 17px;
 }
 
 .save-amount {
@@ -2284,9 +2286,12 @@ ul.cat-li button {
 
 .available-in h6 {
     font-family: inherit;
-    font-size: 11px;
+    font-size: 14px;
+    color: #000;
 }
-
+.tandc h6 {
+    font-size: 14px;
+}
 .coupon-disclaimer h6 {
     font-size: 9px;
     color: #34495e;
@@ -2322,4 +2327,10 @@ ul.cat-li button {
   line-height: 18px;
 }
 
+.coupon-content.mhs h1 {
+    padding: 0px 20px;
+}
+
+.coupon-content.mhs .tags {
+    margin: 0px 0px 0px 18px;
 }
