@@ -11,7 +11,7 @@
         <div class="col-md-8">
             <div class="cat-cpn">
                 <ul>
-                  
+
                     <li ng-class="filter.class" ng-repeat="filter in filters"><a ng-click="changefilter(filter.name);" style="text-transform:capitalize;">{{filter.name}}</li>
                     
                 </ul>
@@ -54,6 +54,7 @@
     <div pageslide ps-open="checked" ps-speed="0.8">
                    <div class="clos-btn" id="demo-right">
                        <i class="ln-cross img-cl" ng-click="toggle()"></i>
+                       <div class="tab1">
                     <div style="" class="custom-slid" >
                         <h4>Order Summary</h4>
                         <div class="recharge-details">
@@ -62,7 +63,17 @@
                         </div>
                      
                     </div>
-                     <button type="submit">Proceed to pay</button>
-                    </div>
-                </div>
+                    <div class="cart-coupons cart">
+                        <h6>Coupon Picked</h6>
+                        <ul>
+                          <li ><h5>Dominos</h5><h5 class="coupon-count"> x 1</h5><a class="remove-coupon" href=""></a> <span class="rupee"><span id="totalPrice" style="">₹0</span></span>
+                    </li>
+                
+                </ul>
+            </div>
+            <button type="submit">Proceed to pay</button>
+        </div>
+        <div class="tab2"></div>
+    </div>
+</div>
 </div>
