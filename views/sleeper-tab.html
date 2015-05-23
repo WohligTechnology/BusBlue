@@ -3,9 +3,9 @@
         <div class="col-md-8">
             <div class="tabs">
                 <ul class="list-inline">
-                    <li class="tab-active">All</li>
-                    <li>Rs.900</li>
-                    <li>Rs.1000</li>
+                    <li class="{{active1}}" ng-click="first_tab();">All</li>
+                    <li class="{{active2}}" ng-click="second_tab(0);">Rs.900</li>
+                    <li class="{{active3}}" ng-click="third_tab(0);">Rs.1000</li>
                 </ul>
             </div>
             <div class="bus-ui">
@@ -13,7 +13,8 @@
                     <p class="upperlbl">UPPER</p>
                 </div>
                 <div class="passengerseats">
-                    <div class="row-seats margined">
+                   <div  class="{{secondtab}} {{firsttab}}" ng-click="third_tab(1);">
+                    <div class="row-seats margined" >
                         <i class="jon sleeper-booked" ng-click="selectbea($event);"></i>
                         <i class="jon sleeper-booked"></i>
                         <i class="jon empty-sleeper" ng-click="selectbea($event);"></i>
@@ -21,7 +22,7 @@
                         <i class="jon empty-sleeper" ng-click="selectbea($event);"></i>
                         <i class="jon lady-sleeper" ng-click="selectbea($event);"></i>
                     </div>
-                    <div class="row-seats">
+                    <div class="row-seats" ng-click="second_tab();">
                         <i class="jon empty-sleeper" ng-click="selectbea($event);"></i>
                         <i class="jon lady-sleeper" ng-click="selectbea($event);"></i>
                         <i class="jon empty-sleeper" ng-click="selectbea($event);"></i>
@@ -29,10 +30,11 @@
                         <i class="jon sleeper-booked" ng-click="selectbea($event);"></i>
                         <i class="jon empty-sleeper" ng-click="selectbea($event);"></i>
                     </div>
+                    </div>
                     <div class="row-seats">
 
                     </div>
-                    <div class="row-seats">
+                    <div class="row-seats last-tab {{thirdtab}}"  ng-click="second_tab(1);">
                         <i class="jon empty-sleeper" ng-click="selectbea($event);"></i>
                         <i class="jon empty-sleeper" ng-click="selectbea($event);"></i>
                         <i class="jon sleeper-booked" ng-click="selectbea($event);"></i>

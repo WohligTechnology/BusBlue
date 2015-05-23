@@ -2156,10 +2156,7 @@ ul.cat-li button {
     text-align: center;
 }
 
-.tab-active {
-    background-color: #435255!important;
-    color: #fff;
-}
+
 
 .tabs ul li {
     background-color: #fff;
@@ -2333,4 +2330,17 @@ ul.cat-li button {
 
 .coupon-content.mhs .tags {
     margin: 0px 0px 0px 18px;
+}
+.firsttab{
+    opacity: 1;
+}
+.selectsecond, .selectthird
+{
+    opacity: 0.3;
+}
+
+
+.tab-active{
+    background-color: #435255!important;
+    color: #fff;
 }

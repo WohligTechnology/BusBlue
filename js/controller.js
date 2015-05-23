@@ -1254,9 +1254,55 @@ phonecatControllers.controller('bus',
         $scope.selectbea = function (event) {
             $(event.target).toggleClass('selected-sleeper');
         };
-
-    });
-
+        
+        $scope.firsttab="selectall";
+        $scope.secondtab="";
+        $scope.thirdtab="";
+        $scope.active1="tab-active";
+        $scope.active2="";
+        $scope.active3="";
+        
+        $scope.first_tab=function(){
+            $scope.firsttab="selectall";
+            $scope.secondtab="";
+            $scope.thirdtab="";
+            $scope.active1="tab-active";
+            $scope.active2="";
+            $scope.active3="";
+        };
+        $scope.second_tab=function(currval){
+            $scope.firsttab="";
+            $scope.secondtab="selectsecond";
+            $scope.thirdtab="";
+            $scope.active1="";
+            if(currval==1)
+            {
+                $scope.active2="";
+                $scope.active3="tab-active";
+            }
+            else
+            {
+                $scope.active2="tab-active";
+                $scope.active3="";
+            }
+        };
+        $scope.third_tab=function(currval){
+            $scope.firsttab="";
+            $scope.secondtab="";
+            $scope.thirdtab="selectthird";
+            $scope.active1="";
+            if(currval==1)
+            {
+                $scope.active2="tab-active";
+                $scope.active3="";
+            }
+            else
+            {
+                $scope.active2="";
+                $scope.active3="tab-active";
+            }
+        };
+});
 phonecatControllers.controller('terms',
     function ($scope, TemplateService, NavigationService, RestService, $location) {
         $scope.template = TemplateService;
