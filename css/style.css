@@ -1297,9 +1297,9 @@ img.heros {
 }
 .recharge-details {
     position: relative;
-    padding: 11px 15px;
+    padding: 20px 15px;
     background: #eaedef;
-    margin: 20px 0 25px;
+    margin: 20px 25px 25px 0px;
 }
 .custom-slid {
     margin: 50px 0px 0px 40px;
@@ -1315,11 +1315,14 @@ img.heros {
     float: right;
 }
 .vendor {
-    font-size: 10px;
+    font-size: 11px;
     color: #919bac;
+    font-weight: bold;
 }
 .recharge-details h5 {
     display: inline;
+    font-size: 15px;
+    font-weight: bold;
 }
 img.img-cl {
     margin: 4px 0px 0px 6px;
@@ -1338,9 +1341,9 @@ img.img-cl {
     -ms-transform: translatex(-50%);
     -o-transform: translatex(-50%);
     transform: translatex(-50%);
-    background: rgb(61, 174, 223);
+    background: #e76f62;
     color: #fff;
-    border: 1px solid rgb(61, 174, 223);
+    border: 1px solid #e76f62;
     padding: 10px 25px 10px 25px;
 }
 .user-set i.fa.fa-user {
