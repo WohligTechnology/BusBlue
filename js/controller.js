@@ -1210,6 +1210,24 @@ phonecatControllers.controller('bus',
                 controller: 'bus'
             });
         };
+    
+        $scope.sleeper2 = function (listings) {
+            $scope.listingid = listings;
+            console.log("Demo is wokring");
+            ngDialog.open({
+                template: 'views/sleeper2-1.html',
+                controller: 'bus'
+            });
+        };
+    
+        $scope.sleepertab = function (listings) {
+            $scope.listingid = listings;
+            console.log("Demo is wokring");
+            ngDialog.open({
+                template: 'views/sleeper-tab.html',
+                controller: 'bus'
+            });
+        };
 
         $scope.slide = function (slidess) {
             $scope.listingid = slidess;

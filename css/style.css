@@ -1791,6 +1791,10 @@ button.select-btn {
   top: 30px;
   right: 15px;
 }
+.sleeper-last{
+    float: right;
+    margin-right: 58px;
+}
 .sleeper-bus-ht{
     height: 102px;
 }
