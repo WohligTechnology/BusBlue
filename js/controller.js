@@ -500,6 +500,15 @@ phonecatControllers.controller('coupon',
                 }
             }
         };
+    
+     $scope.showcoupon = function () {
+            $scope.coupondiv = true;
+            
+        }
+        $scope.hidecoupon = function () {
+            $scope.coupondiv = false;
+        }
+    
 
         $scope.filters = [{
             "class": "select",

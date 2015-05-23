@@ -1,6 +1,8 @@
 {
     "jscodehints.detectedExclusions": [
         "C:/xampp/htdocs/blue/basiccodeigniter/assets/assets/bootstrap-datepicker/js/bootstrap-datepicker.js",
-        "C:/xampp/htdocs/blue/basiccodeigniter/assets/assets/bootstrap-daterangepicker/date.js"
+        "C:/xampp/htdocs/blue/basiccodeigniter/assets/assets/bootstrap-daterangepicker/date.js",
+        "C:/xampp/htdocs/BusBlue/bower_components/jquery/src/ajax/load.js",
+        "C:/xampp/htdocs/BusBlue/bower_components/jquery/src/attributes/classes.js"
     ]
 }

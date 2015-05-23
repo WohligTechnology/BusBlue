@@ -25,7 +25,7 @@
         <div class="cpn-img coupons-grid"  >
            
             <div class="galleryitem" ng-repeat="coupon in coupons|filter:filter">
-               <div class="coupons couponss">
+               <div class="coupons couponss" ng-click="showcoupon();">
                 <div class="coupon-wrapper">
                     <img class="heros" ng-src="{{coupon.image}}">
                        <div class="gradient-overlay">
@@ -68,7 +68,7 @@
                         <ul>
                           <li ><h5>Dominos</h5><h5 class="coupon-count"> x 1</h5><a class="remove-coupon" href=""></a> <span class="rupee"><span id="totalPrice" style="">₹0</span></span>
                     </li>
-                
+
                 </ul>
             </div>
             <button type="submit">Proceed to pay</button>
@@ -76,4 +76,86 @@
         <div class="tab2"></div>
     </div>
 </div>
+</div>
+
+
+<div class="main-content popoverlay" ng-show="coupondiv">
+    <div class="container login-set">
+        <div class="popoverlay">
+            <div class="form-fixhead"></div>
+            <div class="holder1">
+                <div class="row">
+
+                    <div class="col-md-7">
+                        <div class="left-content">
+                            <div class="coupon l">
+                                <div class="coupon-wrapper">
+                                    <div class="tnc-coupon-overley"></div> <img class="hero" src="https://d32vr05tkg9faf.cloudfront.net/content/images/coupon/web/1297_1418211534934.png"> <img class="brand" src="">
+                                    <div class="coupon-content">
+                                        <div class="tags"> <span class="tag food">Food</span>
+                                        </div>
+                                        <h1>Get FREE burger and iced tea with your meal</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-details clearfix">
+                                <div class="save-amount"><span>save</span>
+                                    <div>₹50</div>
+                                </div>
+                                <div class="expires"> <span>Expires on</span>
+                                    <div>30 Jun 2015</div>
+                                </div>
+                                <div class="barcode"></div>
+                                <button class="btn full-btn green pickTncCoupon" data-id="1297">Pick for ₹0</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <i class="ln-cross closebtn" ng-click="hidecoupon()"></i>
+                        <div class="vendor">McDonald's North and East</div>
+                        <div class="right-content">
+                            <div class="coupon-disclaimer">
+                                <h6>This coupon can be redeemed only on the merchant website</h6> <span>Punch in the coupon code during checkout</span>
+                            </div>
+                            <div class="available-in">
+                                <h6>Available in</h6> <span>Ludhiana / Meerut / Agra / Gurgaon / Jammu / Faridabad / Allahabad / Gwalior / Hoshiarpur / Udaipur / HARDWAR / Jodhpur / Chandigarh / MUZZAFARNAG / Jalandhar / KHANNA / Ajmer / Jaipur / Karnal / Delhi / Manesar / Kanpur / Bareilly / Patiala / Ambala / Varanasi / Patarsi / Kolkata / Amritsar / Panipat / Kota / Mathura / Mohali / Bhopal / Howrah / Sonepat / Noida / Lucknow / Ghaziabad / Dehradun / Amroha</span>
+                            </div>
+                            <div class="tandc">
+                                <h6>Terms &amp; Conditions</h6>
+                                <ol>
+                                    <li>Offer Highlights:</li>
+                                    <li>Get a complimentary McAloo Tikki ™ Burger and Ice Tea (Regular) on spends of Rs.100 or above. Taxes extra. </li>
+                                    <li></li>
+                                    <li>How to redeem this offer:</li>
+                                    <li>Customer has to handover the printed copy of the complete e-coupon mailer at the time of billing at McDonald ™ store for availing the offer. Customer will not be entitled to avail the offer if the complete printout is not produced. </li>
+                                    <li></li>
+                                    <li>Terms of this offer:</li>
+                                    <li>- Rs.50 displayed in the e-coupon is an indicative value. </li>
+                                    <li>- Offer valid at McDonald ™ Family Restaurant (North and East) - Delhi NCR, Punjab, Haryana, Himachal Pradesh, Uttarakhand, Rajasthan, Uttar Pradesh, West Bengal, Jammu and Madhya Pradesh (Gwalior and Bhopal). </li>
+                                    <li>- Offer not redeemable at Airport Stores, DLF Mega Mall and Cyber Green Gurgaon. </li>
+                                    <li>- One voucher will be honored per billing. Present printed copy of the e-coupon at the time of billing at McDonald ™ store. </li>
+                                    <li>- Offer not valid on McDelivery ™ and with other offers scheme. Offer cannot be redeemed for cash. </li>
+                                    <li>- Offer not valid during breakfast hours. </li>
+                                    <li>- Offer valid till 30th June, 2015. </li>
+                                    <li>- In the event the product offered in the e-coupon is not available due to any reason whatsoever, the store can offer a product of equivalent value to the customer.</li>
+                                    <li>- For detailed terms and conditions refer to www.mcdonaldsindia.com </li>
+                                    <li>- For any queries or assistance, please write to care@freecharge.com</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="border1">
+                    <p class="abc"> <span class="alreadys">Don't have an account ? Click <a ng-click="createshow();" class="loginlink cpointer">here</a> to  create one </span>
+                    </p>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
