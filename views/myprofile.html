@@ -21,185 +21,188 @@
                     </div>
                 </div>
                 <div class="row">
-                   <div class="col-md-12">
-                    <div class="list-grp">
-                        <ul class="list-groups">
-                            <li ng-class="class" ng-click="tabchange('trans',7)"><a href=""><i class="ln-cash"></i><span>My Transactions</span></a></li>
-                            <li ng-class="classd" ng-click="tabchange('profile',1)" ><a ><i class="ln-user" ></i> <span>Profile</span></a></li>
-                            <li ng-class="classe" ng-click="tabchange('coupon',2)"  ><a ><i class="ln-ticket" ></i><span>My Coupons</span></a></li>
-                           
-                        </ul>
-                    </div>
+                    <div class="col-md-12">
+                        <div class="list-grp">
+                            <ul class="list-groups">
+                                <li ng-class="class" ng-click="tabchange('trans',7)"><a href=""><i class="ln-cash"></i><span>My Transactions</span></a>
+                                </li>
+                                <li ng-class="classd" ng-click="tabchange('profile',1)"><a><i class="ln-user" ></i> <span>Profile</span></a>
+                                </li>
+                                <li ng-class="classe" ng-click="tabchange('coupon',2)"><a><i class="ln-ticket" ></i><span>My Coupons</span></a>
+                                </li>
+
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-8 border-left">
-               <div class="mypro" ng-show="tab=='profile'">
-                <div class=" profile-all" ng-if="show1==true">
-                    <div class="row profile-set">
+                <div class="mypro" ng-show="tab=='profile'">
+                    <div class=" profile-all" ng-if="show1==true">
+                        <div class="row profile-set">
 
-                        <div class="col-md-4">
-                            <div class="pro-img">
-                                <img src="images/jason.jpg">
-                            </div>
-                        </div>
-                        <div class="col-md-8 ">
-                            <div class="pro-det">
-                                <i class="fa fa-pencil" ng-click="toggle1();"></i>
-                                <h3>Mahesh Maurya</h3>
-                                <h5>Transaction Summary</h5>
-                                <h5>0 transactions as of today</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="con-hd">
-                                <h4>Contact details</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row cont-set profile-set">
-
-
-                        <div class="col-xs-4 col-md-4">
-                            <div class="name">
-                                <p>Name :</p>
-                                <p>Mobile number :</p>
-                                <p>Email :</p>
-                                <p>Address :</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-md-6">
-                            <div class="names">
-                                <p>Mahesh maurya</p>
-                                <p>8796622179</p>
-                                <p>mahesh@wohlig.com</p>
-                                <p>Mumbai-421001</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="edit-pro text-center">
-                                <button type="submit" ng-click="toggle1();">Edit profile</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="profile-edit" ng-if="show2==true">
-                    <div class="edit-hd profile-sets">
-                        <h4><span class="pen"><i class="fa fa-pencil"></i>Edit profile</span></h4>
-                    </div>
-                    <div class="row ">
-
-                        <div class="col-md-12 profile-sets">
-                            <div class="row">
-                                <div class="col-md-4 col-xs-4">
-                                    <div class="info">
-
-                                        <h5>Full Name</h5>
-                                        <h5>Mobile</h5>
-                                        <h5>Address</h5>
-                                        <h5>Area</h5>
-                                        <h5>State</h5>
-                                        <h5>City</h5>
-                                        <h5>Pincode</h5>
-                                    </div>
+                            <div class="col-md-4">
+                                <div class="pro-img">
+                                    <img src="images/jason.jpg">
                                 </div>
-                                <div class="col-md-6 col-xs-8">
-                                    <div class="info-txt">
-                                        <input type="text" placeholder="Full name">
-                                        <input type="number" placeholder="Mobile">
-                                        <input type="text" placeholder="Address">
-                                        <input type="text" placeholder="Area">
-                                        <select>
-                                            <option value="volvo">Volvo</option>
-                                            <option value="saab">Saab</option>
-                                            <option value="opel">Opel</option>
-                                            <option value="audi">Audi</option>
-                                        </select>
-                                        <input type="text" placeholder="City">
-                                        <input type="text" placeholder="Pincode">
-                                    </div>
+                            </div>
+                            <div class="col-md-8 ">
+                                <div class="pro-det">
+                                    <i class="fa fa-pencil" ng-click="toggle1();"></i>
+                                    <h3>Mahesh Maurya</h3>
+                                    <h5>Transaction Summary</h5>
+                                    <h5>0 transactions as of today</h5>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="edit-pros text-center">
-                                <button type="submit">Save changes</button>
-                                <button type="submit" ng-click="toggle();">Cancel</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-<div class="mycoupon" ng-show="tab=='coupon'">
-   <div class="row">
-   <div class="col-md-6">
-    <div class="copn-sct">
-        <button type="submit" class="select-btn">All</button>
-        <button type="submit">Active</button>
-        
-    </div>
-    </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-        <div class="cpn-li">
-            <ul class="cpn-details" >
-                <li ng-repeat="cpn in coupon">
-                    <div class="cpn-pack">
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="pack-img">
-                                    <img ng-src="{{cpn.image}}" class="img-responsive">
-                                </div>
-                            </div>
-                             <div class="col-md-6">
-                                <div class="pack-right">
-                                    <h1>Rs.{{cpn.price}}</h1>
-                                    <h4>Details</h4>
+                            <div class="col-md-4">
+                                <div class="con-hd">
+                                    <h4>Contact details</h4>
                                 </div>
                             </div>
                         </div>
-                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="cpn-code">
-                                    <h4>Coupon code</h4>
-                                    
+                        <div class="row cont-set profile-set">
+
+
+                            <div class="col-xs-4 col-md-4">
+                                <div class="name">
+                                    <p>Name :</p>
+                                    <p>Mobile number :</p>
+                                    <p>Email :</p>
+                                    <p>Address :</p>
                                 </div>
                             </div>
-                             <div class="col-md-6">
-                                <div class="cpn-code">
-                                   
-                                    <p>{{cpn.code}}</p>
+                            <div class="col-xs-6 col-md-6">
+                                <div class="names">
+                                    <p>Mahesh maurya</p>
+                                    <p>8796622179</p>
+                                    <p>mahesh@wohlig.com</p>
+                                    <p>Mumbai-421001</p>
                                 </div>
                             </div>
                         </div>
-                          <div class="row">
-                            <div class="col-md-5">
-                                <div class="pack-dat">
-                                    <p>Expires on</p>
-                                    <div class="pck-cal">
-                                        <h5>{{cpn.month}}</h5>
-                                        <h3>{{cpn.date}}</h3>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-md-7">
-                                <div class="pck-rg">
-                                    <h5>e-coupon</h5>
-                                    <h6>Delivered to your inbox</h6>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="edit-pro text-center">
+                                    <button type="submit" ng-click="toggle1();">Edit profile</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </li>
-<!--
+                    <div class="profile-edit" ng-if="show2==true">
+                        <div class="edit-hd profile-sets">
+                            <h4><span class="pen"><i class="fa fa-pencil"></i>Edit profile</span></h4>
+                        </div>
+                        <div class="row ">
+
+                            <div class="col-md-12 profile-sets">
+                                <div class="row">
+                                    <div class="col-md-4 col-xs-4">
+                                        <div class="info">
+
+                                            <h5>Full Name</h5>
+                                            <h5>Mobile</h5>
+                                            <h5>Address</h5>
+                                            <h5>Area</h5>
+                                            <h5>State</h5>
+                                            <h5>City</h5>
+                                            <h5>Pincode</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-8">
+                                        <div class="info-txt">
+                                            <input type="text" placeholder="Full name">
+                                            <input type="number" placeholder="Mobile">
+                                            <input type="text" placeholder="Address">
+                                            <input type="text" placeholder="Area">
+                                            <select>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="saab">Saab</option>
+                                                <option value="opel">Opel</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                            <input type="text" placeholder="City">
+                                            <input type="text" placeholder="Pincode">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="edit-pros text-center">
+                                    <button type="submit">Save changes</button>
+                                    <button type="submit" ng-click="toggle();">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mycoupon" ng-show="tab=='coupon'">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="copn-sct">
+                                <button type="submit" class="select-btn">All</button>
+                                <button type="submit">Active</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cpn-li">
+                                <ul class="cpn-details">
+                                    <li ng-repeat="cpn in coupon">
+                                        <div class="cpn-pack">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="pack-img">
+                                                        <img ng-src="{{cpn.image}}" class="img-responsive">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="pack-right">
+                                                        <h1>Rs.{{cpn.price}}</h1>
+                                                        <h4>Details</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="cpn-code">
+                                                        <h4>Coupon code</h4>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="cpn-code">
+
+                                                        <p>{{cpn.code}}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div class="pack-dat">
+                                                        <p>Expires on</p>
+                                                        <div class="pck-cal">
+                                                            <h5>{{cpn.month}}</h5>
+                                                            <h3>{{cpn.date}}</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <div class="pck-rg">
+                                                        <h5>e-coupon</h5>
+                                                        <h6>Delivered to your inbox</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--
                          <li>
                     <div class="cpn-pack">
                         <div class="row">
@@ -249,7 +252,7 @@
                     </div>
                 </li>
 -->
-<!--
+                                    <!--
                          <li>
                     <div class="cpn-pack">
                         <div class="row">
@@ -299,11 +302,76 @@
                     </div>
                 </li>
 -->
-            </ul>
-        </div>
-        </div>
-    </div>
-</div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trans" ng-show="tab=='trans'">
+                    <div class="row">
+
+                        <div class="trans-cat">
+                            <ul class="cat-li">
+                                <li>
+                                    <select>
+                                        <option value="volvo">Transcation type</option>
+                                        <option value="saab">Saving</option>
+                                        <option value="mercedes">Current</option>
+                                        <option value="audi">None</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select>
+                                        <option value="volvo">Status</option>
+                                        <option value="saab">On</option>
+                                        <option value="mercedes">Off</option>
+                                        <option value="audi">None</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <button type="submit">Clear filter</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row tran-info " ng-repeat="tran in trans">
+                       <div class="tran-info">
+                        <div class="col-md-2">
+                            <div class="tran-dat">
+                                <p>Travel date</p>
+                                <h5>{{tran.travel}}</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tran-loc">
+                                <p class="p1">{{tran.to}}<i class="ln-arrow-left5"></i>{{tran.from}}</p>
+                                <p class="p2">Rs.<span class="p2spn">{{tran.rs}}/-</span></p>
+                                <p class="p3">Ticket No.<span>{{tran.ticket}}</span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="tran-book">
+                                <button type="submit">Book Again</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="tran-rate">
+                                <ul>
+                                    <li><i class="fa fa-star"></i>Rate Bus</li>
+                                    <li><i class="ln-envelope"></i>Email Tickets</li>
+                                    <li><i class="ln-printer"></i>Print Tickets</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="tran-dat">
+                                <p>Booking Date</p>
+                                <h5>{{tran.book}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

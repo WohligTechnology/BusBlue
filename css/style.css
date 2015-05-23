@@ -1619,22 +1619,24 @@ span.pen i {
 .list-grp ul li {
     list-style: none;
     display: block;
-    padding: 10px;
+    padding: 10px 0px 15px 10px;
     cursor: pointer;
+    margin: 5px 0px;
+    transition: all 0.5s ease-out;
 }
 li.selected {
     background: rgb(234, 237, 239);
-    padding: 10px 0px 10px 10px;
+    padding: 10px 0px 15px 10px;
     margin: 5px 0px;
 }
 ul.list-groups li a i {
     font-size: 26px;
-    color: rgb(61, 174, 223);
+    color: #000;
     vertical-align: sub;
 }
 ul.list-groups li a span {
     font-size: 16px;
-    color: #3DAEDF;
+    color: #000;
     padding: 0px 10px;
 }
 .profile-edit {
@@ -1683,6 +1685,7 @@ ul.list-groups li a span {
     display: block;
     height: 100%;
     padding: 10px;
+    margin: 22px auto;
 }
 .bus-ui {
     position: relative;
@@ -1798,4 +1801,23 @@ span.rtn i {
     left: -9px;
     top: 31px;
     font-weight: bold;
+}
+ul.cat-li button {
+    border: 1px solid rgb(192, 192, 192);
+    background: #fff;
+    padding: 4px 8px 2px 8px;
+    color: rgb(94, 92, 92);
+    cursor: pointer;
+}
+.tran-rate ul {
+    list-style: none;
+    margin: 0px -40px;
+}
+.tran-rate ul li i {
+    margin: 5px;
+}
+
+.tran-rate ul li {
+    font-size: 12px;
+    line-height: 22px;
 }

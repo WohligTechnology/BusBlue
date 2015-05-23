@@ -98,3 +98,164 @@ ul.cpn-details li {
     color: rgb(61, 174, 223);
     font-weight: bold;
 }
+.rightContent {
+  /* float: right; */
+  /* width: 220px; */
+  /* padding: 5px 0px 0; */
+  margin: -8px 0px 0px;
+  min-height: 175px;
+}
+.legend {
+  color: #333;
+  font-size: 11px;
+  border-bottom: 1px solid #FFFFFF;
+  font-family: "lato";
+}
+.legend label {
+  line-height: 25px;
+  display: block;
+  margin: 6px 0;
+}
+.legend.sleeper .seat.available {
+  background-position: -40px 0;
+  vertical-align: middle;
+  margin: 0px 10px 0px 0px;
+}
+.legend.sleeper .seat.ladies {
+  background-position: -40px -20px;
+  vertical-align: middle;
+  margin: 0px 10px 0px 0px;
+}
+.legend.sleeper .seat {
+  width: 40px;
+}
+.legend.sleeper .seat.selected {
+  background-position: -40px -60px;
+  vertical-align: middle;
+  margin: 0px 10px 0px 0px;
+}
+.legend.sleeper .seat.booked {
+  background-position: -40px -40px;
+  vertical-align: middle;
+  margin: 0px 10px 0px 0px;
+}
+.fare {
+  margin-top: 15px;
+  font-size: 11px;
+  color: #333;
+  line-height: 20px;
+  font-family: "lato";
+}
+.fare .amount, .fare .seatsSelected {
+  margin: 5px 0;
+}
+.fare label {
+  display: block;
+  float: left;
+  /* width: 95px; */
+}
+.fare span {
+  font-size: 11px;
+  color: #e24648;
+  display: block;
+  float: left;
+  /* width: 125px; */
+  margin: 0px 0px 0px 10px;
+}
+.legend label {
+  line-height: 24px;
+  display: block;
+  margin: 6px 0px;
+}
+.trans-cat {
+    background: rgb(234, 237, 239);
+    padding: 8px 15px 1px 1px;
+}
+
+ul.cat-li li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul.cat-li {
+    text-align: right;
+}
+ul.cat-li select {
+  border: 1px solid rgb(192, 192, 192);
+  padding: 3px 0px 3px 8px;
+  color: rgb(94, 92, 92);
+  outline: 0;
+  cursor: pointer;
+}
+.row.tran-info {
+    border: 1px solid rgb(234, 237, 239);
+    padding: 25px 8px 25px 8px;
+    border-top: 4px solid #41b372;
+    margin: 24px auto;
+}
+.tran-dat {
+    border: 1px solid rgb(234, 237, 239);
+}
+
+.tran-dat p {
+    margin: 0;
+    background: rgb(234, 237, 239);
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 8px 13px;
+    text-transform: capitalize;
+}
+
+.tran-dat h5 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+.tran-loc .p1 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+p.p1 i {
+    color: grey;
+    font-size: 11px;
+    margin: 5px;
+}
+p.p2 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+}
+
+span.p2spn {
+    color: #000;
+    margin: 5px;
+}
+
+p.p3 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+}
+
+p.p3 span {
+    color: #000;
+    margin: 5px;
+}
+
+.tran-loc p {
+    line-height: 10px;
+}
+
+.tran-loc {
+    margin: 7px auto;
+}
+.tran-book button {
+    background: #fff;
+    border: 1px solid #41b372;
+    color: #41b372;
+    padding: 5px 10px 5px 10px;
+    margin: 18px auto;
+}

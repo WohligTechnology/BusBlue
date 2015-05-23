@@ -613,7 +613,7 @@ phonecatControllers.controller('myprofile',
 
         //        ****** Data for coupons *****
 
-  $scope.filter = {
+        $scope.filter = {
             tags: ""
         };
         $scope.changefilter = function (data) {
@@ -639,8 +639,8 @@ phonecatControllers.controller('myprofile',
             "class": "",
             "name": "active"
         }];
-        
-        
+
+
         $scope.coupon = [{
             "name": "active",
             "image": "images/r51.jpg",
@@ -682,7 +682,7 @@ phonecatControllers.controller('myprofile',
             "month": "May",
             "date": "26",
         }, {
-          "image": "images/r51.jpg",
+            "image": "images/r51.jpg",
             "price": "50",
             "code": "548000",
             "month": "May",
@@ -696,7 +696,53 @@ phonecatControllers.controller('myprofile',
         }, ];
 
 
+        //****** trans date ******
 
+    
+      $scope.trans = [{
+            "travel": "21-May-2015",
+            "to": "Mumbai",
+            "from": "Pune (J.P.Travels)",
+            "ticket": "548#000",
+            "rs": "3000",
+            "book": "26-May-2015",
+
+        },{
+            "travel": "21-May-2015",
+            "to": "Mumbai",
+            "from": "Pune (J.P.Travels)",
+            "ticket": "548#000",
+            "rs": "3000",
+            "book": "26-May-2015",
+
+        },{
+            "travel": "21-May-2015",
+            "to": "Mumbai",
+            "from": "Pune (J.P.Travels)",
+            "ticket": "548#000",
+            "rs": "3000",
+            "book": "26-May-2015",
+
+        },{
+            "travel": "21-May-2015",
+            "to": "Mumbai",
+            "from": "Pune (J.P.Travels)",
+            "ticket": "548#000",
+            "rs": "3000",
+            "book": "26-May-2015",
+
+        },{
+            "travel": "21-May-2015",
+            "to": "Mumbai",
+            "from": "Pune (J.P.Travels)",
+            "ticket": "548#000",
+            "rs": "3000",
+            "book": "26-May-2015",
+
+        } ];
+
+
+        //***** end *****
 
         //        ***** End ****    
 
