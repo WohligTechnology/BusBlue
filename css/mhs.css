@@ -303,10 +303,52 @@ p.p3 span {
     padding: 5px 10px 5px 10px;
     margin: 18px auto;
 }
+span.rs-py {
+    margin: 0px 0px 0px 80px;
+}
+.payments .payment-info {
+  padding: 18px 32px;
+}
+.payments .user-avatar {
+  width: 50px;
+  height: 50px;
+  float: left;
+  border-radius: 500px;
+  background: 0 0;
+}
+.user-avatar {
+  color: #fff;
+  float: right;
+}
+.payments .num-block {
+  float: left;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.cart-subtext h6 {
+  text-transform: uppercase;
+  color: #919bac;
+  font-size: 10px;
+  line-height: 2;
+}
+.payments .amount-block {
+  float: right;
+  text-align: right;
+  margin-top: 5px;
+}
+.cart-subtext h6 {
+  text-transform: uppercase;
+  color: #919bac;
+  font-size: 10px;
+  line-height: 2;
+}
 .cart li {
   padding: 16px 18px;
   margin-bottom: 10px;
   border-bottom: 1px dashed #eaedef;
+}
+.tab2 {
+    margin: 40px auto;
 }
 .cart h5 {
   display: inline;
@@ -353,4 +395,73 @@ p.p3 span {
 }
 .coupon-count {
   color: #919bac;
+}
+.row.pay {
+    /* border: 1px solid; */
+    margin: 0px 10px;
+}
+
+.user-avatar img {
+    border-radius: 100%;
+    height: 51px;
+    width: 50px;
+    border: 1px solid grey;
+    padding: 8px 0px;
+    margin: 18px 0px;
+}
+
+.num-block h3 {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 0px;
+    color: #34495e;
+}
+
+.num-block {
+    float: left;
+    margin-top: 15px;
+}
+.num-block h6 {
+  color: #919bac;
+  font-weight: bold;
+}
+.num-block.amount-block {
+    float: right;
+}
+.promocode {
+  width: 100%;
+  background: #eaedef;
+  position: relative;
+}
+.promocode .arrow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 8px;
+  background: url(../images/coupon-arrow2.png) -5px 0 repeat-x;
+}
+.promocode form {
+  padding: 18px 12px 12px;
+  z-index: 99;
+  position: relative;
+  min-height: 78px;
+  overflow: hidden;
+  -webkit-transition: height .4s ease;
+  -ms-transition: height .4s ease;
+  -moz-transition: height .4s ease;
+  -o-transition: height .4s ease;
+  transition: height .4s ease;
+}
+.promocode .code-field {
+  float: left;
+  width: 100%;
+  margin-right: 10px;
+  height: 40px;
+  font-size: 14px;
+}
+.tab2 .promocode {
+  border: 1px solid #EAEDEF;
+  border-top: none;
+  padding: 10px 20px 80px 14px;
 }

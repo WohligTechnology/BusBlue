@@ -54,6 +54,7 @@
     <div pageslide ps-open="checked" ps-speed="0.8">
                    <div class="clos-btn" id="demo-right">
                        <i class="ln-cross img-cl" ng-click="toggle()"></i>
+<!--
                        <div class="tab1">
                     <div style="" class="custom-slid" >
                         <h4>Order Summary</h4>
@@ -71,9 +72,57 @@
 
                 </ul>
             </div>
-            <button type="submit">Proceed to pay</button>
+            <button type="submit">Proceed to pay<span class="rs-py">₹100</span>
+            </button>
         </div>
-        <div class="tab2"></div>
+        -->
+        <div class="tab2">
+            <div class="row pay">
+
+                <div class="payment-info">
+                    <div class="col-md-2">
+                        <div class="user-avatar">
+                            <img src="images/r51.jpg" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="num-block">
+                            <h3>8796622179</h3>
+
+                            <h6>Aircel, Maharashtra</h6>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="num-block amount-block">
+                            <h3 id="paymentAmount">₹100</h3>
+                           
+                                <h6 id="couponCountText">Includes 1 coupon</h6>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="promocode">
+                    <div class="arrow"></div>
+                    <div class="col-md-8">
+                        <form>
+                            <div class="field">
+                                <input type="text" class="code-field" placeholder="Enter free fund / Promocode">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="btns-promo ">
+                            <a href="#">Apply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </div>
