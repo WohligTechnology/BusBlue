@@ -2166,6 +2166,9 @@ ul.cat-li button {
     
     margin: 0 -2px;
     border: 1px solid #ccc;
+    font-family: "lato";
+    font-size: 11px;
+    cursor: pointer;
 }
 /* COUPON POPUP*/
 
@@ -2338,7 +2341,7 @@ ul.cat-li button {
 }
 .selectsecond, .selectthird
 {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 

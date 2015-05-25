@@ -575,3 +575,25 @@ select#paymentOther option {
     font-size: 13px;
     line-height: 0;
 }
+.dro-sl select {
+    font-size: 14px;
+    font-family: "lato",'sans-serif';
+    padding: 5px 125px 5px 12px;
+    outline: 0;
+    cursor: pointer;
+    border: 1px solid #C4C4C4;
+}
+
+
+button.cont-btn {
+    background: #e24648;
+    border: 1px solid #e24648;
+    color: #fff;
+    font-family: "lato";
+    font-size: 13px;
+    padding: 2px 15px 2px 15px;
+}
+
+.btn-dro {
+    margin: 10px auto;
+}
