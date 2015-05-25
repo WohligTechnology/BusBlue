@@ -55,9 +55,9 @@
                    <div class="clos-btn" id="demo-right">
                        <i class="ln-cross img-cl" ng-click="toggle()"></i>
 
-<!--
 
-                       <div class="tab1">
+
+                       <div class="tab1" ng-show="tab1div">
                     <div style="" class="custom-slid" >
                         <h4>Order Summary</h4>
                         <div class="recharge-details">
@@ -74,13 +74,15 @@
 
                 </ul>
             </div>
-            <button class=" btns-1 " type="submit">Proceed to pay<span class="rs-py">₹100</span>
+<!--
+            <button class=" btns-1 " type="submit" ng-click="tabclick();">Proceed to pay<span class="rs-py">₹100</span>
             </button>
+-->
         </div>
-        -->
+        
 
 
-        <div class="tab2">
+        <div class="tab2" ng-show="tab2div">
             <div class="row pay">
 
                 <div class="payment-info">
@@ -263,9 +265,11 @@
                 </div>
             </div>
 
-            <button class=" btns-1 " type="submit">Proceed to pay<span class="rs-py">₹100</span>
-            </button>
+           
         </div>
+        
+         <button class=" btns-1 " type="submit" ng-click="tabclick();">Proceed to pay<span class="rs-py">₹100</span>
+            </button>
     </div>
 </div>
 </div>

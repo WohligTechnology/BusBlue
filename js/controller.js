@@ -471,7 +471,7 @@ phonecatControllers.controller('Datepicker',
 //    });
 phonecatControllers.controller('coupon',
     function ($scope, TemplateService, NavigationService, RestService, $location) {
-        $scope.cardtype="";
+        $scope.cardtype = "";
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/coupon.html";
@@ -484,7 +484,18 @@ phonecatControllers.controller('coupon',
             toaster.pop("success", "Welcome", "Registered successfully", 5000);
         }
         
-             //        ***** tabchange ****
+        $scope.tab1div="true";
+
+         $scope.tabclick = function () {
+            $scope.tab2div = true;
+            $scope.tab1div = false;
+             
+           
+        }
+
+
+
+        //        ***** tabchange ****
 
         $scope.tab = 'debit';
         $scope.class = '';
@@ -492,9 +503,8 @@ phonecatControllers.controller('coupon',
         $scope.classe = '';
         $scope.tabchange = function (tab, a) {
             //        console.log(tab);
-            if(tab=="")
-            {
-                return ;
+            if (tab == "") {
+                return;
             }
             $scope.tab = tab;
             if (a == 1) {
@@ -514,7 +524,7 @@ phonecatControllers.controller('coupon',
 
 
         //            ******** end *******
-        
+
         $scope.filter = {
             tags: ""
         };
@@ -533,15 +543,15 @@ phonecatControllers.controller('coupon',
                 }
             }
         };
-    
-     $scope.showcoupon = function () {
+
+        $scope.showcoupon = function () {
             $scope.coupondiv = true;
-            
+
         }
         $scope.hidecoupon = function () {
             $scope.coupondiv = false;
         }
-    
+
 
         $scope.filters = [{
             "class": "select",
@@ -740,8 +750,8 @@ phonecatControllers.controller('myprofile',
 
         //****** trans date ******
 
-    
-      $scope.trans = [{
+
+        $scope.trans = [{
             "travel": "21-May-2015",
             "to": "Mumbai",
             "from": "Pune (J.P.Travels)",
@@ -749,7 +759,7 @@ phonecatControllers.controller('myprofile',
             "rs": "3000",
             "book": "26-May-2015",
 
-        },{
+        }, {
             "travel": "21-May-2015",
             "to": "Mumbai",
             "from": "Pune (J.P.Travels)",
@@ -757,7 +767,7 @@ phonecatControllers.controller('myprofile',
             "rs": "3000",
             "book": "26-May-2015",
 
-        },{
+        }, {
             "travel": "21-May-2015",
             "to": "Mumbai",
             "from": "Pune (J.P.Travels)",
@@ -765,7 +775,7 @@ phonecatControllers.controller('myprofile',
             "rs": "3000",
             "book": "26-May-2015",
 
-        },{
+        }, {
             "travel": "21-May-2015",
             "to": "Mumbai",
             "from": "Pune (J.P.Travels)",
@@ -773,7 +783,7 @@ phonecatControllers.controller('myprofile',
             "rs": "3000",
             "book": "26-May-2015",
 
-        },{
+        }, {
             "travel": "21-May-2015",
             "to": "Mumbai",
             "from": "Pune (J.P.Travels)",
@@ -781,7 +791,7 @@ phonecatControllers.controller('myprofile',
             "rs": "3000",
             "book": "26-May-2015",
 
-        } ];
+        }];
 
 
         //***** end *****
@@ -1252,7 +1262,7 @@ phonecatControllers.controller('bus',
                 controller: 'bus'
             });
         };
-    
+
         $scope.sleeper2 = function (listings) {
             $scope.listingid = listings;
             console.log("Demo is wokring");
@@ -1261,7 +1271,7 @@ phonecatControllers.controller('bus',
                 controller: 'bus'
             });
         };
-    
+
         $scope.sleepertab = function (listings) {
             $scope.listingid = listings;
             console.log("Demo is wokring");
@@ -1287,55 +1297,49 @@ phonecatControllers.controller('bus',
         $scope.selectbea = function (event) {
             $(event.target).toggleClass('selected-sleeper');
         };
-        
-        $scope.firsttab="selectall";
-        $scope.secondtab="";
-        $scope.thirdtab="";
-        $scope.active1="tab-active";
-        $scope.active2="";
-        $scope.active3="";
-        
-        $scope.first_tab=function(){
-            $scope.firsttab="selectall";
-            $scope.secondtab="";
-            $scope.thirdtab="";
-            $scope.active1="tab-active";
-            $scope.active2="";
-            $scope.active3="";
+
+        $scope.firsttab = "selectall";
+        $scope.secondtab = "";
+        $scope.thirdtab = "";
+        $scope.active1 = "tab-active";
+        $scope.active2 = "";
+        $scope.active3 = "";
+
+        $scope.first_tab = function () {
+            $scope.firsttab = "selectall";
+            $scope.secondtab = "";
+            $scope.thirdtab = "";
+            $scope.active1 = "tab-active";
+            $scope.active2 = "";
+            $scope.active3 = "";
         };
-        $scope.second_tab=function(currval){
-            $scope.firsttab="";
-            $scope.secondtab="selectsecond";
-            $scope.thirdtab="";
-            $scope.active1="";
-            if(currval==1)
-            {
-                $scope.active2="";
-                $scope.active3="tab-active";
-            }
-            else
-            {
-                $scope.active2="tab-active";
-                $scope.active3="";
+        $scope.second_tab = function (currval) {
+            $scope.firsttab = "";
+            $scope.secondtab = "selectsecond";
+            $scope.thirdtab = "";
+            $scope.active1 = "";
+            if (currval == 1) {
+                $scope.active2 = "";
+                $scope.active3 = "tab-active";
+            } else {
+                $scope.active2 = "tab-active";
+                $scope.active3 = "";
             }
         };
-        $scope.third_tab=function(currval){
-            $scope.firsttab="";
-            $scope.secondtab="";
-            $scope.thirdtab="selectthird";
-            $scope.active1="";
-            if(currval==1)
-            {
-                $scope.active2="tab-active";
-                $scope.active3="";
-            }
-            else
-            {
-                $scope.active2="";
-                $scope.active3="tab-active";
+        $scope.third_tab = function (currval) {
+            $scope.firsttab = "";
+            $scope.secondtab = "";
+            $scope.thirdtab = "selectthird";
+            $scope.active1 = "";
+            if (currval == 1) {
+                $scope.active2 = "tab-active";
+                $scope.active3 = "";
+            } else {
+                $scope.active2 = "";
+                $scope.active3 = "tab-active";
             }
         };
-});
+    });
 phonecatControllers.controller('terms',
     function ($scope, TemplateService, NavigationService, RestService, $location) {
         $scope.template = TemplateService;
