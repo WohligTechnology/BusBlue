@@ -522,11 +522,13 @@ ul.serv-li li {
     margin: 13px;
     font-size: 12px;
     color: #919bac;
+    cursor: pointer;
 }
 
 .select-box {
     /* display: inline-block; */
     /* vertical-align: middle; */
+    
     cursor: pointer;
     max-height: 24px;
     margin-top: 0px;
@@ -536,6 +538,7 @@ select#paymentOther {
     text-transform: uppercase;
     outline: 0;
     /* -webkit-appearance: none; */
+    
     -moz-appearance: none;
     -ms-appearance: none;
     padding: 6px 6px 7px 8px;
@@ -547,7 +550,6 @@ select#paymentOther {
 select#paymentOther option {
     text-transform: uppercase;
 }
-
 /*
 .select-box:after {
     position: absolute;
@@ -563,9 +565,11 @@ select#paymentOther option {
     content: "";
     pointer-events: none;
 }*/
+
 .dropd-slep {
     margin: 65px auto;
 }
+
 .dropd-slep {
     margin: 65px auto;
 }
@@ -575,15 +579,15 @@ select#paymentOther option {
     font-size: 13px;
     line-height: 0;
 }
+
 .dro-sl select {
     font-size: 14px;
-    font-family: "lato",'sans-serif';
+    font-family: "lato", 'sans-serif';
     padding: 5px 125px 5px 12px;
     outline: 0;
     cursor: pointer;
     border: 1px solid #C4C4C4;
 }
-
 
 button.cont-btn {
     background: #e24648;
@@ -596,4 +600,170 @@ button.cont-btn {
 
 .btn-dro {
     margin: 10px auto;
+}
+
+.scrollbar-dynamic::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 26px;
+}
+
+.scrollbar-dynamic::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+    border-left: 1px solid #C6C6C6;
+    border-right: 1px solid #C6C6C6;
+    border-radius: 10px;
+}
+
+.scrollbar-dynamic::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    /* outline: 1px solid rgb(204, 204, 204); */
+    
+    height: 8px;
+    border-radius: 20px;
+}
+
+input.cred-txt {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    display: inline-block;
+    height: 50px;
+    padding: 4px 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    text-indent: 18px;
+    color: #919bac;
+    vertical-align: middle;
+    border-radius: 0;
+    border: 1px solid #eaedef;
+    background: #fff;
+    width: 100%;
+}
+
+.select-cred select {
+    width: 100%;
+    border-color: #eaedef;
+    color: #959799;
+    height: 50px;
+    padding: 14px 10px 17px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+input.cred-cvv.cred-txt {
+    width: 64px;
+}
+
+.scn {
+    margin: 9px auto;
+}
+
+.txt-cred {
+    margin-bottom: 20px;
+}
+
+.frs.row {
+    margin: 0px;
+}
+
+.bank-list li .bankOption {
+    padding: 10px 6px;
+    margin: 0 10px 10px 0;
+    background: #fff;
+    box-shadow: none;
+}
+
+.bank-list li .bankOption {
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    border: 1px solid #E3E3E3;
+    padding: 10px 5px;
+    margin: 0 9px 15px 0;
+    display: inline-block;
+    color: #999;
+    font-size: 11px;
+    box-shadow: 0 0 1px #E0E0E0;
+    background: #FFF;
+/*
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFF), to(#F7F7F7));
+    background: -webkit-linear-gradient(#FFF 0, #F7F7F7 100%);
+    background: -moz-linear-gradient(#FFF 0, #F7F7F7 100%);
+    background: -o-linear-gradient(#FFF 0, #F7F7F7 100%);
+    background: linear-gradient(#FFF 0, #F7F7F7 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f7f7f7', GradientType=0);
+*/
+}
+
+.bank-list li .bankOption * {
+    float: left;
+}
+.act{
+color: #3DAEDF !important;
+}
+.bank-list input.rdoIn {
+    margin: 7px 10px 0;
+    float: left;
+    border: 0;
+    padding: 0;
+}
+
+.rdoIn+span {
+    margin-bottom: 8px;
+}
+
+input[type=radio]:checked+span {
+    border-color: #65c6bb;
+}
+
+input[type=radio]+span {
+    border-radius: 50%;
+}
+
+input[type=radio]+span {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #eaedef;
+    background-color: #fff;
+    vertical-align: middle;
+    margin-right: 8px;
+    position: relative;
+}
+
+input[type=radio]:checked+span:after {
+    background: transparent url(../images/radio-dot.png) no-repeat center center;
+}
+
+input[type=radio]+span:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 11px;
+    height: 11px;
+}
+.bank-list label.bankOption img {
+  float: left;
+  margin: 0 10px 0 0;
+}
+.bankOption input[type=radio] {
+  display: none;
+}
+ul.bank-list {
+    list-style: none;
+    display: block;
+}
+
+ul.bank-list li {
+    display: inline-block;
+}
+h6.abc {
+    padding-left: 18px;
+    font-size: 14px;
+    color: #000;
 }

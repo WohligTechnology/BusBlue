@@ -55,6 +55,7 @@
                    <div class="clos-btn" id="demo-right">
                        <i class="ln-cross img-cl" ng-click="toggle()"></i>
 
+<!--
 
                        <div class="tab1">
                     <div style="" class="custom-slid" >
@@ -76,9 +77,9 @@
             <button class=" btns-1 " type="submit">Proceed to pay<span class="rs-py">₹100</span>
             </button>
         </div>
-        
+        -->
 
-<!--
+
         <div class="tab2">
             <div class="row pay">
 
@@ -129,17 +130,17 @@
                 <div class="col-md-12">
                     <div class="promo-ser">
                         <ul class="serv-li">
-                            <li>Debit / Credit</li>
-                            <li>Netbanking</li>
+                            <li ng-class="classd" ng-click="tabchange('debit',1)">Debit / Credit</li>
+                            <li ng-class="classe" ng-click="tabchange('netbanking',2)">Netbanking</li>
                             <li>
                                 <div class="select-box">
-                                   
-                                   
-                                    <select id="paymentOther">
-                                        <option value="Other" >Other</option>
-                                        <option value="atmCard">ATM Card</option>
-                                        <option value="cashCard">Cash Card</option>
-                                        <option value="ezeClick">Amex EzeClick</option>
+
+
+                                    <select id="paymentOther" ng-model="cardtype" ng-class="class" ng-change="tabchange(cardtype,3)">
+                                        <option value="">Other</option>
+                                        <option value="atm">ATM Card</option>
+                                        <option value="cash">Cash Card</option>
+                                        <!--                                        <option value="ezeClick">Amex EzeClick</option>-->
                                     </select>
                                 </div>
                             </li>
@@ -147,8 +148,124 @@
                     </div>
                 </div>
             </div>
+
+            <div class="frs row" ng-show="tab=='debit'">
+                <div class="cred">
+                    <div class="trh">
+                        <div class="col-md-12">
+                            <div class="txt-cred">
+                                <input class="cred-txt" type="text" placeholder="XXXX  XXXX  XXXX  XXXX  XXXX">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scn">
+                        <div class="col-md-4">
+                            <div class="select-cred">
+
+
+                                <select>
+                                    <option value="Other">Expiry Date</option>
+                                    <option value="Other">2015</option>
+                                    <option value="atmCard">2016</option>
+                                    <option value="cashCard">2017</option>
+                                    <option value="ezeClick">2018</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="select-cred">
+
+
+                                <select>
+                                    <option value="Other">Expiry Month</option>
+                                    <option value="Other">2015</option>
+                                    <option value="atmCard">2016</option>
+                                    <option value="cashCard">2017</option>
+                                    <option value="ezeClick">2018</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="cvv">
+                                <input class="cred-cvv cred-txt" type="text" placeholder="CVV">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="frs row scnd" ng-show="tab=='netbanking'">
+                <div class="bnk-set">
+                    <ul class="bank-list">
+                        <li>
+                            <label class="bankOption">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/icicibank.png" alt="ICICI" title="ICICI" width="98" height="28">
+                            </label>
+                        </li>
+                        <li>
+                            <label class="bankOption">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/statbank.png" alt="SBI" title="SBI" width="98" height="28">
+                            </label>
+                        </li>
+                        <li>
+                            <label class="bankOption">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/hdfcbank.png" alt="HDFC" title="HDFC" width="98" height="28">
+                            </label>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="frs row scnd" ng-show="tab=='atm'">
+                <div class="bnk-set">
+                    <ul class="bank-list">
+                        <li>
+                            <label class="bankOption">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/punjabNationalBank.png" alt="Punjab National Bank" title="Punjab National Bank" width="98" height="28">
+                            </label>
+                        </li>
+                        <li>
+                            <label class="bankOption">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/canarabank.png" alt="Canara Bank Debit Card (ATM PIN)" title="Canara Bank Debit Card (ATM PIN)" width="98" height="28">
+                            </label>
+                        </li>
+                        <li>
+                            <label class="bankOption">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/citibank.png" alt="Citibank Debit Card (IPIN)" title="Citibank Debit Card (IPIN)" width="98" height="28">
+                            </label>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="frs row scnd" ng-show="tab=='cash'">
+                <div class="bnk-set">
+                    <ul class="bank-list">
+                        <li>
+                            <label class="bankOption">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/icicibank.png" alt="ICICI" title="ICICI" width="98" height="28">
+                            </label>
+                        </li>
+                        <li>
+                            <label class="bankOption">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/statbank.png" alt="SBI" title="SBI" width="98" height="28">
+                            </label>
+                        </li>
+                        <li>
+                            <label class="bankOption">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/hdfcbank.png" alt="HDFC" title="HDFC" width="98" height="28">
+                            </label>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <button class=" btns-1 " type="submit">Proceed to pay<span class="rs-py">₹100</span>
+            </button>
         </div>
--->
     </div>
 </div>
 </div>
@@ -223,9 +340,12 @@
 
                 </div>
 
-                <div class="border1">
-                    <p class="abc"> <span class="alreadys">Don't have an account ? Click <a ng-click="createshow();" class="loginlink cpointer">here</a> to  create one </span>
+                <div class="spn">
+                    <!--
+                    <p class="abc">Don't have an account ? Click <a  class="loginlink cpointer">here</a> to  create one
                     </p>
+-->
+                    <h6 style="color:#000;  font-size: 14px;padding-left: 16px;">Don't have an account ? Click <span style="color:#3DAEDF"> here </span>to  create one</h6>
 
 
                 </div>

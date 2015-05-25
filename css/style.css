@@ -1037,7 +1037,7 @@ a {
 }
 
 a:hover {
-    color: #3DAEDF;
+    /* color: #3DAEDF; */
     text-decoration: none;
 }
 
@@ -1126,7 +1126,7 @@ a:hover {
 
 .bus-update {
     padding: 25px 0px;
-    background-image: url('../images/road.jpg');
+    background: url('../images/road.jpg')fixed;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2188,6 +2188,7 @@ ul.cat-li button {
     margin: 5px 0 14px;
     max-width: 103px;
     border-right: 1px solid #eaedef;
+    color: rgb(101, 198, 187);
 }
 
 .save-amount:after {
@@ -2206,6 +2207,7 @@ ul.cat-li button {
     text-transform: uppercase;
     padding: 0 20px 0 40px;
     margin: 5px 0 14px;
+    color: rgb(101, 198, 187);
 }
 
 .expires:after {
@@ -2233,6 +2235,7 @@ ul.cat-li button {
 
 .btn.green {
     background: #65c6bb;
+    color: #fff;
 }
 
 .full-btn {
@@ -2293,6 +2296,7 @@ ul.cat-li button {
 }
 .tandc h6 {
     font-size: 14px;
+    color: #000;
 }
 .coupon-disclaimer h6 {
     font-size: 9px;

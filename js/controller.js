@@ -471,6 +471,7 @@ phonecatControllers.controller('Datepicker',
 //    });
 phonecatControllers.controller('coupon',
     function ($scope, TemplateService, NavigationService, RestService, $location) {
+        $scope.cardtype="";
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/coupon.html";
@@ -482,6 +483,38 @@ phonecatControllers.controller('coupon',
             toaster.pop("error", "Login Error", "Invalid username or password", 5000);
             toaster.pop("success", "Welcome", "Registered successfully", 5000);
         }
+        
+             //        ***** tabchange ****
+
+        $scope.tab = 'debit';
+        $scope.class = '';
+        $scope.classd = 'act';
+        $scope.classe = '';
+        $scope.tabchange = function (tab, a) {
+            //        console.log(tab);
+            if(tab=="")
+            {
+                return ;
+            }
+            $scope.tab = tab;
+            if (a == 1) {
+                $scope.class = '';
+                $scope.classd = "act";
+                $scope.classe = '';
+            } else if (a == 2) {
+                $scope.class = '';
+                $scope.classd = '';
+                $scope.classe = 'act';
+            } else {
+                $scope.class = 'act';
+                $scope.classd = '';
+                $scope.classe = '';
+            }
+        };
+
+
+        //            ******** end *******
+        
         $scope.filter = {
             tags: ""
         };
