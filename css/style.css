@@ -1564,7 +1564,7 @@ img.img-cl {
     top: 7px;
 }
 
-.clos-btn button {
+button.btns-1 {
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -2236,6 +2236,7 @@ ul.cat-li button {
     width: 100%!important;
 }
 
+/*
 .btn {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -2254,6 +2255,7 @@ ul.cat-li button {
     height: 46px;
     border-radius: 0;
 }
+*/
 
 .btn.green:active,
 .btn.green:focus,

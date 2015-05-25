@@ -54,7 +54,8 @@
     <div pageslide ps-open="checked" ps-speed="0.8">
                    <div class="clos-btn" id="demo-right">
                        <i class="ln-cross img-cl" ng-click="toggle()"></i>
-<!--
+
+
                        <div class="tab1">
                     <div style="" class="custom-slid" >
                         <h4>Order Summary</h4>
@@ -72,10 +73,12 @@
 
                 </ul>
             </div>
-            <button type="submit">Proceed to pay<span class="rs-py">₹100</span>
+            <button class=" btns-1 " type="submit">Proceed to pay<span class="rs-py">₹100</span>
             </button>
         </div>
-        -->
+        
+
+<!--
         <div class="tab2">
             <div class="row pay">
 
@@ -98,9 +101,9 @@
                     <div class="col-md-6">
                         <div class="num-block amount-block">
                             <h3 id="paymentAmount">₹100</h3>
-                           
-                                <h6 id="couponCountText">Includes 1 coupon</h6>
-                            
+
+                            <h6 id="couponCountText">Includes 1 coupon</h6>
+
                         </div>
                     </div>
                 </div>
@@ -117,12 +120,35 @@
                     </div>
                     <div class="col-md-4">
                         <div class="btns-promo ">
-                            <a href="#">Apply</a>
+                            <button class="btn-2" type="submit">Apply</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="promo-ser">
+                        <ul class="serv-li">
+                            <li>Debit / Credit</li>
+                            <li>Netbanking</li>
+                            <li>
+                                <div class="select-box">
+                                   
+                                   
+                                    <select id="paymentOther">
+                                        <option value="Other" >Other</option>
+                                        <option value="atmCard">ATM Card</option>
+                                        <option value="cashCard">Cash Card</option>
+                                        <option value="ezeClick">Amex EzeClick</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+-->
     </div>
 </div>
 </div>

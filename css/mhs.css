@@ -97,7 +97,6 @@ ul.cpn-details li {
     margin: 0px;
     color: rgb(202, 202, 202);
     font-weight: bold;
-    
 }
 
 .pack-dat {
@@ -303,101 +302,121 @@ p.p3 span {
     padding: 5px 10px 5px 10px;
     margin: 18px auto;
 }
+
 span.rs-py {
     margin: 0px 0px 0px 80px;
 }
+
 .payments .payment-info {
-  padding: 18px 32px;
+    padding: 18px 32px;
 }
+
 .payments .user-avatar {
-  width: 50px;
-  height: 50px;
-  float: left;
-  border-radius: 500px;
-  background: 0 0;
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 500px;
+    background: 0 0;
 }
+
 .user-avatar {
-  color: #fff;
-  float: right;
+    color: #fff;
+    float: right;
 }
+
 .payments .num-block {
-  float: left;
-  margin-left: 20px;
-  margin-top: 5px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
 }
+
 .cart-subtext h6 {
-  text-transform: uppercase;
-  color: #919bac;
-  font-size: 10px;
-  line-height: 2;
+    text-transform: uppercase;
+    color: #919bac;
+    font-size: 10px;
+    line-height: 2;
 }
+
 .payments .amount-block {
-  float: right;
-  text-align: right;
-  margin-top: 5px;
+    float: right;
+    text-align: right;
+    margin-top: 5px;
 }
+
 .cart-subtext h6 {
-  text-transform: uppercase;
-  color: #919bac;
-  font-size: 10px;
-  line-height: 2;
+    text-transform: uppercase;
+    color: #919bac;
+    font-size: 10px;
+    line-height: 2;
 }
+
 .cart li {
-  padding: 16px 18px;
-  margin-bottom: 10px;
-  border-bottom: 1px dashed #eaedef;
+    padding: 16px 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #eaedef;
 }
+
 .tab2 {
     margin: 40px auto;
 }
+
 .cart h5 {
-  display: inline;
-  font-size: 17px;
-  color: #3DAEDF;
+    display: inline;
+    font-size: 17px;
+    color: #3DAEDF;
 }
+
 .cart-coupons h6 {
-  text-transform: uppercase;
-  color: #919bac;
-  font-size: 14px;
+    text-transform: uppercase;
+    color: #919bac;
+    font-size: 14px;
 }
+
 .cart ul {
-  margin-top: 10px;
-  max-height: 100%;
-  list-style: none;
-  position: relative;
-  margin: 0 auto;
-  padding-left: 0px;
-  margin: 0px 30px 0px 0px;
+    margin-top: 10px;
+    max-height: 100%;
+    list-style: none;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 0px;
+    margin: 0px 30px 0px 0px;
 }
+
 .remove-coupon {
-  float: right;
-  position: relative;
-  width: 24px;
-  height: 24px;
-  margin-left: 18px;
-  border: 2px solid #dd4d3b;
-  border-radius: 50%;
+    float: right;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-left: 18px;
+    border: 2px solid #dd4d3b;
+    border-radius: 50%;
 }
+
 .remove-coupon:after {
-  position: absolute;
-  top: 9px;
-  content: '';
-  width: 8px;
-  height: 2px;
-  background: #dd4d3b;
-  left: 6px;
+    position: absolute;
+    top: 9px;
+    content: '';
+    width: 8px;
+    height: 2px;
+    background: #dd4d3b;
+    left: 6px;
 }
+
 .rupee {
-  float: right;
+    float: right;
 }
+
 .cart-coupons {
     margin: 0px 0px 0px 40px;
 }
+
 .coupon-count {
-  color: #919bac;
+    color: #919bac;
 }
+
 .row.pay {
     /* border: 1px solid; */
+    
     margin: 0px 10px;
 }
 
@@ -421,47 +440,138 @@ span.rs-py {
     float: left;
     margin-top: 15px;
 }
+
 .num-block h6 {
-  color: #919bac;
-  font-weight: bold;
+    color: #919bac;
+    font-weight: bold;
 }
+
 .num-block.amount-block {
     float: right;
 }
+
 .promocode {
-  width: 100%;
-  background: #eaedef;
-  position: relative;
+    width: 100%;
+    background: #eaedef;
+    position: relative;
+    padding: 0px;
 }
+
 .promocode .arrow {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 8px;
-  background: url(../images/coupon-arrow2.png) -5px 0 repeat-x;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 8px;
+    background: url(../images/coupon-arrow2.png) -5px 0 repeat-x;
 }
+
 .promocode form {
-  padding: 18px 12px 12px;
-  z-index: 99;
-  position: relative;
-  min-height: 78px;
-  overflow: hidden;
-  -webkit-transition: height .4s ease;
-  -ms-transition: height .4s ease;
-  -moz-transition: height .4s ease;
-  -o-transition: height .4s ease;
-  transition: height .4s ease;
+    padding: 18px 12px 12px;
+    z-index: 99;
+    position: relative;
+    min-height: 78px;
+    overflow: hidden;
+    -webkit-transition: height .4s ease;
+    -ms-transition: height .4s ease;
+    -moz-transition: height .4s ease;
+    -o-transition: height .4s ease;
+    transition: height .4s ease;
 }
+
 .promocode .code-field {
-  float: left;
-  width: 100%;
-  margin-right: 10px;
-  height: 40px;
-  font-size: 14px;
+    float: left;
+    width: 100%;
+    margin-right: 10px;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid rgb(234, 237, 239);
+    padding: 0px 0px 0px 13px;
 }
+
 .tab2 .promocode {
-  border: 1px solid #EAEDEF;
-  border-top: none;
-  padding: 10px 20px 80px 14px;
+    border: 1px solid #EAEDEF;
+    border-top: none;
+    padding: 0px 0px 90px 0px;
+}
+
+button.btn-2 {
+    text-align: right;
+    background: #919bac;
+    border: 1px solid #919bac;
+    color: #fff;
+    padding: 8px 30px 8px 30px;
+    margin: 19px auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.promo-ser ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.promo-ser {
+    margin: 23px auto;
+    text-align: center;
+}
+
+ul.serv-li li {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 13px;
+    font-size: 12px;
+    color: #919bac;
+}
+
+.select-box {
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    cursor: pointer;
+    max-height: 24px;
+    margin-top: 0px;
+}
+
+select#paymentOther {
+    text-transform: uppercase;
+    outline: 0;
+    /* -webkit-appearance: none; */
+    -moz-appearance: none;
+    -ms-appearance: none;
+    padding: 6px 6px 7px 8px;
+    margin: -9px auto !important;
+    border: 1px solid #919bac;
+    cursor: pointer;
+}
+
+select#paymentOther option {
+    text-transform: uppercase;
+}
+
+/*
+.select-box:after {
+    position: absolute;
+    top: 44%;
+    right: 110px;
+    margin-top: -3px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid;
+    border-right: 5px solid rgba(0, 0, 0, 0);
+    border-left: 5px solid rgba(0, 0, 0, 0);
+    color: #999;
+    content: "";
+    pointer-events: none;
+}*/
+.dropd-slep {
+    margin: 65px auto;
+}
+.dropd-slep {
+    margin: 65px auto;
+}
+
+.drop-sl p {
+    font-family: "lato";
+    font-size: 13px;
+    line-height: 0;
 }
