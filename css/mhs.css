@@ -767,3 +767,6 @@ h6.abc {
     font-size: 14px;
     color: #000;
 }
+.cat-cpn ul li a:hover {
+    color: rgb(61, 174, 223);
+}

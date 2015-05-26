@@ -384,7 +384,7 @@ button.btn.btn-outline {
 .coupon .cart-set {
     display: block;
     position: absolute;
-    top: 7px;
+    top: 19px;
     right: 145px;
     color: rgb(61, 174, 223);
 }
@@ -392,7 +392,7 @@ button.btn.btn-outline {
 .coupon .user-set {
     display: block;
     position: absolute;
-    top: 7px;
+    top: 20px;
     right: 90px;
 }
 
@@ -1291,8 +1291,8 @@ button.src-bt {
 }
 
 .coupon-bt button {
-    background: #3DAEDF;
-    color: #fff;
+    background: #fff;
+    color: #3DAEDF;
     border: 1px solid #3DAEDF;
     text-transform: uppercase;
     padding: 5px 25px 5px 25px;
@@ -1303,9 +1303,9 @@ button.src-bt {
 }
 
 .coupon-bt button:hover {
-    background: #fff;
+    background: #3DAEDF;
     border: 1px solid #3DAEDF;
-    color: #3daedf;
+    color: #FFFFFF;
 }
 
 .cpn-img .coupon-wrapper {
@@ -1325,16 +1325,16 @@ button.src-bt {
 img.heros {
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: auto;
     z-index: 1;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    opacity: 0.85;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .coupon-wrapper:hover img.heros {
@@ -1370,13 +1370,8 @@ img.heros {
 }
 
 .couponss {
-    /* float: left; */
-    /* display: inline; */
-    /* border: 0; */
-    /* margin: 0; */
     
-    padding: 8px;
-    background: 0 0;
+    padding: 5px;
 }
 
 .gradient-overlay {
@@ -1561,7 +1556,8 @@ img.img-cl {
 
 .coupon-bt {
     position: relative;
-    top: 7px;
+    top: 12px;
+    min-height: 50px;
 }
 
 button.btns-1 {
@@ -1615,23 +1611,20 @@ button.btns-1 {
 */
     
     cursor: pointer;
-    -webkit-border-radius: 50em !important;
+    /* -webkit-border-radius: 50em !important; */
     -moz-border-radius: 50em !important;
-    border-radius: 50em !important;
+    /* border-radius: 50em !important; */
 }
 
 li.select {
     border: 1px solid #3DAEDF;
-    -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
-    border-radius: 25px;
     height: 30px;
     color: #3DAEDF;
 }
 
 .cat-cpn ul li:hover {
     /* border: 1px solid rgb(61, 174, 223); */
-    /* border-radius: 25px; */
     /* padding: 4px 15px; */
     /* margin: 0px; */
     /*
@@ -2352,4 +2345,17 @@ ul.cat-li button {
 .tab-active{
     background-color: #435255!important;
     color: #fff;
+}
+.user-set.text-right i {
+    background: #fff;
+    color: #3DAEDF;
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 18px;
+    height: 37px;
+    width: 37px;
+    cursor: pointer;
+}
+.row.pad-bt {
+    padding-bottom: 24px;
 }
