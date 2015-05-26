@@ -1,11 +1,5 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <div class="cpn-hd ">
-<!--                <h3>Grab Unlimited offer with your coupons!</h3>-->
-            </div>
-        </div>
-    </div>
+
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
@@ -20,36 +14,34 @@
         <div class="col-md-2"></div>
     </div>
     <div class="row pad-bt">
-    <div class="col-md-12">
-    <div class="sli-cp cd-gallery">
-        <div class="cpn-img coupons-grid"  >
            
-            <div class="galleryitem" ng-repeat="coupon in coupons|filter:filter">
-               <div class="coupons couponss" ng-click="showcoupon();">
-                <div class="coupon-wrapper">
-                    <img class="heros" ng-src="{{coupon.image}}">
-                       <div class="gradient-overlay">
-                        <span class="msg">{{coupon.title}}</span>
-                    </div>
-                     <div class="curtain"></div>
-                    <div class="coupon-content">
-                        <div class="tags" >
-                            <span class="tag {{tag}}" ng-repeat="tag in coupon.tags">
-                                {{tag}}
-                            </span>
-                          
-                        </div>
-                        <h1>{{coupon.name}}</h1>
-                    </div>
-                    <button class="btn green pickCoupon">{{coupon.button}}</button>
-                </div>
-                </div>
-            </div>
-      
-        </div>
-        
-    </div>
-    </div>
+           <div class="slider-li">
+              <div class="slider-dv">
+               <ul class="sli-ul" >
+                   <li ng-repeat="coupon in coupons|filter:filter">
+                       <div class="img-box" ng-click="tabclick(coupon);">
+                       
+                        <figure>
+                   <img class="" ng-src="images/810_1416552824765.png">
+                   <div class="layer" ng-hide="coupon.layer">
+                   <p class="tags">{{coupon.tags}}</p>
+                   <figcaption class="fig-cp">{{coupon.name}}</figcaption>
+                   <p class="ly-sl">Select</p>
+                   </div>
+                   <div class="layer2" ng-show="coupon.layer">
+                       <i class="ln-checkmark"></i>
+                       <p>{{coupon.title}}</p>
+                   </div>
+                 
+               </figure>
+                  </div> 
+                  
+                               </li>
+                        
+               </ul>
+               </div>
+           </div>   
+   
     </div>
     <div pageslide ps-open="checked" ps-speed="0.8">
                    <div class="clos-btn" id="demo-right">
@@ -69,17 +61,17 @@
                     <div class="cart-coupons cart">
                         <h6>Coupon Picked</h6>
                         <ul>
-                          <li ><h5>Dominos</h5><h5 class="coupon-count"> x 1</h5><a class="remove-coupon" href=""></a> <span class="rupee"><span id="totalPrice" style="">₹0</span></span>
+                          <li ><h5>Dominos</h5><h5 class="coupon-count"> x 1</h5><a class="remove-coupon" href=""></a>  <span class="rupee"><span id="totalPrice" style="">₹0</span></span>
                     </li>
 
                 </ul>
             </div>
-<!--
+            <!--
             <button class=" btns-1 " type="submit" ng-click="tabclick();">Proceed to pay<span class="rs-py">₹100</span>
             </button>
 -->
         </div>
-        
+
 
 
         <div class="tab2" ng-show="tab2div">
@@ -201,17 +193,20 @@
                     <ul class="bank-list">
                         <li>
                             <label class="bankOption">
-                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/icicibank.png" alt="ICICI" title="ICICI" width="98" height="28">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> 
+                                <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/icicibank.png" alt="ICICI" title="ICICI" width="98" height="28">
                             </label>
                         </li>
                         <li>
                             <label class="bankOption">
-                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/statbank.png" alt="SBI" title="SBI" width="98" height="28">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> 
+                                <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/statbank.png" alt="SBI" title="SBI" width="98" height="28">
                             </label>
                         </li>
                         <li>
                             <label class="bankOption">
-                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/hdfcbank.png" alt="HDFC" title="HDFC" width="98" height="28">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> 
+                                <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/hdfcbank.png" alt="HDFC" title="HDFC" width="98" height="28">
                             </label>
                         </li>
 
@@ -224,17 +219,20 @@
                     <ul class="bank-list">
                         <li>
                             <label class="bankOption">
-                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/punjabNationalBank.png" alt="Punjab National Bank" title="Punjab National Bank" width="98" height="28">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> 
+                                <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/punjabNationalBank.png" alt="Punjab National Bank" title="Punjab National Bank" width="98" height="28">
                             </label>
                         </li>
                         <li>
                             <label class="bankOption">
-                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/canarabank.png" alt="Canara Bank Debit Card (ATM PIN)" title="Canara Bank Debit Card (ATM PIN)" width="98" height="28">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> 
+                                <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/canarabank.png" alt="Canara Bank Debit Card (ATM PIN)" title="Canara Bank Debit Card (ATM PIN)" width="98" height="28">
                             </label>
                         </li>
                         <li>
                             <label class="bankOption">
-                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/citibank.png" alt="Citibank Debit Card (IPIN)" title="Citibank Debit Card (IPIN)" width="98" height="28">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> 
+                                <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/citibank.png" alt="Citibank Debit Card (IPIN)" title="Citibank Debit Card (IPIN)" width="98" height="28">
                             </label>
                         </li>
 
@@ -247,17 +245,20 @@
                     <ul class="bank-list">
                         <li>
                             <label class="bankOption">
-                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/icicibank.png" alt="ICICI" title="ICICI" width="98" height="28">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> 
+                                <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/icicibank.png" alt="ICICI" title="ICICI" width="98" height="28">
                             </label>
                         </li>
                         <li>
                             <label class="bankOption">
-                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/statbank.png" alt="SBI" title="SBI" width="98" height="28">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> 
+                                <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/statbank.png" alt="SBI" title="SBI" width="98" height="28">
                             </label>
                         </li>
                         <li>
                             <label class="bankOption">
-                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/hdfcbank.png" alt="HDFC" title="HDFC" width="98" height="28">
+                                <input type="radio" class="rdoIn" name="paymentoption" value="SBIN" checked="checked"><span></span> 
+                                <img class="img-responsive" src="https://dmx246cm6p7k8.cloudfront.net/content/images/hdfcbank.png" alt="HDFC" title="HDFC" width="98" height="28">
                             </label>
                         </li>
 
@@ -265,11 +266,11 @@
                 </div>
             </div>
 
-           
+
         </div>
-        
-         <button class=" btns-1 " type="submit" ng-click="tabclick();">Proceed to pay<span class="rs-py">₹100</span>
-            </button>
+
+        <button class=" btns-1 " type="submit" ng-click="tabclick();">Proceed to pay<span class="rs-py">₹100</span>
+        </button>
     </div>
 </div>
 </div>
@@ -286,7 +287,9 @@
                         <div class="left-content">
                             <div class="coupon l">
                                 <div class="coupon-wrapper">
-                                    <div class="tnc-coupon-overley"></div> <img class="hero" src="https://d32vr05tkg9faf.cloudfront.net/content/images/coupon/web/1297_1418211534934.png"> <img class="brand" src="">
+                                    <div class="tnc-coupon-overley"></div>
+                                    <img class="hero" src="https://d32vr05tkg9faf.cloudfront.net/content/images/coupon/web/1297_1418211534934.png">
+                                    <img class="brand" src="">
                                     <div class="coupon-content mhs">
                                         <div class="tags "> <span class="tag food">Food</span>
                                         </div>
@@ -312,7 +315,7 @@
                         <div class="vendor">McDonald's North and East</div>
                         <div class="right-content">
                             <div class="coupon-disclaimer">
-                                <h6>This coupon can be redeemed only on the merchant website</h6> <span>Punch in the coupon code during checkout</span>
+                                <h6>This coupon can be redeemed only on the merchant website</h6>  <span>Punch in the coupon code during checkout</span>
                             </div>
                             <div class="available-in">
                                 <h6>Available in</h6><span>Ludhiana / Meerut / Agra / Gurgaon / Jammu / Faridabad / Allahabad / Gwalior / Hoshiarpur / Udaipur / HARDWAR / Jodhpur / Chandigarh / MUZZAFARNAG / Jalandhar / KHANNA / Ajmer / Jaipur / Karnal / Delhi / Manesar / Kanpur / Bareilly / Patiala / Ambala / Varanasi / Patarsi / Kolkata / Amritsar / Panipat / Kota / Mathura / Mohali / Bhopal / Howrah / Sonepat / Noida / Lucknow / Ghaziabad / Dehradun / Amroha</span>
@@ -321,21 +324,21 @@
                                 <h6>Terms &amp; Conditions</h6>
                                 <ol>
                                     <li>Offer Highlights:</li>
-                                    <li>Get a complimentary McAloo Tikki ™ Burger and Ice Tea (Regular) on spends of Rs.100 or above. Taxes extra. </li>
+                                    <li>Get a complimentary McAloo Tikki ™ Burger and Ice Tea (Regular) on spends of Rs.100 or above. Taxes extra.</li>
                                     <li></li>
                                     <li>How to redeem this offer:</li>
-                                    <li>Customer has to handover the printed copy of the complete e-coupon mailer at the time of billing at McDonald ™ store for availing the offer. Customer will not be entitled to avail the offer if the complete printout is not produced. </li>
+                                    <li>Customer has to handover the printed copy of the complete e-coupon mailer at the time of billing at McDonald ™ store for availing the offer. Customer will not be entitled to avail the offer if the complete printout is not produced.</li>
                                     <li></li>
                                     <li>Terms of this offer:</li>
-                                    <li>- Rs.50 displayed in the e-coupon is an indicative value. </li>
-                                    <li>- Offer valid at McDonald ™ Family Restaurant (North and East) - Delhi NCR, Punjab, Haryana, Himachal Pradesh, Uttarakhand, Rajasthan, Uttar Pradesh, West Bengal, Jammu and Madhya Pradesh (Gwalior and Bhopal). </li>
-                                    <li>- Offer not redeemable at Airport Stores, DLF Mega Mall and Cyber Green Gurgaon. </li>
-                                    <li>- One voucher will be honored per billing. Present printed copy of the e-coupon at the time of billing at McDonald ™ store. </li>
-                                    <li>- Offer not valid on McDelivery ™ and with other offers scheme. Offer cannot be redeemed for cash. </li>
-                                    <li>- Offer not valid during breakfast hours. </li>
-                                    <li>- Offer valid till 30th June, 2015. </li>
+                                    <li>- Rs.50 displayed in the e-coupon is an indicative value.</li>
+                                    <li>- Offer valid at McDonald ™ Family Restaurant (North and East) - Delhi NCR, Punjab, Haryana, Himachal Pradesh, Uttarakhand, Rajasthan, Uttar Pradesh, West Bengal, Jammu and Madhya Pradesh (Gwalior and Bhopal).</li>
+                                    <li>- Offer not redeemable at Airport Stores, DLF Mega Mall and Cyber Green Gurgaon.</li>
+                                    <li>- One voucher will be honored per billing. Present printed copy of the e-coupon at the time of billing at McDonald ™ store.</li>
+                                    <li>- Offer not valid on McDelivery ™ and with other offers scheme. Offer cannot be redeemed for cash.</li>
+                                    <li>- Offer not valid during breakfast hours.</li>
+                                    <li>- Offer valid till 30th June, 2015.</li>
                                     <li>- In the event the product offered in the e-coupon is not available due to any reason whatsoever, the store can offer a product of equivalent value to the customer.</li>
-                                    <li>- For detailed terms and conditions refer to www.mcdonaldsindia.com </li>
+                                    <li>- For detailed terms and conditions refer to www.mcdonaldsindia.com</li>
                                     <li>- For any queries or assistance, please write to care@freecharge.com</li>
                                 </ol>
                             </div>
