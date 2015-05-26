@@ -10,7 +10,10 @@ a:hover {
 .nav-cont a {
     color: #fff;
 }
-
+a:hover, a:focus {
+    color:#3DAEDF;
+  text-decoration: none;
+}
 .login {
     padding-top: 15px;
 }
@@ -406,6 +409,7 @@ button.btn.btn-outline {
     font-size: 20px;
     padding: 9px;
     cursor: pointer;
+    border: 1px solid #3DAEDF;
 }
 
 .content.changehead {
@@ -1616,11 +1620,19 @@ button.btns-1 {
     /* border-radius: 50em !important; */
 }
 
-li.select {
+li.select a {
+    border: 1px solid #3DAEDF;
+    -moz-border-radius: 25px;
+    color: #fff;
+    background: #3DAEDF;
+}
+li.select  {
     border: 1px solid #3DAEDF;
     -moz-border-radius: 25px;
     height: 30px;
-    color: #3DAEDF;
+    color: #fff;
+    background: #3DAEDF;
+    padding: 4px 15px;
 }
 
 .cat-cpn ul li:hover {
@@ -2355,6 +2367,7 @@ ul.cat-li button {
     height: 37px;
     width: 37px;
     cursor: pointer;
+    border: 1px solid #3DAEDF;
 }
 .row.pad-bt {
     padding-bottom: 24px;
