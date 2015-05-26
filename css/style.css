@@ -328,7 +328,7 @@ button.btn.btn-outline {
     position: absolute;
     top: 19px;
     right: 145px;
-    color: rgb(61, 174, 223);
+    color: #3DAEDF;
 }
 .coupon .user-set {
     display: block;
@@ -731,7 +731,7 @@ td.td-st i {
 tr.tbl-tr th {
     font-weight: 400;
     font-size: 14px;
-    color: rgb(61, 174, 223);
+    color: #3DAEDF;
     border-bottom: 1px solid #3DAEDF !important;
 }
 .table-striped>tbody>tr:nth-of-type(odd) {
@@ -739,7 +739,7 @@ tr.tbl-tr th {
 }
 span.sml-fn {
     font-size: 12px;
-    color: rgb(61, 174, 223);
+    color: #3DAEDF;
 }
 .scrollbar-dynamic {
     max-height: 450px;
@@ -1616,7 +1616,7 @@ span.pen i {
     line-height: 8px;
     font-size: 17px;
     font-weight: bold;
-    color: rgb(61, 174, 223);
+    color: #3DAEDF;
 }
 .left-nm {
     margin-top: 13px;
@@ -2104,29 +2104,41 @@ p.ly-sl {
 
 .img-box:hover p.ly-sl {
     opacity: 1;
+      transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -mz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
 }
 .img-box:hover .tags {
     opacity: 0;
+      transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -mz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
 }
 .img-box:hover .fig-cp {
     opacity: 0;
+      transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -mz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
 }
 .img-box:hover .layer {
      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.51));
-      transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -mz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
+      transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -mz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
 }
 .layer2 {
     height: 180px;
     width: 180px;
     background: rgba(0, 0, 0, 0.49);
     position: absolute;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -mz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -mz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
     top: 0;
 }
 .layer2 i {
