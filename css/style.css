@@ -318,7 +318,8 @@ button.btn.btn-outline {
 }
 .profile .user-set {
     display: block;
-    margin: 10px auto;
+    position: relative;
+    top: 20px;
 }
 .profile .login {
     display: none;
@@ -352,7 +353,7 @@ button.btn.btn-outline {
     background: rgb(234, 237, 239);
 }
 .content.profile {
-    background: rgb(234, 237, 239);
+    background: rgb(253, 254, 255);
 }
 .content.changehead header a {
     color: #596A77;
