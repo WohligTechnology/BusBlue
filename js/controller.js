@@ -484,11 +484,11 @@ phonecatControllers.controller('coupon',
             toaster.pop("success", "Welcome", "Registered successfully", 5000);
         }
 
-        $scope.tab1div = "true";
+        $scope.tab2div = "true";
 
-        $scope.tabclick = function() {
-            $scope.tab2div = true;
-            $scope.tab1div = false;
+        $scope.tabclicks = function() {
+            $scope.tab2div = false;
+            $scope.tab1div = true;
 
 
         }
