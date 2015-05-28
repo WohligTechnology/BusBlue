@@ -64,6 +64,7 @@ a:focus {
     list-style: none;
     /* text-align: center; */
     margin: 0px 38px 0px 0px;
+    -webkit-transition: all 0.5s ease;
 }
 .cat-cpn {
     text-align: center;
@@ -1386,18 +1387,18 @@ button.btns-1 {
     /* -webkit-border-radius: 50em !important; */
     -moz-border-radius: 50em !important;
     /* border-radius: 50em !important; */
+    -webkit-transition: all 0.5s ease;
 }
 li.select a {
-    border: 1px solid #3DAEDF;
+    /* border: 1px solid #3DAEDF; */
     -moz-border-radius: 25px;
     color: #fff;
-    background: #3DAEDF;
 }
 li.select {
     border: 1px solid #3DAEDF;
     -moz-border-radius: 25px;
-    height: 30px;
-    color: #fff;
+    /* height: 30px; */
+    color: #fff !important;
     background: #3DAEDF;
     padding: 4px 15px;
 }
@@ -1419,6 +1420,7 @@ li.select {
     -webkit-box-shadow: inset 0 0 0 1px rgba(61, 174, 223, 1);
     -moz-box-shadow: inset 0 0 0 1px rgba(61, 174, 223, 1);
     box-shadow: inset 0 0 0 1px rgba(61, 174, 223, 1);
+    -webkit-transition: all 0.5s ease;
 }
 .car-sets a {
     cursor: pointer;
