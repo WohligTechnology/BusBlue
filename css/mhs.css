@@ -4,8 +4,8 @@
 
 .copn-sct button {
     background: #FFFFFF;
-    color: #3DAEDF;
-    border: 1px solid #3DAEDF;
+    color: #1295C9;
+    border: 1px solid #1295C9;
     text-transform: uppercase;
     padding: 5px 25px 5px 25px;
     -webkit-transition: all 0.5s ease;
@@ -363,7 +363,7 @@ span.rs-py {
 .cart h5 {
     display: inline;
     font-size: 17px;
-    color: #3DAEDF;
+    color: #1295C9;
 }
 
 .cart-coupons h6 {
@@ -703,7 +703,7 @@ input.cred-cvv.cred-txt {
     float: left;
 }
 .act{
-color: #3DAEDF !important;
+color: #1295C9 !important;
 }
 .bank-list input.rdoIn {
     margin: 7px 10px 0;
@@ -716,7 +716,7 @@ color: #3DAEDF !important;
     margin-bottom: 8px;
 }
 
-input[type=radio]:checked+span {
+.bankOption input[type=radio]:checked+span {
     border-color: #65c6bb;
 }
 
@@ -724,7 +724,7 @@ input[type=radio]+span {
     border-radius: 50%;
 }
 
-input[type=radio]+span {
+.bankOption input[type=radio]+span {
     display: inline-block;
     width: 27px;
     height: 27px;
@@ -735,7 +735,7 @@ input[type=radio]+span {
     position: relative;
 }
 
-input[type=radio]:checked+span:after {
+.bankOption input[type=radio]:checked+span:after {
     background: transparent url(../images/radio-dot.png) no-repeat center center;
 }
 
