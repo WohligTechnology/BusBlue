@@ -2168,3 +2168,83 @@ p.ly-sl {
     overflow: hidden;
     overflow-y: auto;
 }
+
+.rangediv {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+rzslider {
+  position: relative !important;
+  display: inline-block !important;
+  width: 100% !important;
+  height: 2px !important;
+  margin: 30px 0 15px 0 !important;
+  vertical-align: middle !important;
+}
+rzslider span.bar1 {
+  z-index: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: #fff !important;
+}
+rzslider span {
+  position: absolute !important;
+  display: inline-block !important;
+  white-space: nowrap !important;
+}
+rzslider span.bar2.selection1 {
+  z-index: 1 !important;
+  width: 0;
+  background: #12005E !important;
+}
+rzslider span.pointer {
+  top: -15px !important;
+  z-index: 2 !important;
+  width: 32px !important;
+  height: 32px !important;
+  cursor: pointer !important;
+  background-color: #fff !important;
+  -webkit-border-radius: 16px !important;
+  -moz-border-radius: 16px !important;
+  border-radius: 16px !important;
+}
+rzslider span.pointer:after {
+  position: absolute !important;
+  top: 12px !important;
+  left: 12px !important;
+  width: 8px !important;
+  height: 8px !important;
+  background: #E11121 !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
+  border-radius: 4px !important;
+  content: '' !important;
+}
+rzslider span.bubble.limit {
+  color: white !important;
+}
+rzslider span.bubble {
+  top: -45px !important;
+  padding: 1px 3px 1px 3px !important;
+  color: white !important;
+  cursor: default !important;
+  background-color: #E11121;
+  border-radius: 3px;
+}
+rzslider span.bubble.limit {
+  color: white !important;
+}
+   #slider-range {
+        width: 40% !important;
+        float: left;
+        margin-top: 6px;
+    }
+    
+    #amount-lt,
+    #amount-rt {
+        width: 30% !important;
+        float: left;
+        height: 25px;
+        line-height: normal;
+    }

@@ -6,7 +6,8 @@ var firstapp = angular.module('firstapp', [
     'templateservicemod',
     'navigationservice',
     'restservicemod',
-    'pageslide-directive'
+    'pageslide-directive',
+    'ui-rangeSlider'
 ]);
 
 firstapp.config(['$routeProvider',

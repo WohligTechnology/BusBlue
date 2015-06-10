@@ -1,6 +1,6 @@
 var lat = 0;
 var long = 0;
-var phonecatControllers = angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'restservicemod', 'ngRoute', 'ngDialog', 'infinite-scroll', 'wu.masonry', 'iso.directives', 'ui.bootstrap']);
+var phonecatControllers = angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'restservicemod', 'ngRoute', 'ngDialog', 'infinite-scroll', 'wu.masonry', 'iso.directives', 'ui.bootstrap', 'at.multirange-slider']);
 
 phonecatControllers.controller('home',
     function($scope, TemplateService, NavigationService, RestService, $filter, $location, $timeout) {
@@ -911,13 +911,21 @@ phonecatControllers.controller('about',
 
     });
 phonecatControllers.controller('car-det',
-    function($scope, TemplateService, NavigationService, RestService, $location, ngDialog) {
+    function($scope, TemplateService, NavigationService, RestService, $location, ngDialog, $sce) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
         TemplateService.content = "views/car-det.html";
         $scope.navigation = NavigationService.getnav();
         $scope.pageClass = "page-login";
         $scope.headclass1 = 'changeheads';
+        $scope.demo2 = {
+            range: {
+                min: 0,
+                max: 10050
+            },
+            minPrice: 0,
+            maxPrice: 10050
+        };
         $scope.loginfunc = function(login) {
             console.log("in login");
             toaster.pop("error", "Login Error", "Invalid username or password", 5000);
@@ -1060,18 +1068,24 @@ phonecatControllers.controller('car-det',
         };
 
 
-
-
-
         $scope.items = [
-            'Option 1',
-            'Option 2',
-            'Option 3'
+            'Chevrolet Tavera AC',
+            'Honda City AC',
+            'Mahindra Xylo AC',
+            'Mercedes E Class AC',
+            'Swift Dzire AC',
+            'Tata Indica AC',
+            'Tata Indigo AC',
+            'Toyota Corolla AC',
+            'Toyota Innova AC',
+            'Toyota Corolla '
         ];
-        $scope.amenties = [
-            'Option 1',
-            'Option 2',
-            'Option 3'
+        $scope.seats = [
+            '4 Seats',
+            '6 Seats',
+            '3 Seats',
+            '12 Seats',
+            '9 Seats'
         ];
         $scope.boearding = [
             'Option 1',
@@ -1191,9 +1205,9 @@ phonecatControllers.controller('bus',
             'Laxmi (atmaram) Travels  ',
             'Laxmi New Brand (atmaram)  ',
             'Mahakali Travels Mumbai '
-         
+
         ];
-      $scope.bustype = [
+        $scope.bustype = [
             'AC',
             'Non AC',
             'Sleeper',
@@ -1210,10 +1224,10 @@ phonecatControllers.controller('bus',
             'No Amenities',
             'Track My Bus',
             'Emergency exit'
-            
+
         ];
         $scope.boearding = [
-               'Atmaram Travels ',
+            'Atmaram Travels ',
             'Citizen Travels Goa',
             'GTA - Global Travel ',
             'Global Travel Agency ',
@@ -1225,7 +1239,7 @@ phonecatControllers.controller('bus',
             'Mahakali Travels Mumbai '
         ];
         $scope.dropping = [
-               'Atmaram Travels ',
+            'Atmaram Travels ',
             'Citizen Travels Goa',
             'GTA - Global Travel ',
             'Global Travel Agency ',

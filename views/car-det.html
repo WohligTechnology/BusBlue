@@ -360,11 +360,11 @@
     <div class="bus-filter">
         <div class="container">
             <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-2">
+               
+                <div class="col-md-4">
                       <div class="trvl bus-type">
-                        <p data-toggle="dropdown" class="dropdown-toggle">Filter by: Travels <b class="caret"></b></p>
-                        <ul class="dropdown-menu">
+                        <p data-toggle="dropdown" class="dropdown-toggle">Filter by: Car Type  <b class="caret"></b></p>
+                        <ul class="dropdown-menu scrollbar-dynamic" data-jquery-scrollbar="jqueryScrollbarOptions">
                             <li class="checkbox" ng-repeat="choice in items">
                                 <label>
                                     <input type="checkbox" value="">{{choice}}</label>
@@ -372,18 +372,27 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-2">
-                    <div class="bus-type">
-                        <p href="#" data-toggle="dropdown" class="dropdown-toggle">Car Type <b class="caret"></b>
+                    <div class="col-md-4">
+                    <div class="bus-type text-center">
+                        <p href="#" data-toggle="dropdown" class="dropdown-toggle">Price Range <b class="caret"></b>
                         </p>
-                        <ul class="dropdown-menu">
-                            <li class="checkbox" ng-repeat="choice in items">
+                       <div range-slider min="demo2.range.min" max="demo2.range.max" model-min="demo2.minPrice" model-max="demo2.maxPrice" filter="currency:'₹'" step="100"></div>
+         </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bus-type text-center">
+                        <p href="#" data-toggle="dropdown" class="dropdown-toggle">Seating Capacity <b class="caret"></b>
+                        </p>
+                        <ul class="dropdown-menu" style="  left: 30%;">
+                            <li class="checkbox" ng-repeat="seat in seats">
                                 <label>
-                                    <input type="checkbox" value="">{{choice}}</label>
+                                    <input type="checkbox" value="">{{seat}}</label>
                             </li>
                         </ul>
                     </div>
                 </div>
+<!--                <div class="col-md-2"></div>-->
+<!--
                 <div class="col-md-2">
                     <div class="bus-type">
                         <p href="#" data-toggle="dropdown" class="dropdown-toggle">Amenities <b class="caret"></b>
@@ -396,6 +405,8 @@
                         </ul>
                     </div>
                 </div>
+-->
+<!--
                 <div class="col-md-2">
                     <div class="bus-type">
                         <p href="#" data-toggle="dropdown" class="dropdown-toggle">Boarding <b class="caret"></b>
@@ -408,6 +419,8 @@
                         </ul>
                     </div>
                 </div>
+-->
+<!--
                 <div class="col-md-2">
                     <div class="bus-type">
                         <p href="#" data-toggle="dropdown" class="dropdown-toggle">Dropping <b class="caret"></b>
@@ -420,6 +433,7 @@
                         </ul>
                     </div>
                 </div>
+-->
                 <div class="col-md-1"></div>
                 <!--
                 <div class="col-md-2">
@@ -576,3 +590,4 @@
         </div>
     </div>
 </section>
+  
