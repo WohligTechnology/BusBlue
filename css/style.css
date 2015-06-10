@@ -171,7 +171,7 @@ footer.foot-main {
 .foot-main h3 {
     margin: 0px;
     font-size: 18px;
-    color: #596A77;
+    color: #06719C;
     margin-bottom: 5px;
 }
 .foot-main ul>li {
@@ -183,7 +183,8 @@ footer.foot-main {
     margin: 0;
 }
 .foot-main ul>li>a {
-    color: #919bac;
+    color: #1295C9;
+    line-height: 26px;
 }
 .copy {
     padding: 15px 0 0;
@@ -2161,4 +2162,9 @@ p.ly-sl {
     bottom: 0;
     text-align: center;
     left: 5px;
+}
+.trvl.bus-type.open ul {
+    height: 207px;
+    overflow: hidden;
+    overflow-y: auto;
 }

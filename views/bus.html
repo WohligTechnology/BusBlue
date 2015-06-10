@@ -99,7 +99,7 @@
                     <div class="trvl bus-type">
                         <p data-toggle="dropdown" class="dropdown-toggle">Filter by: Travels <b class="caret"></b>
                         </p>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu scrollbar-dynamic" data-jquery-scrollbar="jqueryScrollbarOptions">
                             <li class="checkbox" ng-repeat="choice in items">
                                 <label>
                                     <input type="checkbox" value="">{{choice}}</label>
@@ -112,18 +112,18 @@
                         <p href="#" data-toggle="dropdown" class="dropdown-toggle">Bus Type <b class="caret"></b>
                         </p>
                         <ul class="dropdown-menu">
-                            <li class="checkbox" ng-repeat="choice in items">
+                            <li class="checkbox" ng-repeat="bus in bustype">
                                 <label>
-                                    <input type="checkbox" value="">{{choice}}</label>
+                                    <input type="checkbox" value="">{{bus}}</label>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="bus-type">
+                    <div class="trvl bus-type">
                         <p href="#" data-toggle="dropdown" class="dropdown-toggle">Amenities <b class="caret"></b>
                         </p>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu scrollbar-dynamic" data-jquery-scrollbar="jqueryScrollbarOptions">
                             <li class="checkbox" ng-repeat="amen in amenties">
                                 <label>
                                     <input type="checkbox" value="">{{amen}}</label>
@@ -132,10 +132,10 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="bus-type">
+                    <div class="trvl bus-type">
                         <p href="#" data-toggle="dropdown" class="dropdown-toggle">Boarding <b class="caret"></b>
                         </p>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu scrollbar-dynamic" data-jquery-scrollbar="jqueryScrollbarOptions">
                             <li class="checkbox" ng-repeat="board in boearding">
                                 <label>
                                     <input type="checkbox" value="">{{board}}</label>
@@ -144,10 +144,10 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="bus-type">
+                    <div class="trvl bus-type">
                         <p href="#" data-toggle="dropdown" class="dropdown-toggle">Dropping <b class="caret"></b>
                         </p>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu scrollbar-dynamic" data-jquery-scrollbar="jqueryScrollbarOptions">
                             <li class="checkbox" ng-repeat="drop in dropping">
                                 <label>
                                     <input type="checkbox" value="">{{drop}}</label>
@@ -155,6 +155,7 @@
                         </ul>
                     </div>
                 </div>
+<!--
                 <div class="col-md-2">
                     <div class="bus-type">
                         <p href="#" data-toggle="dropdown" class="dropdown-toggle">Ratings <b class="caret"></b>
@@ -167,6 +168,7 @@
                         </ul>
                     </div>
                 </div>
+-->
             </div>
         </div>
     </div>

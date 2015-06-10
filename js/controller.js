@@ -1181,24 +1181,60 @@ phonecatControllers.controller('bus',
 
 
         $scope.items = [
-            'Option 1',
-            'Option 2',
-            'Option 3'
+            'Atmaram Travels ',
+            'Citizen Travels Goa',
+            'GTA - Global Travel ',
+            'Global Travel Agency ',
+            'Infant Jesus travels ',
+            'Kadamba Transport Corporation Limited ',
+            'Konkan Tours and Travels  ',
+            'Laxmi (atmaram) Travels  ',
+            'Laxmi New Brand (atmaram)  ',
+            'Mahakali Travels Mumbai '
+         
+        ];
+      $scope.bustype = [
+            'AC',
+            'Non AC',
+            'Sleeper',
+            'Semi-Sleeper'
         ];
         $scope.amenties = [
-            'Option 1',
-            'Option 2',
-            'Option 3'
+            'WIFI',
+            'Water Bottle',
+            'Blankets',
+            'Charging Point',
+            'Movie',
+            'Reading Light',
+            'Pillow',
+            'No Amenities',
+            'Track My Bus',
+            'Emergency exit'
+            
         ];
         $scope.boearding = [
-            'Option 1',
-            'Option 2',
-            'Option 3'
+               'Atmaram Travels ',
+            'Citizen Travels Goa',
+            'GTA - Global Travel ',
+            'Global Travel Agency ',
+            'Infant Jesus travels ',
+            'Kadamba Transport Corporation Limited ',
+            'Konkan Tours and Travels  ',
+            'Laxmi (atmaram) Travels  ',
+            'Laxmi New Brand (atmaram)  ',
+            'Mahakali Travels Mumbai '
         ];
         $scope.dropping = [
-            'Option 1',
-            'Option 2',
-            'Option 3'
+               'Atmaram Travels ',
+            'Citizen Travels Goa',
+            'GTA - Global Travel ',
+            'Global Travel Agency ',
+            'Infant Jesus travels ',
+            'Kadamba Transport Corporation Limited ',
+            'Konkan Tours and Travels  ',
+            'Laxmi (atmaram) Travels  ',
+            'Laxmi New Brand (atmaram)  ',
+            'Mahakali Travels Mumbai '
         ];
         $scope.rating = [
             'Option 1',
