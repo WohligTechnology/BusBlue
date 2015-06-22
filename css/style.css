@@ -2066,6 +2066,9 @@ ul.sli-ul li {
     display: block;
     position: relative;
 }
+.home-content.ng-scope {
+    background: #fff;
+}
 .img-box img {
     position: absolute;
     top: 50%;
