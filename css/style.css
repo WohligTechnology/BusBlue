@@ -183,7 +183,7 @@ footer.foot-main {
     margin: 0;
 }
 .foot-main ul>li>a {
-    color: #1295C9;
+    color: #444;
     line-height: 26px;
 }
 .copy {
@@ -2248,3 +2248,35 @@ rzslider span.bubble.limit {
         height: 25px;
         line-height: normal;
     }
+.ftr-head h3{
+     border-bottom: 1px solid #40A7E5;
+  text-align: center;
+  padding-bottom: 8px;
+  color: #444;
+}
+.ftr-head ul {
+    padding-left: 40px;
+}
+.ftr-head img{
+    padding:40px;
+}
+.ftr-head ul li a img{
+    padding: 5px;
+    height: 45px;
+  width: auto;
+}
+.ml20{
+    margin-left:20px;
+}
+.fb-color{
+    color:#3A5795;
+}
+.twit-color{
+    color:#55ACEE;
+}
+.gplus-color{
+    color: #D8442F;
+}
+.mt20{
+    margin-top:20px;
+}
