@@ -14,7 +14,7 @@ phonecatControllers.controller('home',
         $scope.coords = {};
 
         $scope.show = false;
-//        $scope.pageClass = "page-home";
+        $scope.pageClass = "page-home";
         $scope.pageready = "true";
 
         //        $scope.login = function(listing) {
