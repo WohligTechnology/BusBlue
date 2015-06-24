@@ -2283,3 +2283,31 @@ rzslider span.bubble.limit {
 .mt20{
     margin-top:20px;
 }
+.container{
+    border-bottom: 2px solid black;
+}
+
+.mt20 p{
+    text-align: center;
+}
+.offer-img img{
+    border-radius: 50%;
+    border:1px solid black;
+}
+imgs img{
+    padding-bottom: 2px;
+}
+.transaction h4{
+    padding: 15px 0;
+}
+.travel-img img{
+    height:150px;
+    width: 60%;
+    margin:0 auto;
+}
+.pt20{
+    padding-top: 20px;
+}
+.pb20{
+    padding-bottom: 20px;
+}
