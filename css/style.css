@@ -2256,6 +2256,7 @@ rzslider span.bubble.limit {
   text-align: center;
   padding-bottom: 8px;
   color: #444;
+    padding-top: 25px;
 }
 .ftr-head ul {
     padding-left: 40px;
@@ -2282,10 +2283,9 @@ rzslider span.bubble.limit {
 }
 .mt20{
     margin-top:20px;
-}
-.container{
     border-bottom: 2px solid black;
 }
+
 
 .mt20 p{
     text-align: center;
@@ -2293,12 +2293,15 @@ rzslider span.bubble.limit {
 .offer-img img{
     border-radius: 50%;
     border:1px solid black;
+
 }
 imgs img{
     padding-bottom: 2px;
+    
 }
 .transaction h4{
     padding: 15px 0;
+    padding-bottom: 40px;
 }
 .travel-img img{
     height:150px;
@@ -2310,4 +2313,41 @@ imgs img{
 }
 .pb20{
     padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+.text-center.imgs img {
+  height: 75px;
+  overflow: hidden;
+  display: block;
+}
+.mz20 h4{
+    padding: 20px 0;
+}
+.mt20 p{
+padding-bottom: 20px;
+}
+.offer-img h5{
+      padding-top: 10px;
+}
+.text-center.imgs img{
+padding-bottom: 20px;
+}
+.pt20 h4{
+    padding-bottom: 15px;
+}
+.pz20 img{
+    padding-top: 30px;
+}
+.pz20 h5{
+    padding-bottom: 25fpx;
+}
+.mt20.travel-img {
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+}
+.container.footer-menu {
+    margin: 0px 0px 18px 1px;
+}
+.row.travel-img {
+    margin: 0px 0px 25px 0px;
 }
