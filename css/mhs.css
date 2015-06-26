@@ -1,7 +1,6 @@
 .copn-sct {
     margin: 20px 56px;
 }
-
 .copn-sct button {
     background: #FFFFFF;
     color: #1295C9;
@@ -14,7 +13,6 @@
     transition: all 0.5s ease;
     font-size: 10px;
 }
-
 ul.cpn-details li {
     list-style: none;
     min-height: 188px;
@@ -23,11 +21,9 @@ ul.cpn-details li {
     display: inline-block;
     margin: 8px 15px;
 }
-
 .cpn-pack {
     padding: 5px 10px 5px 6px;
 }
-
 .pack-img img {
     width: 70px;
     height: 70px;
@@ -35,32 +31,26 @@ ul.cpn-details li {
     text-align: center;
     display: block;
 }
-
 .pack-right h1 {
     font-size: 18px;
     font-weight: bold;
     color: rgb(235, 93, 93);
     line-height: 0px;
 }
-
 .pack-right {
     text-align: right;
 }
-
 .pack-right h4 {
     font-size: 14px;
     color: rgb(61, 174, 223);
 }
-
 .cpn-code {
     text-align: center;
 }
-
 .cpn-code h4 {
     font-size: 13px;
     color: #999;
 }
-
 .cpn-code p {
     font-weight: bold;
     font-size: 14px;
@@ -68,20 +58,17 @@ ul.cpn-details li {
     padding: 3px 0px 4px 1px;
     color: #999;
 }
-
 .pack-dat p {
     font-size: 10px;
     font-weight: bold;
     color: rgb(119, 119, 119);
 }
-
 .pck-cal {
     border: 1px solid #EAEDEF;
     text-align: center;
     padding: 0px 0px;
     margin: -6px 7px 0px 7px;
 }
-
 .pck-cal h5 {
     font-size: 9px;
     background: rgb(202, 202, 202);
@@ -90,7 +77,6 @@ ul.cpn-details li {
     color: #fff;
     font-weight: bold;
 }
-
 .pck-cal h3 {
     font-size: 15px;
     padding: 6px 0px 6px 0px;
@@ -98,11 +84,9 @@ ul.cpn-details li {
     color: rgb(202, 202, 202);
     font-weight: bold;
 }
-
 .pack-dat {
     margin: 0px 2px;
 }
-
 i.ln-cross.img-cl {
     border: 1px solid rgb(61, 174, 223);
     border-radius: 100%;
@@ -113,62 +97,51 @@ i.ln-cross.img-cl {
     left: 9px;
     cursor: pointer;
 }
-
 .pck-rg h5 {
     color: rgb(61, 174, 223);
     font-weight: bold;
 }
-
 .rightContent {
     /* float: right; */
     /* width: 220px; */
     /* padding: 5px 0px 0; */
-    
     margin: -8px 0px 0px;
     min-height: 175px;
 }
-
 .legend {
     color: #333;
     font-size: 11px;
     border-bottom: 1px solid #FFFFFF;
     font-family: "lato";
 }
-
 .legend label {
     line-height: 25px;
     display: block;
     margin: 6px 0;
 }
-
 .legend.sleeper .seat.available {
     background-position: -40px 0;
     vertical-align: middle;
     margin: 0px 10px 0px 0px;
 }
-
 .legend.sleeper .seat.ladies {
     background-position: -40px -20px;
     vertical-align: middle;
     margin: 0px 10px 0px 0px;
 }
-
 .legend.sleeper .seat {
     width: 40px;
 }
-
 .legend.sleeper .seat.selected {
     background-position: -40px -60px;
     vertical-align: middle;
     margin: 0px 10px 0px 0px;
 }
-
 .legend.sleeper .seat.booked {
     background-position: -40px -40px;
     vertical-align: middle;
     margin: 0px 10px 0px 0px;
 }
-
 .fare {
     margin-top: 15px;
     font-size: 11px;
@@ -176,48 +149,39 @@ i.ln-cross.img-cl {
     line-height: 20px;
     font-family: "lato";
 }
-
 .fare .amount,
 .fare .seatsSelected {
     margin: 5px 0;
 }
-
 .fare label {
     display: block;
     float: left;
     /* width: 95px; */
 }
-
 .fare span {
     font-size: 11px;
     color: #e24648;
     display: block;
     float: left;
     /* width: 125px; */
-    
     margin: 0px 0px 0px 10px;
 }
-
 .legend label {
     line-height: 24px;
     display: block;
     margin: 6px 0px;
 }
-
 .trans-cat {
     background: rgb(234, 237, 239);
     padding: 8px 15px 1px 1px;
 }
-
 ul.cat-li li {
     list-style: none;
     display: inline-block;
 }
-
 ul.cat-li {
     text-align: right;
 }
-
 ul.cat-li select {
     border: 1px solid rgb(192, 192, 192);
     padding: 3px 0px 3px 8px;
@@ -225,18 +189,15 @@ ul.cat-li select {
     outline: 0;
     cursor: pointer;
 }
-
 .row.tran-info {
     border: 1px solid rgb(234, 237, 239);
     padding: 25px 8px 25px 8px;
     border-top: 4px solid #41b372;
     margin: 24px auto;
 }
-
 .tran-dat {
     border: 1px solid rgb(234, 237, 239);
 }
-
 .tran-dat p {
     margin: 0;
     background: rgb(234, 237, 239);
@@ -247,54 +208,44 @@ ul.cat-li select {
     padding: 8px 13px;
     text-transform: capitalize;
 }
-
 .tran-dat h5 {
     text-align: center;
     font-weight: bold;
     font-size: 12px;
 }
-
 .tran-loc .p1 {
     font-size: 12px;
     font-weight: bold;
 }
-
 p.p1 i {
     color: grey;
     font-size: 11px;
     margin: 5px;
 }
-
 p.p2 {
     font-size: 12px;
     font-weight: bold;
     color: #999;
 }
-
 span.p2spn {
     color: #000;
     margin: 5px;
 }
-
 p.p3 {
     font-size: 12px;
     font-weight: bold;
     color: #999;
 }
-
 p.p3 span {
     color: #000;
     margin: 5px;
 }
-
 .tran-loc p {
     line-height: 10px;
 }
-
 .tran-loc {
     margin: 7px auto;
 }
-
 .tran-book button {
     background: #fff;
     border: 1px solid #41b372;
@@ -302,15 +253,12 @@ p.p3 span {
     padding: 5px 10px 5px 10px;
     margin: 18px auto;
 }
-
 span.rs-py {
     margin: 0px 0px 0px 80px;
 }
-
 .payments .payment-info {
     padding: 18px 32px;
 }
-
 .payments .user-avatar {
     width: 50px;
     height: 50px;
@@ -318,60 +266,50 @@ span.rs-py {
     border-radius: 500px;
     background: 0 0;
 }
-
 .user-avatar {
     color: #fff;
     float: right;
 }
-
 .payments .num-block {
     float: left;
     margin-left: 20px;
     margin-top: 5px;
 }
-
 .cart-subtext h6 {
     text-transform: uppercase;
     color: #919bac;
     font-size: 10px;
     line-height: 2;
 }
-
 .payments .amount-block {
     float: right;
     text-align: right;
     margin-top: 5px;
 }
-
 .cart-subtext h6 {
     text-transform: uppercase;
     color: #919bac;
     font-size: 10px;
     line-height: 2;
 }
-
 .cart li {
     padding: 16px 18px;
     margin-bottom: 10px;
     border-bottom: 1px dashed #eaedef;
 }
-
 .tab2 {
     margin: 40px auto;
 }
-
 .cart h5 {
     display: inline;
     font-size: 17px;
     color: #1295C9;
 }
-
 .cart-coupons h6 {
     text-transform: uppercase;
     color: #919bac;
     font-size: 14px;
 }
-
 .cart ul {
     margin-top: 10px;
     max-height: 100%;
@@ -381,7 +319,6 @@ span.rs-py {
     padding-left: 0px;
     margin: 0px 30px 0px 0px;
 }
-
 .remove-coupon {
     float: right;
     position: relative;
@@ -391,7 +328,6 @@ span.rs-py {
     border: 2px solid #dd4d3b;
     border-radius: 50%;
 }
-
 .remove-coupon:after {
     position: absolute;
     top: 9px;
@@ -401,25 +337,19 @@ span.rs-py {
     background: #dd4d3b;
     left: 6px;
 }
-
 .rupee {
     float: right;
 }
-
 .cart-coupons {
     margin: 0px 0px 0px 40px;
 }
-
 .coupon-count {
     color: #919bac;
 }
-
 .row.pay {
     /* border: 1px solid; */
-    
     margin: 0px 10px;
 }
-
 .user-avatar img {
     border-radius: 100%;
     height: 51px;
@@ -428,35 +358,29 @@ span.rs-py {
     padding: 8px 0px;
     margin: 18px 0px;
 }
-
 .num-block h3 {
     font-size: 19px;
     font-weight: bold;
     line-height: 0px;
     color: #34495e;
 }
-
 .num-block {
     float: left;
     margin-top: 15px;
 }
-
 .num-block h6 {
     color: #919bac;
     font-weight: bold;
 }
-
 .num-block.amount-block {
     float: right;
 }
-
 .promocode {
     width: 100%;
     background: #eaedef;
     position: relative;
     padding: 0px;
 }
-
 .promocode .arrow {
     position: absolute;
     left: 0;
@@ -465,7 +389,6 @@ span.rs-py {
     height: 8px;
     background: url(../images/coupon-arrow2.png) -5px 0 repeat-x;
 }
-
 .promocode form {
     padding: 18px 12px 12px;
     z-index: 99;
@@ -478,7 +401,6 @@ span.rs-py {
     -o-transition: height .4s ease;
     transition: height .4s ease;
 }
-
 .promocode .code-field {
     float: left;
     width: 100%;
@@ -488,13 +410,11 @@ span.rs-py {
     border: 1px solid rgb(234, 237, 239);
     padding: 0px 0px 0px 13px;
 }
-
 .tab2 .promocode {
     border: 1px solid #EAEDEF;
     border-top: none;
     padding: 0px 0px 90px 0px;
 }
-
 button.btn-2 {
     text-align: right;
     background: #919bac;
@@ -505,17 +425,14 @@ button.btn-2 {
     text-transform: uppercase;
     font-weight: bold;
 }
-
 .promo-ser ul {
     list-style: none;
     display: inline-flex;
 }
-
 .promo-ser {
     margin: 23px auto;
     text-align: center;
 }
-
 ul.serv-li li {
     text-transform: uppercase;
     font-weight: bold;
@@ -524,21 +441,17 @@ ul.serv-li li {
     color: #919bac;
     cursor: pointer;
 }
-
 .select-box {
     /* display: inline-block; */
     /* vertical-align: middle; */
-    
     cursor: pointer;
     max-height: 24px;
     margin-top: 0px;
 }
-
 select#paymentOther {
     text-transform: uppercase;
     outline: 0;
     /* -webkit-appearance: none; */
-    
     -moz-appearance: none;
     -ms-appearance: none;
     padding: 6px 6px 7px 8px;
@@ -546,7 +459,6 @@ select#paymentOther {
     border: 1px solid #919bac;
     cursor: pointer;
 }
-
 select#paymentOther option {
     text-transform: uppercase;
 }
@@ -569,17 +481,14 @@ select#paymentOther option {
 .dropd-slep {
     margin: 65px auto;
 }
-
 .dropd-slep {
     margin: 65px auto;
 }
-
 .drop-sl p {
     font-family: "lato";
     font-size: 13px;
     line-height: 0;
 }
-
 .dro-sl select {
     font-size: 14px;
     font-family: "lato", 'sans-serif';
@@ -588,7 +497,6 @@ select#paymentOther option {
     cursor: pointer;
     border: 1px solid #C4C4C4;
 }
-
 button.cont-btn {
     background: #e24648;
     border: 1px solid #e24648;
@@ -597,31 +505,25 @@ button.cont-btn {
     font-size: 13px;
     padding: 2px 15px 2px 15px;
 }
-
 .btn-dro {
     margin: 10px auto;
 }
-
 .scrollbar-dynamic::-webkit-scrollbar {
     width: 6px;
     border-radius: 26px;
 }
-
 .scrollbar-dynamic::-webkit-scrollbar-track {
     background-color: #eaeaea;
     border-left: 1px solid #C6C6C6;
     border-right: 1px solid #C6C6C6;
     border-radius: 10px;
 }
-
 .scrollbar-dynamic::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     /* outline: 1px solid rgb(204, 204, 204); */
-    
     height: 8px;
     border-radius: 20px;
 }
-
 input.cred-txt {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -641,7 +543,6 @@ input.cred-txt {
     background: #fff;
     width: 100%;
 }
-
 .select-cred select {
     width: 100%;
     border-color: #eaedef;
@@ -652,30 +553,24 @@ input.cred-txt {
     text-transform: uppercase;
     cursor: pointer;
 }
-
 input.cred-cvv.cred-txt {
     width: 64px;
 }
-
 .scn {
     margin: 9px auto;
 }
-
 .txt-cred {
     margin-bottom: 20px;
 }
-
 .frs.row {
     margin: 0px;
 }
-
 .bank-list li .bankOption {
     padding: 10px 6px;
     margin: 0 10px 10px 0;
     background: #fff;
     box-shadow: none;
 }
-
 .bank-list li .bankOption {
     cursor: pointer;
     height: 50px;
@@ -689,7 +584,7 @@ input.cred-cvv.cred-txt {
     font-size: 11px;
     box-shadow: 0 0 1px #E0E0E0;
     background: #FFF;
-/*
+    /*
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFF), to(#F7F7F7));
     background: -webkit-linear-gradient(#FFF 0, #F7F7F7 100%);
     background: -moz-linear-gradient(#FFF 0, #F7F7F7 100%);
@@ -698,12 +593,11 @@ input.cred-cvv.cred-txt {
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f7f7f7', GradientType=0);
 */
 }
-
 .bank-list li .bankOption * {
     float: left;
 }
-.act{
-color: #1295C9 !important;
+.act {
+    color: #1295C9 !important;
 }
 .bank-list input.rdoIn {
     margin: 7px 10px 0;
@@ -711,19 +605,15 @@ color: #1295C9 !important;
     border: 0;
     padding: 0;
 }
-
 .rdoIn+span {
     margin-bottom: 8px;
 }
-
 .bankOption input[type=radio]:checked+span {
     border-color: #65c6bb;
 }
-
 input[type=radio]+span {
     border-radius: 50%;
 }
-
 .bankOption input[type=radio]+span {
     display: inline-block;
     width: 27px;
@@ -734,11 +624,9 @@ input[type=radio]+span {
     margin-right: 8px;
     position: relative;
 }
-
 .bankOption input[type=radio]:checked+span:after {
     background: transparent url(../images/radio-dot.png) no-repeat center center;
 }
-
 input[type=radio]+span:after {
     content: '';
     position: absolute;
@@ -748,17 +636,16 @@ input[type=radio]+span:after {
     height: 11px;
 }
 .bank-list label.bankOption img {
-  float: left;
-  margin: 0 10px 0 0;
+    float: left;
+    margin: 0 10px 0 0;
 }
 .bankOption input[type=radio] {
-  display: none;
+    display: none;
 }
 ul.bank-list {
     list-style: none;
     display: block;
 }
-
 ul.bank-list li {
     display: inline-block;
 }
@@ -767,5 +654,184 @@ h6.abc {
     font-size: 14px;
     color: #000;
 }
-.cat-cpn ul li a:hover {
+.cat-cpn ul li a:hover {} .pay-head span {
+    color: #1295C9;
+    padding: 8px;
+}
+.trav-det.ng-scope {
+    border-bottom: 1px solid rgb(234, 237, 239);
+    padding: 8px;
+}
+.pay-head p {
+    margin: 5px 0px 0px 0px;
+}
+.asterik {
+    color: #D02025;
+    font-size: 11px;
+    padding-left: 2px;
+    vertical-align: bottom;
+}
+.right-margin-50 {
+    margin-right: 35px;
+    margin-top: 5px;
+}
+.lb {
+    float: left;
+}
+.trav-name.lb input {
+    font: inherit;
+    width: 200px;
+    padding: 5px 10px;
+    border: 1px solid darkgrey;
+    display: block;
+    margin: 0px auto;
+    font-size: 0.9em;
+    font-weight: 300;
+    outline: 0 !important;
+}
+.trav-names.lb input {
+    font: inherit;
+    width: 65px;
+    padding: 6px 10px;
+    border: 1px solid darkgrey;
+    display: block;
+    margin: 0px auto;
+    font-size: 0.9em;
+    font-weight: 300;
+    outline: 0 !important;
+}
+.travel-det {
+    background: #EAEDEF;
+    padding: 2px;
+    text-transform: capitalize;
+    margin: 40px 0px 0px 0px;
+}
+.travel-det p {
+    padding: 9px 6px 0px 14px;
+    font-size: 16px;
+}
+.btnCol {
+    float: left;
+    margin: 8px 0px 0px 5px;
+}
+.BMargin {
+    margin-right: 10px;
+}
+.LH {
+    float: left;
+    margin-top: 5px;
+}
+.coln2 {
+    width: 25%;
+    margin-right: 40px;
+}
+.btnCol .radBt {
+    vertical-align: baseline;
+    padding: 0;
+    margin-top: 0;
+    font-size: 13px;
+}
+.right-margin-10 {
+    margin-right: 19px;
+    margin-top: 5px;
+}
+.btnCol label {
+    margin-left: 2px;
+    margin-right: 8px;
+}
+.row.marg-top {
+    margin-top: 20px;
+    margin-left: 0;
+}
+input.code {
+    font: inherit;
+    width: 46px;
+    padding: 6px 10px;
+    border: 1px solid darkgrey;
+    display: block;
+    margin: 0px auto;
+    font-size: 0.9em;
+    font-weight: 300;
+    outline: 0 !important;
+}
+input.mob-num {
+    font: inherit;
+    width: 180px;
+    padding: 6px 10px;
+    border: 1px solid darkgrey;
+    display: block;
+    font-size: 0.9em;
+    font-weight: 300;
+    outline: 0 !important;
+    margin: 0px 52px;
+}
+.tr-content {
+    border-bottom: 1px solid rgb(234, 237, 239);
+    padding-bottom: 20px;
+}
+.cpns-code input {
+    font: inherit;
+    width: 200px;
+    padding: 5px 10px;
+    border: 1px solid darkgrey;
+    display: block;
+    margin: 0px auto;
+    font-size: 0.9em;
+    font-weight: 300;
+    outline: 0 !important;
+    float: left;
+}
+button.cpns-btn {
+    background: #1295C9;
+    border: 1px solid #1295C9;
+    color: #fff;
+    padding: 4px 17px;
+    margin: 0px 14px;
+}
+.cpns-code {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.row.bs-det {
+    margin: 0;
+}
+.bs-travel {
+    border-bottom: 1px solid rgb(234, 237, 239);
+    padding-bottom: 20px;
+}
+.trvl-name h6 {
+    line-height: 70%;
+}
+.row.pay-amnt {
+    margin: 0;
+}
+
+.bold.text-algn h5 {
+    font-weight: 700;
+}
+.txt-algn {
+    text-align: right;
+}
+h4.right-pl {
+    float: right;
+}
+.totl p {
+    float: left;
+}
+.pl-lrft{
+float: left;
+}
+.totl {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-top-style: dotted;
+    border-width: 2px;
+    border-color: rgb(140, 140, 140);
+    position: relative;
+    border-bottom-style: dotted;
+    padding-bottom: 37px;
+}
+.totl h4 {
+    font-size: 15px;
+    font-weight: 700;
 }
