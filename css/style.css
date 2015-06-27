@@ -2682,7 +2682,7 @@ rzslider span.bubble.limit {
 }
 
 .offer-img img {
-    border-radius: 50%;
+    border-radius: 100%;
     border: 1px solid black;
 }
 
@@ -2707,13 +2707,12 @@ imgs img {
 
 .pb20 {
     padding-bottom: 20px;
-    border-bottom: 2px solid black;
+/*    border-bottom: 2px solid black;*/
 }
 
 .text-center.imgs img {
     height: 75px;
     overflow: hidden;
-    display: block;
 }
 
 .mz20 h4 {
