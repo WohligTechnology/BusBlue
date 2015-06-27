@@ -56,9 +56,9 @@ firstapp.config(['$routeProvider',
         }).when('/coupon', {
             templateUrl: 'views/template.html',
             controller: 'coupon'
-        }).when('/payment', {
+        }).when('/checkout-bus', {
             templateUrl: 'views/template.html',
-            controller: 'payment'
+            controller: 'checkout-bus'
         }).when('/contactus', {
             templateUrl: 'views/template.html',
             controller: 'contactus'

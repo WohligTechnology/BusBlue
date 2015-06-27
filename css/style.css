@@ -219,7 +219,7 @@ footer.foot-main {
 
 .foot-main ul {
     padding: 0px;
-    margin: 0;
+    margin: 2px;
 }
 
 .foot-main ul>li>a {
@@ -596,7 +596,7 @@ a.btnsoc.fa.fa-facebook {
     float: left;
     font-size: 22px;
     padding: 14px 18px 14px 17px;
-    /* border-bottom: 2px solid #35518e; */
+
 }
 
 a.btnsoc.fa.fa-twitter {
@@ -2636,14 +2636,13 @@ rzslider span.bubble.limit {
 }
 
 .ftr-head h3 {
-    text-align: center;
     padding-bottom: 8px;
     color: #1295C9;
     padding-top: 25px;
+    font-weight: 700;
 }
 
 .ftr-head ul {
-    text-align: center;
 }
 
 .ftr-head img {
@@ -2665,7 +2664,6 @@ rzslider span.bubble.limit {
 }
 
 .twit-color {
-    color: #55ACEE;
 }
 
 .gplus-color {
@@ -2749,9 +2747,13 @@ imgs img {
 }
 
 .container.footer-menu {
-    margin: 0px 0px 18px 1px;
+    /* margin: 0px 0px 18px 1px; */
 }
 
 .row.travel-img {
     margin: 0px 0px 25px 0px;
+}
+.ftr-head.soc ul {
+    text-align: left;
+    margin: 0px 0px 0px 27px;
 }

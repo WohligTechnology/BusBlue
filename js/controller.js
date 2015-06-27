@@ -1399,6 +1399,12 @@ phonecatControllers.controller('bus',
                 $scope.active3 = "tab-active";
             }
         };
+        
+        $scope.rediecttocheckout=function(){
+            ngDialog.close();
+            $location.url("/checkout-bus");
+        }
+    
     });
 phonecatControllers.controller('terms',
     function($scope, TemplateService, NavigationService, RestService, $location) {
@@ -1666,11 +1672,11 @@ phonecatControllers.controller('forgot',
         $scope.navigation = NavigationService.getnav();
 
     });
-phonecatControllers.controller('payment',
+phonecatControllers.controller('checkout-bus',
     function($scope, TemplateService, NavigationService, RestService, $location, ngDialog) {
         $scope.template = TemplateService;
         TemplateService.title = $scope.menutitle;
-        TemplateService.content = "views/payment.html";
+        TemplateService.content = "views/checkout-bus.html";
         $scope.navigation = NavigationService.getnav();
         $scope.pageClass = "page-login";
         $scope.headclass1 = 'changeheads';

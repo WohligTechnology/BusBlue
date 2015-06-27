@@ -1,4 +1,6 @@
 <div class="holder" ng-controller="bus">
+   <div class="row">
+   <div class="col-md-8">
     <div class="bus-ui">
         <div class="drivercabin"><i class="jon steering"></i>
         </div>
@@ -65,6 +67,65 @@
                 <i class="jon empty-seat" ng-click="selectMe($event);"></i>
                 <i class="jon empty-seat" ng-click="selectMe($event);"></i>
                 <i class="jon empty-seat" ng-click="selectMe($event);"></i>
+            </div>
+        </div>
+    </div>
+    </div>
+        <div class="col-md-4">
+        
+            <div class="rightContent">
+				<div class="legend sleeper">
+					<label><span class="jon seat available"></span>Available <span class="legendType">Sleeper</span></label>
+					<label><span class="jon seat ladies"></span>Reserved for ladies</label>
+					<label><span class="jon seat selected"></span>Selected <span class="legendType">Sleeper</span></label>
+					<label><span class="jon seat booked"></span>Booked <span class="legendType">Sleeper</span></label>
+				</div>
+				<div class="fare">
+					<div class="seatsSelected clearfix">
+						<label>Seat(s)  :</label>
+						<span>G, 15, 16, H, E, 8</span>
+					</div>
+					<div class="amount clearfix">
+						<label>Base Fare : </label>
+						<span class="basefare fareval">Rs. 5700</span>
+					</div>
+                     <div id="svcDiv" class="amount clearfix Hide" style="display: none;">
+						<label>Service Charge : </label>
+						<span class="servicecharge fareval"></span>
+					</div>
+                    <div id="svtDiv" class="amount clearfix Hide" style="display: none;">
+						<label>Service Tax : </label>
+						<span class="servicetax fareval"></span>
+					</div>                   
+                    <div class="amount clearfix">
+						<label>Total Fare : </label>
+						<span class="totalfare fareval">Rs. 5700.00</span>
+					</div>
+				</div>
+			</div>
+        
+    </div>
+</div>
+    <div class="row">
+        <div class="dropd-slep">
+            <div class="col-md-6">
+                <div class="drop-sl">
+                    <p>Choose boarding point</p>
+                    <div class="dro-sl">
+                        <select>
+                           <option>-- Boarding points --</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="btn-dro">
+                    <a ng-click="rediecttocheckout();"> <button type="submit" class="cont-btn">Continue</button></a>
+                </div>
             </div>
         </div>
     </div>
