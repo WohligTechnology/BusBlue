@@ -59,6 +59,9 @@ firstapp.config(['$routeProvider',
         }).when('/checkout-bus', {
             templateUrl: 'views/template.html',
             controller: 'checkout-bus'
+        }).when('/checkout-car', {
+            templateUrl: 'views/template.html',
+            controller: 'checkout-car'
         }).when('/contactus', {
             templateUrl: 'views/template.html',
             controller: 'contactus'
