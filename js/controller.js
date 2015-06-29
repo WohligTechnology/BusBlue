@@ -1696,7 +1696,30 @@ phonecatControllers.controller('checkout-bus',
         };
 
     });
+phonecatControllers.controller('checkout-car',
+    function($scope, TemplateService, NavigationService, RestService, $location, ngDialog) {
+        $scope.template = TemplateService;
+        TemplateService.title = $scope.menutitle;
+        TemplateService.content = "views/checkout-car.html";
+        $scope.navigation = NavigationService.getnav();
+        $scope.pageClass = "page-login";
+        $scope.headclass1 = 'changeheads';
+        $scope.loginfunc = function(login) {
+            console.log("in login");
+            toaster.pop("error", "Login Error", "Invalid username or password", 5000);
+            toaster.pop("success", "Welcome", "Registered successfully", 5000);
+        }
 
+        $scope.jqueryScrollbarOptions = {
+            "type": "simpble",
+            "onScroll": function(y, x) {
+                if (y.scroll == y.maxScroll) {
+                    alert('Scrolled to bottom');
+                }
+            }
+        };
+
+    });
 phonecatControllers.controller('headerctrl',
     function($scope, TemplateService, ngDialog) {
         $scope.template = TemplateService;
